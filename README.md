@@ -1,21 +1,20 @@
-# CMP Native SDK (iOS) Readme - 6.28.0
+# CMP Native SDK (iOS and tvOS) Readme - 6.29.0
 
 ## App Setup
 
 ### Requirements
-The OneTrust Headless SDK for Publishers was developed using Swift and requires **iOS 11.0** and above.
+The OneTrust Headless SDK for Publishers was developed using Swift and requires **iOS/tvOS 11.0** and above.
 - Note: We do support iOS 10 with XCFramework downloaded from the OneTrust portal. 
 
-### Import using .framework (supported for Legacy Build System only).
+### Import using .framework (iOS - supported for Legacy Build System only).
 1. Download and unzip Publishers Native SDK. The SDK can be downloaded from the Mobile SDKs page in the OneTrust platform.
 2. Select the SDK that is compatible with the version of Xcode and Swift. Folders suffixed with -Test contain simulator and device architectures. Folders without -Test contain only device specific architectures.
-  - If using Xcode 11.7, use the OTPublishersHeadlessSDK.framework provided under OTPublishersHeadlessSDK-11.7 folder based on your bitcode configuration.
   - If using Xcode 12.x, use the OTPublishersHeadlessSDK.framework provided under OTPublishersHeadlessSDK-12 folder based on your bitcode configuration.
 3. Drag and drop OTPublishersHeadlessSDK.framework into your Xcode project. Check **Copy Items If Needed**.
 4. Add OTPublishersHeadlessSDK to "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically added.
 5. Select "Embed & Sign" for "Frameworks, Libraries, and Embedded contents" under Target's General Tab.
 
-### Import using .xcframework
+### Import using .xcframework (iOS)
 1. Download and unzip the iOS SDK. The SDK can be downloaded from the Mobile SDKs page in the OneTrust platform.
 2. OTPublishersHeadlessSDK-XCFramework folder contains a pre-compiled binary package as XCFramework. 
 3. Drag and drop OTPublishersHeadlessSDK.xcframework into your Xcode project. Check **Copy Items If Needed**.
@@ -25,18 +24,34 @@ The OneTrust Headless SDK for Publishers was developed using Swift and requires 
   - Delete the existing OTPublishersHeadlessSDK.framework from Application.
   - Remove OTPublishersHeadlessSDK.framework from "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically removed.
 
-### Import using CocoaPods
+### Import using CocoaPods (iOS)
 1. If the application have been using .framework or .xcframework earlier, delete any existance of .framework/.xcframework and all of it's references from Target's Build or General Settings before adopting Pods.
   - Delete the existing OTPublishersHeadlessSDK.framework / OTPublishersHeadlessSDK.xcframework from Application.
   - Remove OTPublishersHeadlessSDK.framework / OTPublishersHeadlessSDK.xcframework from "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically removed.
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for CocoaPods is added on version 6.3.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-XCFramework', '~> 6.28.0.0' `
+        `pod 'OneTrust-CMP-XCFramework', '~> 6.29.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`
 5. Open .xcworkspace file in Xcode and run the app.
+
+### Import using Swift Package Manager (iOS)
+1. If the application target have been using .framework or .xcframework earlier, delete any existance of .framework/.xcframework and all of it's references from Target's Build or General Settings before adopting Swift Package.
+  - Delete the existing OTPublishersHeadlessSDK.framework / OTPublishersHeadlessSDK.xcframework from Application Target.
+  - Remove OTPublishersHeadlessSDK.framework / OTPublishersHeadlessSDK.xcframework from "Embedded Frameworks" and to "Link Binary With Libraries" under Application Target's Build Phases Tab if not automatically removed.
+2. Open the Application project or workspace.
+3. Next, select `File -> Add Packages...`. This will pop up the Swift Packages screen.
+4. On the top right corner of the Swift Packages pop-up, you can search for Swift Packages. Enter the URL for the corresponding Swift package you want to integrate and press ENTER.
+Ex: 
+    If you want to integrate the iOS OT SDK via SPM, enter the Github public URL: https://github.com/Zentrust/OTPublishersHeadlessSDK . 
+5. This will now show and select the Swift package in the middle section of the pop-up. On the right side, we will be prompted to decide the `Dependency Rule` and the `Project`.
+6. Choose the `Dependency Rule` that is appropriate for your project. If you wish to stay current with our SDK, we recommend using `Up to Next Major Version`. This will automatically update your project with latest iOS OT SDK whenever a new version is published from our end.
+7. Choose the `Project` by selecting the Project to which your application target belongs to.
+8. Now on the bottom-right of the pop-up, you will see that the `Add Package` button is now enabled. Click on the button. This will now start resolving the Swift package for you.
+9. While resolving the Swift package, you will be prompted with a new pop-up (Choose Package Product) where you will need to select the `Target` to which the Swift Package Product should be added to. Select the appropriate Target. This is the final step and once the target as been selected, the Swift Package Product will be added to that Target.
+**Note: All the above mentioned steps are only required to be done once whenever the Application target is being linked with OT SDK Swift Package. After this is done, during next releases, the application can directly fetch the latest OT SDK Swift Package by going to `File -> Packages -> Update to Latest Package Version`.
 
 ### Import Header
 Import header to begin using OTPublishersHeadlessSDK methods.
@@ -48,16 +63,15 @@ ObjC:  `#import <OTPublishersHeadlessSDK/OTPublishersHeadlessSDK-Swift.h>`
 ### Import tvOS Framework
 The OneTrust Native SDK support is extended for tvOS. It is developed using Swift and requires **tvOS 11.0** and above.
 
-### Import using .framework
+### Import using .framework (tvOS - supported for Legacy Build System only).
 1. Download and unzip Publishers Native SDK. The SDK can be downloaded from the Mobile SDKs page in the OneTrust platform.
 2. Select the SDK that is compatible with the version of Xcode and Swift. Folders suffixed with -Test contain simulator and device architectures. Folders without -Test contain only device specific architectures.
-  - If using Xcode 11.7, use the OTPublishersHeadlessSDKtvOS.framework provided under OTPublishersHeadlessSDK-11.7 folder based on your bitcode configuration.
   - If using Xcode 12.x, use the OTPublishersHeadlessSDKtvOS.framework provided under OTPublishersHeadlessSDK-12 folder based on your bitcode configuration.
 3. Drag and drop OTPublishersHeadlessSDKtvOS.framework into your Xcode project. Check **Copy Items If Needed**.
 4. Add OTPublishersHeadlessSDKtvOS to "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically added.
 5. Select "Embed & Sign" for "Frameworks, Libraries, and Embedded contents" under Target's General Tab.
 
-### Import using .xcframework
+### Import using .xcframework (tvOS)
 1. Download and unzip the SDK. The SDK can be downloaded from the Mobile SDKs page in the OneTrust platform.
 2. OTPublishersHeadlessSDK-XCFramework folder contains a pre-compiled binary package as XCFramework. 
 3. Drag and drop OTPublishersHeadlessSDKtvOS.xcframework into your Xcode project. Check **Copy Items If Needed**.
@@ -67,18 +81,34 @@ The OneTrust Native SDK support is extended for tvOS. It is developed using Swif
   - Delete the existing OTPublishersHeadlessSDKtvOS.framework from Application.
   - Remove OTPublishersHeadlessSDKtvOS.framework from "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically removed.
 
-### Import using CocoaPods
+### Import using CocoaPods (tvOS)
 1. If the application have been using .framework or .xcframework earlier, delete any existance of .framework/.xcframework and all of it's references from Target's Build or General Settings before adopting Pods.
   - Delete the existing OTPublishersHeadlessSDKtvOS.framework / OTPublishersHeadlessSDKtvOS.xcframework from Application.
   - Remove OTPublishersHeadlessSDKtvOS.framework / OTPublishersHeadlessSDKtvOS.xcframework from "Embedded Frameworks" and to "Link Binary With Libraries" under Target's Build Phases Tab if not automatically removed.
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for tvOS in CocoaPods is added on version 6.4.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.28.0.0' `
+        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.29.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`
 5. Open .xcworkspace file in Xcode and run the app.
+
+### Import using Swift Package Manager (tvOS)
+1. If the application target have been using .framework or .xcframework earlier, delete any existance of .framework/.xcframework and all of it's references from Target's Build or General Settings before adopting Swift Package.
+  - Delete the existing OTPublishersHeadlessSDKtvOS.framework / OTPublishersHeadlessSDKtvOS.xcframework from Application Target.
+  - Remove OTPublishersHeadlessSDKtvOS.framework / OTPublishersHeadlessSDKtvOS.xcframework from "Embedded Frameworks" and to "Link Binary With Libraries" under Application Target's Build Phases Tab if not automatically removed.
+2. Open the Application project or workspace.
+3. Next, select `File -> Add Packages...`. This will pop up the Swift Packages screen.
+4. On the top right corner of the Swift Packages pop-up, you can search for Swift Packages. Enter the URL for the corresponding Swift package you want to integrate and press ENTER.
+Ex: 
+    If you want to integrate the tvOS OT SDK via SPM, enter the Github public URL: https://github.com/Zentrust/OTPublishersHeadlessSDKtvOS . 
+5. This will now show and select the Swift package in the middle section of the pop-up. On the right side, we will be prompted to decide the `Dependency Rule` and the `Project`.
+6. Choose the `Dependency Rule` that is appropriate for your project. If you wish to stay current with our SDK, we recommend using `Up to Next Major Version`. This will automatically update your project with latest tvOS OT SDK whenever a new version is published from our end.
+7. Choose the `Project` by selecting the Project to which your application target belongs to.
+8. Now on the bottom-right of the pop-up, you will see that the `Add Package` button is now enabled. Click on the button. This will now start resolving the Swift package for you.
+9. While resolving the Swift package, you will be prompted with a new pop-up (Choose Package Product) where you will need to select the `Target` to which the Swift Package Product should be added to. Select the appropriate Target. This is the final step and once the target as been selected, the Swift Package Product will be added to that Target.
+**Note: All the above mentioned steps are only required to be done once whenever the Application target is being linked with OT SDK Swift Package. After this is done, during next releases, the application can directly fetch the latest OT SDK Swift Package by going to `File -> Packages -> Update to Latest Package Version`.
 
 ### Import Header
 Import header to begin using OTPublishersHeadlessSDK methods.
