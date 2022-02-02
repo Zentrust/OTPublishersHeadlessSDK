@@ -43,6 +43,9 @@ extension UIColor {
   @objc dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
 }
 extension String {
+  public var asUTCDate: Foundation.Date? {
+    get
+  }
   public var booleanValue: Swift.Bool? {
     get
   }
