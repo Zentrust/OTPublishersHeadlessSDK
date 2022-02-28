@@ -1,4 +1,4 @@
-# CMP Native SDK (iOS and tvOS) Readme - 6.31.0
+# CMP Native SDK (iOS and tvOS) Readme - 6.32.0
 
 ## App Setup
 
@@ -31,7 +31,7 @@ The OneTrust Headless SDK for Publishers was developed using Swift and requires 
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for CocoaPods is added on version 6.3.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-XCFramework', '~> 6.31.0.0' `
+        `pod 'OneTrust-CMP-XCFramework', '~> 6.32.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`
@@ -88,7 +88,7 @@ The OneTrust Native SDK support is extended for tvOS. It is developed using Swif
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for tvOS in CocoaPods is added on version 6.4.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.31.0.0' `
+        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.32.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`

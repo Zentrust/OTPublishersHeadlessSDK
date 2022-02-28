@@ -515,6 +515,7 @@ public struct PageHeaderTheme : OTPublishersHeadlessSDK.TextTheme {
 @objc(OTConsentInteractionType) public enum ConsentInteractionType : Swift.Int {
   case bannerAllowAll = 1
   case bannerRejectAll
+  case bannerContinueWithoutAccepting
   case bannerClose
   case preferenceCenterAllowAll
   case preferenceCenterRejectAll
@@ -661,12 +662,6 @@ extension BannerUIDataModel {
   @objc public static var domainData: Swift.String {
     @objc get
   }
-  @objc public static var profileData: Swift.String {
-    @objc get
-  }
-  @objc public static var userConsentStatus: Swift.String {
-    @objc get
-  }
   @objc deinit
   @objc override dynamic public init()
 }
@@ -714,6 +709,14 @@ public enum AgeGateAuthorizationStatus : Swift.Int {
     get
   }
   public init?(rawValue: Swift.Int)
+}
+extension OTUserDefaultKeys {
+  @objc public static var profileData: Swift.String {
+    @objc get
+  }
+  @objc public static var userConsentStatus: Swift.String {
+    @objc get
+  }
 }
 @objc public enum OTBannerHeightRatio : Swift.Int {
   case full = 1
