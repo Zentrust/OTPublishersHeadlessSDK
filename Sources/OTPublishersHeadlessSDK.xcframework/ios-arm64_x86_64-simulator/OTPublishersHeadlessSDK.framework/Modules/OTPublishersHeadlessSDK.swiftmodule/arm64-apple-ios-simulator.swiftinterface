@@ -213,8 +213,8 @@ extension UILabel {
   @objc dynamic public func getCommonData() -> [Swift.String : Any]?
   @objc dynamic public func updatePurposeConsent(forGroup groupId: Swift.String, consentValue: Swift.Bool, updateHierarchy: Swift.Bool = false)
   @objc dynamic public func updatePurposeLegitInterest(forGroup groupId: Swift.String, legIntValue: Swift.Bool)
-  @objc dynamic public func getPurposeConsentLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
   @objc dynamic public func getPurposeLegitInterestLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getPurposeConsentLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
   @objc dynamic public func getConsentStatus(forCategory categoryId: Swift.String) -> Swift.Int8
   @objc dynamic public func getConsentStatus(forSDKId sdkId: Swift.String) -> Swift.Int8
   @objc dynamic public func getLastDataDownloadedLocation() -> OTGeolocationModel
@@ -327,6 +327,9 @@ public struct BannerUIDataModel {
   public var iabSummaryData: BannerUIDataModel.IABSummaryData {
     get
   }
+  public var linkAccessibilityHint: Swift.String {
+    get
+  }
   public let acceptAllButton: AcceptAllButtonData
   public let rejectAllButton: RejectAllButtonData
   public let privacySettingsButton: ConfirmChoicesButtonData
@@ -341,6 +344,9 @@ extension BannerUIDataModel {
       get
     }
     public var logoImage: UIKit.UIImage? {
+      get
+    }
+    public var logoAriaLabel: Swift.String {
       get
     }
   }
@@ -423,6 +429,7 @@ public struct OTUIKeys {
     public static let pcViewCookiesText: Swift.String
     public static let pCenterBackText: Swift.String
     public static let pCenterVendorsListText: Swift.String
+    public static let vendorListDescription: Swift.String
     public static var pcIABVendorListTitle: Swift.String {
       get
     }
@@ -470,6 +477,12 @@ public struct OTUIKeys {
       get
     }
     public static var legitInterestText: Swift.String {
+      get
+    }
+    public static var vendorListSearchBarPlaceholder: Swift.String {
+      get
+    }
+    public static var sdkListSearchBarPlaceholder: Swift.String {
       get
     }
   }

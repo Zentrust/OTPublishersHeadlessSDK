@@ -605,15 +605,6 @@ enum OTUIType : NSInteger;
 /// \param legIntValue Boolean value specifying updated legitimate interest value. Permissible values : true or false.
 ///
 - (void)updatePurposeLegitInterestForGroup:(NSString * _Nonnull)groupId legIntValue:(BOOL)legIntValue;
-/// Function to get consent value for specified group identifier.
-/// \param customGroupId String Purpose Id for which consent value has to be retrieved.
-///
-///
-/// returns:
-/// 1 if consent given
-/// 0 if consent not given
-/// -1 invalid groupId passed
-- (int8_t)getPurposeConsentLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
 /// Function to get legitimate interest value for specified group identifier.
 /// \param customGroupId String Purpose Id for which legitimate interest value has to be retrieved.
 ///
@@ -623,6 +614,15 @@ enum OTUIType : NSInteger;
 /// 0 if consent not given
 /// -1 invalid groupId passed
 - (int8_t)getPurposeLegitInterestLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
+/// Function to get consent value for specified group identifier.
+/// \param customGroupId String Purpose Id for which consent value has to be retrieved.
+///
+///
+/// returns:
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 invalid groupId passed
+- (int8_t)getPurposeConsentLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
 /// Public function to get consent value for specified category Identifier. It will return nil in case of application supplied category id doesn’t exist.
 /// \param categoryId String Category Id for which value has to be return.
 ///
@@ -1603,15 +1603,6 @@ enum OTUIType : NSInteger;
 /// \param legIntValue Boolean value specifying updated legitimate interest value. Permissible values : true or false.
 ///
 - (void)updatePurposeLegitInterestForGroup:(NSString * _Nonnull)groupId legIntValue:(BOOL)legIntValue;
-/// Function to get consent value for specified group identifier.
-/// \param customGroupId String Purpose Id for which consent value has to be retrieved.
-///
-///
-/// returns:
-/// 1 if consent given
-/// 0 if consent not given
-/// -1 invalid groupId passed
-- (int8_t)getPurposeConsentLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
 /// Function to get legitimate interest value for specified group identifier.
 /// \param customGroupId String Purpose Id for which legitimate interest value has to be retrieved.
 ///
@@ -1621,6 +1612,15 @@ enum OTUIType : NSInteger;
 /// 0 if consent not given
 /// -1 invalid groupId passed
 - (int8_t)getPurposeLegitInterestLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
+/// Function to get consent value for specified group identifier.
+/// \param customGroupId String Purpose Id for which consent value has to be retrieved.
+///
+///
+/// returns:
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 invalid groupId passed
+- (int8_t)getPurposeConsentLocalForCustomGroupId:(NSString * _Nonnull)customGroupId SWIFT_WARN_UNUSED_RESULT;
 /// Public function to get consent value for specified category Identifier. It will return nil in case of application supplied category id doesn’t exist.
 /// \param categoryId String Category Id for which value has to be return.
 ///
