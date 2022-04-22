@@ -262,6 +262,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OTConsentInteractionType, "ConsentInteractio
   OTConsentInteractionTypeUcPreferenceCenterConfirm = 14,
 };
 
+
 /// Enum for IAB CCPA expected values
 typedef SWIFT_ENUM(NSInteger, IabCcpaConsent, open) {
   IabCcpaConsentNotApplicable = 0,
@@ -452,6 +453,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
+
+
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Public function to update consent status for specified UCP purpose id.
 /// \param purposeId String purpose Id for which consent status should be change.
@@ -478,12 +481,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 - (void)updateUCPurposeConsentWithCpOptionId:(NSString * _Nonnull)cpOptionId cpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId withConsent:(BOOL)value;
 /// Public function to get consent status for specified UCP purpose id.
-/// \param purposeId String purpose Id for which consent status will be return.
+/// \param purposeId String purpose Id for which consent status will be returned.
 ///
 ///
 /// returns:
 /// Boolean consent value either true or false
-- (BOOL)getUCPurposeConsentWithPurposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUCPurposeConsentWithPurposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(purposeID:) API where return type is an Int.", "getUCPurposeConsentWithPurposeID:");
+/// Public function to get consent status for specified UCP purpose id.
+/// \param purposeID String purpose Id for which consent status will be returned.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid purpose ID is  passed
+- (NSInteger)getUCPurposeConsentWithPurposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 /// Public function to get consent status for specified UCP topic option id.
 /// \param topicOption String topic option id for which consent status will be return.
 ///
@@ -492,7 +505,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 /// returns:
 /// Boolean consent value either true or false
-- (BOOL)getUCPurposeConsentWithTopicOption:(NSString * _Nonnull)topicOption purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUCPurposeConsentWithTopicOption:(NSString * _Nonnull)topicOption purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(topicID:purposeID:) API where return type is an Int.", "getUCPurposeConsentWithTopicID:purposeID:");
+/// Public function to get consent status for specified UCP topic option id.
+/// \param topicID String topic Id for which consent status will be returned.
+///
+/// \param purposeID String purpose id top which the given topic belongs to.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid purposeID/topicID is  passed
+- (NSInteger)getUCPurposeConsentWithTopicID:(NSString * _Nonnull)topicID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 /// Public function to update consent status for specified UCP custom preference id.
 /// \param cpId String custom preference id for which consent status will be return.
 ///
@@ -501,7 +526,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 /// returns:
 /// Dictionary containing custom preference option id as key and value as consent status either 1 or 0
-- (NSDictionary<NSString *, NSNumber *> * _Nonnull)getUCPurposeConsentWithCpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSNumber *> * _Nonnull)getUCPurposeConsentWithCpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(cpOptionID:cpID:purposeID:) API where it takes an additional parameter called cpOptionID, which is custom preference OptionID in addition to customprefrenceID, purposeID and return type is an Int.", "getUCPurposeConsentWithCustomPreferenceOptionID:customPreferenceID:purposeID:");
+/// Public function to get consent status for an Option of the Custom preference under a given UCPurpose.
+/// \param customPreferenceOptionID String Option ID under a given custom preference for which consent status will be returnd.
+///
+/// \param customPreferenceID String custom preference id to which Option ID belongs to.
+///
+/// \param purposeID String purpose id of the custom preference, to which the given Option ID belongs to.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid customPreferenceOptionID/customPreferenceID/purposeID is  passed
+- (NSInteger)getUCPurposeConsentWithCustomPreferenceOptionID:(NSString * _Nonnull)customPreferenceOptionID customPreferenceID:(NSString * _Nonnull)customPreferenceID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIViewController;
@@ -643,10 +682,10 @@ enum OTUIType : NSInteger;
 /// returns:
 /// GeolocationModel containing country, state.
 - (OTGeolocationModel * _Nullable)getLastUserConsentedLocation SWIFT_WARN_UNUSED_RESULT;
-/// Function to override consent logging identifier
-/// \param identifier identifier with which current udid has to be overridden with
+/// Function to override the data subject identifier of the currently active profile.
+/// \param identifier This will be the new data subject/profile identifier for the active profile.
 ///
-- (void)overrideDataSubjectIdentifier:(NSString * _Nonnull)identifier;
+- (void)overrideDataSubjectIdentifier:(NSString * _Nonnull)identifier SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases (6.36.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier.");
 /// Function to control logging level, pass .noLogs to disable the log.
 /// \param level Log level which has to be printed on console.
 /// Values: .noLogs, .error, .warning, .info, .debug, .verbose.
@@ -885,15 +924,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
-
 @interface OTUserDefaultKeys (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Key for storing profile data.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull profileData;)
 + (NSString * _Nonnull)profileData SWIFT_WARN_UNUSED_RESULT;
-/// key to check whether consent is given or not
+/// Key to check whether consent is given or not.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull userConsentStatus;)
 + (NSString * _Nonnull)userConsentStatus SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
 
 
 
@@ -1260,6 +1301,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OTConsentInteractionType, "ConsentInteractio
   OTConsentInteractionTypeUcPreferenceCenterConfirm = 14,
 };
 
+
 /// Enum for IAB CCPA expected values
 typedef SWIFT_ENUM(NSInteger, IabCcpaConsent, open) {
   IabCcpaConsentNotApplicable = 0,
@@ -1450,6 +1492,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
+
+
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Public function to update consent status for specified UCP purpose id.
 /// \param purposeId String purpose Id for which consent status should be change.
@@ -1476,12 +1520,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 - (void)updateUCPurposeConsentWithCpOptionId:(NSString * _Nonnull)cpOptionId cpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId withConsent:(BOOL)value;
 /// Public function to get consent status for specified UCP purpose id.
-/// \param purposeId String purpose Id for which consent status will be return.
+/// \param purposeId String purpose Id for which consent status will be returned.
 ///
 ///
 /// returns:
 /// Boolean consent value either true or false
-- (BOOL)getUCPurposeConsentWithPurposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUCPurposeConsentWithPurposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(purposeID:) API where return type is an Int.", "getUCPurposeConsentWithPurposeID:");
+/// Public function to get consent status for specified UCP purpose id.
+/// \param purposeID String purpose Id for which consent status will be returned.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid purpose ID is  passed
+- (NSInteger)getUCPurposeConsentWithPurposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 /// Public function to get consent status for specified UCP topic option id.
 /// \param topicOption String topic option id for which consent status will be return.
 ///
@@ -1490,7 +1544,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 /// returns:
 /// Boolean consent value either true or false
-- (BOOL)getUCPurposeConsentWithTopicOption:(NSString * _Nonnull)topicOption purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getUCPurposeConsentWithTopicOption:(NSString * _Nonnull)topicOption purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(topicID:purposeID:) API where return type is an Int.", "getUCPurposeConsentWithTopicID:purposeID:");
+/// Public function to get consent status for specified UCP topic option id.
+/// \param topicID String topic Id for which consent status will be returned.
+///
+/// \param purposeID String purpose id top which the given topic belongs to.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid purposeID/topicID is  passed
+- (NSInteger)getUCPurposeConsentWithTopicID:(NSString * _Nonnull)topicID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 /// Public function to update consent status for specified UCP custom preference id.
 /// \param cpId String custom preference id for which consent status will be return.
 ///
@@ -1499,7 +1565,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 ///
 /// returns:
 /// Dictionary containing custom preference option id as key and value as consent status either 1 or 0
-- (NSDictionary<NSString *, NSNumber *> * _Nonnull)getUCPurposeConsentWithCpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSNumber *> * _Nonnull)getUCPurposeConsentWithCpId:(NSString * _Nonnull)cpId purposeId:(NSString * _Nonnull)purposeId SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(cpOptionID:cpID:purposeID:) API where it takes an additional parameter called cpOptionID, which is custom preference OptionID in addition to customprefrenceID, purposeID and return type is an Int.", "getUCPurposeConsentWithCustomPreferenceOptionID:customPreferenceID:purposeID:");
+/// Public function to get consent status for an Option of the Custom preference under a given UCPurpose.
+/// \param customPreferenceOptionID String Option ID under a given custom preference for which consent status will be returnd.
+///
+/// \param customPreferenceID String custom preference id to which Option ID belongs to.
+///
+/// \param purposeID String purpose id of the custom preference, to which the given Option ID belongs to.
+///
+///
+/// returns:
+/// Int consnet
+/// 1 if consent given
+/// 0 if consent not given
+/// -1 if invalid customPreferenceOptionID/customPreferenceID/purposeID is  passed
+- (NSInteger)getUCPurposeConsentWithCustomPreferenceOptionID:(NSString * _Nonnull)customPreferenceOptionID customPreferenceID:(NSString * _Nonnull)customPreferenceID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UIViewController;
@@ -1641,10 +1721,10 @@ enum OTUIType : NSInteger;
 /// returns:
 /// GeolocationModel containing country, state.
 - (OTGeolocationModel * _Nullable)getLastUserConsentedLocation SWIFT_WARN_UNUSED_RESULT;
-/// Function to override consent logging identifier
-/// \param identifier identifier with which current udid has to be overridden with
+/// Function to override the data subject identifier of the currently active profile.
+/// \param identifier This will be the new data subject/profile identifier for the active profile.
 ///
-- (void)overrideDataSubjectIdentifier:(NSString * _Nonnull)identifier;
+- (void)overrideDataSubjectIdentifier:(NSString * _Nonnull)identifier SWIFT_DEPRECATED_MSG("This API will be removed in a couple of releases (6.36.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier.");
 /// Function to control logging level, pass .noLogs to disable the log.
 /// \param level Log level which has to be printed on console.
 /// Values: .noLogs, .error, .warning, .info, .debug, .verbose.
@@ -1883,15 +1963,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
-
 @interface OTUserDefaultKeys (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Key for storing profile data.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull profileData;)
 + (NSString * _Nonnull)profileData SWIFT_WARN_UNUSED_RESULT;
-/// key to check whether consent is given or not
+/// Key to check whether consent is given or not.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull userConsentStatus;)
 + (NSString * _Nonnull)userConsentStatus SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
 
 
 

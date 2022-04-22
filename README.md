@@ -1,4 +1,4 @@
-# CMP Native SDK (iOS and tvOS) Readme - 6.33.0
+# CMP Native SDK (iOS and tvOS) Readme - 6.34.0
 
 ## App Setup
 
@@ -31,7 +31,7 @@ The OneTrust Headless SDK for Publishers was developed using Swift and requires 
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for CocoaPods is added on version 6.3.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-XCFramework', '~> 6.33.0.0' `
+        `pod 'OneTrust-CMP-XCFramework', '~> 6.34.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`
@@ -88,7 +88,7 @@ The OneTrust Native SDK support is extended for tvOS. It is developed using Swif
 2. Add Podfile to your Application if using CocoaPod for the first time. Refer: https://guides.cocoapods.org/syntax/podspec.html
 3. Edit pod file to add the Pod name and version of your choice. Support for tvOS in CocoaPods is added on version 6.4.0.0 and above.
 Ex:
-        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.33.0.0' `
+        `pod 'OneTrust-CMP-tvOS-XCFramework', '~> 6.34.0.0' `
     Replace the Xcode version with version of your choice. OneTrust Support Xcode 11.0+.
 4. Go to terminal, change working directory to the directory where pod file resides.
        - Run `pod install`
@@ -499,31 +499,6 @@ Returns the following Integer values:
 - 0 = Consent Not Given.
 - -1 = Invalid Group Id passed / Group Id does not have a Legitimate interest configured for it.
 
-### Override Data subject Identifier
-OneTrust SDK logs consent transactions based on consent logging feature that have been enabled in OneTrust's environment. By default, consent logging feature will generate a unique identifier for each device and log transactions considering it as an anonymous user.
- OneTrust provides a method to override this randomly generated identifier by passing a valid **String value** for **identifier** variable. This method will set the value to SDK and show as the Data Subject Identifier in OneTrust environment while reviewing transactions. This method MUST be called after initializing the SDK.
- If the identifier is set after user giving consent, then the last anonymous transaction and the subsequent transactions will be logged with the new identifier set by your application.
-
-Swift: `OTPublishersHeadlessSDK.shared.overrideDataSubjectIdentifier("userId")
-`
-ObjC: `[OTPublishersHeadlessSDK.shared overrideDataSubjectIdentifier:@"userId"];`
-
-Parameter passed - a valid String value.
-
-### Set Data subject Identifier 
-OneTrust SDK logs consent transactions based on consent logging feature that have been enabled in OneTrust's environment. By default, consent logging feature will generate a unique identifier for each device and log transactions considering it as an anonymous user.
-
-OneTrust provides a method to set an identifier defined by application by passing a valid **String value** for **identifier** parameter. This method will set the value to SDK and show as the Data Subject Identifier in OneTrust environment while reviewing transactions. This method MUST be called after initializing the SDK **(mentioned in method #2)**  for the first time. 
- 
- If the identifier is set after user giving consent, then the subsequent transactions will be logged with the new identifier set by your application. If an empty identifier is passed, OneTrust will remove the last saved identifier passed by application.
- 
- Use this method when you only want to set Data Subject Identifier without logging consent. Use Override Data subject Identifier when you want to set the Data Subject Identifier along with logging last given consent with newly set Identifier.
-
-Swift:
-`OTPublishersHeadlessSDK.shared.setDataSubjectIdentifier("User Identifier")`
-ObjC:
-`[OTPublishersHeadlessSDK.shared setDataSubjectIdentifier:@"User Identifier"];`
-**Note: This method will be deprecated and eventually will get removed from SDK. Instead of above method, now Data Subject Identifier is get or set using** `OTPublishersHeadlessSDK.shared.cache.dataSubjectIdentifier` for getting and `OTPublishersHeadlessSDK.shared.cache.dataSubjectIdentifier = "Idetifier"` for setting.
 
 ### Set Up Event Observer
 Each time a user updates their consent preferences the OneTrust SDK will broadcast events to notify your application so the appropriate privacy settings can be updated. Your application only needs observers for the SDKs or Categories that require some action to be taken when a user gives their consent. 
@@ -1073,3 +1048,52 @@ OT SDK throws internal errors defined within the SDK in various scenarios. As of
  | 38 | invalidServerResponse | Thrown when invalid server response is received during OT SDK network calls. |
 
  - Note: Each of the above mentioned errors will also have recovery suggestions associated with them that will be printed whenever an error is thrown.
+
+
+## Multi Profiles Support
+Support for multi profiles has been added to OT SDK based on the profileID/DSID. As part of this feature, all the user choices (w.r.t purposes, categories, vendors and sdk list) and profile specific data (coming down as part of data download) will be stored per profile basis. As a result, whenever a profileID/DSID is set by an application, that particular profile storage will be loaded.
+
+#### Default Profile
+There will always be a default profile configured by OT SDK. Whenever DSID/ProfileID is not set by the application, we will load this default profile. At any point, there will be only one such default profile maintained by OT SDK.
+
+#### Deleting Profile
+Whenever `OTPublisherHeadlessSDK.shared.clearOTSDKData()` method is called, all the stored profiles and their storages will be deleted along with the SDK storage.
+Use public API `OTPublisherHeadlessSDK.shared.deleteProfile(_:completion:)` to delete a profile. If the profile being deleted is currently active, we switch the active profile to default profile and then delete it.
+- Note: MAKE SURE THAT `OTPublisherHeadlessSDK.shared.startSDK` is called atleast once for an application ID before calling the `deleteProfile` API.
+
+Swift: `OTPublishersHeadlessSDK.shared.deleteProfile("profileIDToBeDeleted", completion: { deletionError in print(deletionError ?? "Profile Deletion Successful.") } )`
+    - Parameter profileID: The identifier of the profile to be deleted.
+    - Parameter completion: The completion block that will be triggered after deleting a profile.
+
+#### Switching Profiles 
+Profile switching will happen in the following scenarios:
+1. Whenever `OTPublisherHeadlessSDK.shared.startSDK` API is called, we will be checking for profileID/DataSubjectID that will be passed as part of sdkParams object. If this identifier is empty, we will be switching to/loading the default profile maintained by OT SDK.
+2.  Whenever `OTPublisherHeadlessSDK.shared.switchProfile(_: completion:)` API is called, we will be checking if the data is available for switching a profile. If it is available, we will be switching to the passed in profile. If an empty identifier is passed, we will be loading the default profile maintained by OT SDK.
+        a. For data availability, we check if culture data, common data and domain data are available locally for all profiles.
+        b. If cross device sync enabled scenarios, along with the above data, we will also check if profile data is available locally.
+        c. For above two conditions to be met, MAKE SURE THAT `OTPublisherHeadlessSDK.shared.startSDK` is called atleast once for an application ID before calling the `switchProfile` API.
+- Note: Switching of profile when cross device sync is enabled is not supported yet. Please use startSDK API instead.
+
+
+Swift: `OTPublishersHeadlessSDK.shared.switchProfile(to "profileIDToBeSwitchedTo", completion: {profileSwitchError in print(profileSwitchError ?? "Profile Switch Successful.") } )`
+    - Parameter to: The identifier of the profile to be loaded.
+    - Parameter completion: The completion block that will be triggerred at the end of the profile switch operation.
+
+#### Renaming/Overriding Profiles/Data Subject Identifier
+OneTrust SDK logs consent transactions based on consent logging feature that have been enabled in OneTrust's environment. By default, consent logging feature will generate a Data Subject Identifier (unique identifier) for each device and log transactions considering it as an anonymous user.
+
+Use public API `OTPublisherHeadlessSDK.shared.renameProfile(from:to:completion:)` to rename a profile from one DSID/profile ID to another. 
+1. Make sure that the profileID as part of `from` parameter is already stored or maintained by OT SDK. 
+2. Make sure that the profileID as part of `to` parameter is NOT already stored by OT SDK as the profile IDs maintained by OT SDK have to be unique.
+3. Make sure that OT SDK data is downlaoded before calling this API (`OTPublisherHeadlessSDK.shared.startSDK` API should be completed). 
+4. If the identifier is set after user giving consent, then the last anonymous transaction and the subsequent transactions will be logged with the new identifier set by your application.
+
+- Notes:
+1. MAKE SURE THAT `OTPublisherHeadlessSDK.shared.startSDK` is called atleast once for an application ID before calling the `renameProfile` API.
+2. This API will not switch a profile, it will instead rename the profile from one identifier to another.
+3. `Cache.dataSubjectIdentifier` and `OTPublisherHeadlessSDK.shared.overrideDataSubjectIdentifier()` have been deprecated. They will be removed completely very soon. Please start using `OTPublisherHeadlessSDK.shared.renameProfile(from:to:completion:)` instead.
+
+Swift: `OTPublishersHeadlessSDK.shared.renameProfile(from: "currentProfileID", to: "newProfileID", completion: { renameSuccess in print(renameSuccess) } )`
+    - from: The current identifier of the profile. If no profile identifier is passed, current profile identifier will be updated to new identifier.
+    - to: The new identifier to which the profile ID should be changed to.
+    - completion: Completion block that will be triggered once the rename operation is complete. The boolean status determines if the renaming was successful or not.

@@ -26,9 +26,6 @@ public struct OTCoreConstants {
     public static let consentParsedPurposeConsents: Swift.String
     public static let consentParsedVendorConsents: Swift.String
   }
-  public struct IAB_CCPA_Keys {
-    public static let consentString: Swift.String
-  }
 }
 extension UIColor {
   convenience public init(hexString: Swift.String, alpha: CoreGraphics.CGFloat = 1.0)
@@ -38,9 +35,15 @@ extension UIColor {
   @objc dynamic public func updateUCPurposeConsent(purposeId: Swift.String, withConsent value: Swift.Bool)
   @objc dynamic public func updateUCPurposeConsent(topicOptionId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
   @objc dynamic public func updateUCPurposeConsent(cpOptionId: Swift.String, cpId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
-  @objc dynamic public func getUCPurposeConsent(purposeId: Swift.String) -> Swift.Bool
-  @objc dynamic public func getUCPurposeConsent(topicOption: Swift.String, purposeId: Swift.String) -> Swift.Bool
-  @objc dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(purposeID:) API where return type is an Int.")
+  dynamic public func getUCPurposeConsent(purposeId: Swift.String) -> Swift.Bool
+  @objc dynamic public func getUCPurposeConsent(purposeID: Swift.String) -> Swift.Int
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(topicID:purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(topicID:purposeID:) API where return type is an Int.")
+  dynamic public func getUCPurposeConsent(topicOption: Swift.String, purposeId: Swift.String) -> Swift.Bool
+  @objc dynamic public func getUCPurposeConsent(topicID: Swift.String, purposeID: Swift.String) -> Swift.Int
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(customPreferenceOptionID:customPreferenceID:purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(cpOptionID:cpID:purposeID:) API where it takes an additional parameter called cpOptionID, which is custom preference OptionID in addition to customprefrenceID, purposeID and return type is an Int.")
+  dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
+  @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
 }
 extension String {
   public var asUTCDate: Foundation.Date? {
@@ -98,6 +101,14 @@ public enum AppPermissionType {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
+}
+extension FileManager {
+  public var preferencesDirectory: Foundation.URL {
+    get
+  }
+  public var preferencesDirContent: [Swift.String]? {
+    get
+  }
 }
 public struct UINavBarData {
   public var tintColor: OTPublishersHeadlessSDK.DynamicColor
@@ -163,9 +174,10 @@ extension UIButtonData {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Cache : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "This variable will be removed in a couple of releases (6.36.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier and use OTPublisherHeadlessSDK.shared.currentActiveProfile for retrieving the current active data subject/profile identifier.")
   public var dataSubjectIdentifier: Swift.String? {
     get
-    set(identifier)
+    set
   }
   @objc deinit
   @objc override dynamic public init()
@@ -219,7 +231,8 @@ extension UILabel {
   @objc dynamic public func getConsentStatus(forSDKId sdkId: Swift.String) -> Swift.Int8
   @objc dynamic public func getLastDataDownloadedLocation() -> OTPublishersHeadlessSDK.OTGeolocationModel
   @objc dynamic public func getLastUserConsentedLocation() -> OTPublishersHeadlessSDK.OTGeolocationModel?
-  @objc dynamic public func overrideDataSubjectIdentifier(_ identifier: Swift.String)
+  @objc @available(*, deprecated, message: "This API will be removed in a couple of releases (6.36.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier.")
+  dynamic public func overrideDataSubjectIdentifier(_ identifier: Swift.String)
   @objc dynamic public func enableOTSDKLog(_ level: OTPublishersHeadlessSDK.OTLoggerConstant)
   @objc dynamic public func clearOTSDKData()
   @objc dynamic public func resetUpdatedConsent()
@@ -298,6 +311,14 @@ extension Thread {
     set
   }
   @objc deinit
+}
+extension OTPublishersHeadlessSDK {
+  public var currentActiveProfile: Swift.String {
+    get
+  }
+  public func deleteProfile(_ profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func switchProfile(to profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
 }
 public struct UITextData {
   public var fontDetails: UIKit.UIFont.FontDetails
@@ -560,24 +581,60 @@ public struct PageHeaderTheme : OTPublishersHeadlessSDK.TextTheme {
   }
 }
 @_inheritsConvenienceInitializers @objc public class OTIABTCFKeys : ObjectiveC.NSObject {
-  @objc public static let iabTcf2CmpSdkId: Swift.String
-  @objc public static let iabTcf2CmpSdkVersion: Swift.String
-  @objc public static let iabTcf2PolicyVersion: Swift.String
-  @objc public static let iabTcf2GdprApplies: Swift.String
-  @objc public static let iabTcf2PublisherCC: Swift.String
-  @objc public static let iabTcf2PurposeOneTreatment: Swift.String
-  @objc public static let iabTcf2UseNonStandardStacks: Swift.String
-  @objc public static let iabTcf2TCString: Swift.String
-  @objc public static let iabTcf2VendorConsents: Swift.String
-  @objc public static let iabTcf2VendorLegitimateInterests: Swift.String
-  @objc public static let iabTcf2PurposeConsents: Swift.String
-  @objc public static let iabTcf2PurposeLegitimateInterests: Swift.String
-  @objc public static let iabTcf2SpecialFeaturesOptIns: Swift.String
-  @objc public static let iabTcf2PublisherRestrictions: Swift.String
-  @objc public static let iabTcf2PublisherConsent: Swift.String
-  @objc public static let iabTcf2PublisherLegitimateInterests: Swift.String
-  @objc public static let iabTcf2PublisherCustomPurposesConsents: Swift.String
-  @objc public static let iabTcf2PublisherCustomPurposesLegitimateInterests: Swift.String
+  @objc public static var iabTcf2CmpSdkId: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2CmpSdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PolicyVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2GdprApplies: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCC: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeOneTreatment: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2UseNonStandardStacks: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2TCString: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2VendorConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2VendorLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2SpecialFeaturesOptIns: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherRestrictions: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherConsent: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCustomPurposesConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCustomPurposesLegitimateInterests: Swift.String {
+    @objc get
+  }
   @objc public static var iabTcf2AddtlConsent: Swift.String {
     @objc get
   }
@@ -653,6 +710,13 @@ extension BannerUIDataModel {
     }
   }
 }
+extension OTCoreConstants {
+  public struct IAB_CCPA_Keys {
+    public static var consentString: Swift.String {
+      get
+    }
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AcceptAllButtonData : OTPublishersHeadlessSDK.CommonTextButtonData {
   @objc deinit
 }
@@ -683,10 +747,10 @@ public enum AgeGateAuthorizationStatus : Swift.Int {
   case denied
   case authorized
   public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
   public var rawValue: Swift.Int {
     get
   }
-  public init?(rawValue: Swift.Int)
 }
 @objc public protocol OTEventListener {
   @objc optional func onShowBanner()
