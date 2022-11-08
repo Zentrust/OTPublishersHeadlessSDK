@@ -462,55 +462,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
-@class UIViewController;
-enum OTUIType : NSInteger;
-
-@interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
-/// This API sets up the OT SDK UI and checks if the UI needs to be shown and presents the UI based on this check.
-/// Call this method on application’s main view controller.
-/// note:
-/// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
-/// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
-///
-/// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
-///
-- (void)setupUI:(UIViewController * _Nonnull)viewController UIType:(enum OTUIType)UIType;
-/// This API will display the OT SDK Banner UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showBannerUI;
-/// This API will display the OT SDK Preference Center UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showPreferenceCenterUI;
-/// This API will display the OT SDK Consent Purposes UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
-/// This API adds an event listener to OT SDK UI.
-/// note:
-/// The object being passed should conform to <code>OTEventListener</code>. Otherwise this listener will not be set.
-/// \param eventListener Pass any object that conforms to <code>OTEventListener</code>, where you want to listen to events w.r.t OT SDK UI.
-///
-- (void)addEventListener:(id _Nonnull)eventListener;
-/// This API appends and stores the custom data elements which will be used while logging consent.
-/// \param dataElements The custom daata Elements which will be used while logging consent.
-///
-- (void)appendCustomDataElementsWithDataElements:(NSDictionary<NSString *, id> * _Nonnull)dataElements;
-/// This API retrieves the OT SDK consent string that can be injected using javascript in a webview.
-/// note:
-/// To avoid reconsent prompt in webview, inject this string using javascript before launching the webview.
-- (NSString * _Nullable)getOTConsentJSForWebView SWIFT_WARN_UNUSED_RESULT;
-/// This API dismisses the OT SDK UI if the UI is already present in the view hierarchy.
-- (void)dismissUI;
-@end
-
 
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Public function to update consent status for specified UCP purpose id.
@@ -598,6 +549,55 @@ enum OTUIType : NSInteger;
 /// 0 if consent not given
 /// -1 if invalid customPreferenceOptionID/customPreferenceID/purposeID is  passed
 - (NSInteger)getUCPurposeConsentWithCustomPreferenceOptionID:(NSString * _Nonnull)customPreferenceOptionID customPreferenceID:(NSString * _Nonnull)customPreferenceID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIViewController;
+enum OTUIType : NSInteger;
+
+@interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
+/// This API sets up the OT SDK UI and checks if the UI needs to be shown and presents the UI based on this check.
+/// Call this method on application’s main view controller.
+/// note:
+/// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
+/// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
+///
+/// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
+///
+- (void)setupUI:(UIViewController * _Nonnull)viewController UIType:(enum OTUIType)UIType;
+/// This API will display the OT SDK Banner UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showBannerUI;
+/// This API will display the OT SDK Preference Center UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showPreferenceCenterUI;
+/// This API will display the OT SDK Consent Purposes UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
+/// This API adds an event listener to OT SDK UI.
+/// note:
+/// The object being passed should conform to <code>OTEventListener</code>. Otherwise this listener will not be set.
+/// \param eventListener Pass any object that conforms to <code>OTEventListener</code>, where you want to listen to events w.r.t OT SDK UI.
+///
+- (void)addEventListener:(id _Nonnull)eventListener;
+/// This API appends and stores the custom data elements which will be used while logging consent.
+/// \param dataElements The custom daata Elements which will be used while logging consent.
+///
+- (void)appendCustomDataElementsWithDataElements:(NSDictionary<NSString *, id> * _Nonnull)dataElements;
+/// This API retrieves the OT SDK consent string that can be injected using javascript in a webview.
+/// note:
+/// To avoid reconsent prompt in webview, inject this string using javascript before launching the webview.
+- (NSString * _Nullable)getOTConsentJSForWebView SWIFT_WARN_UNUSED_RESULT;
+/// This API dismisses the OT SDK UI if the UI is already present in the view hierarchy.
+- (void)dismissUI;
 @end
 
 @class OTSdkParams;
@@ -804,9 +804,13 @@ enum OTUIType : NSInteger;
 /// Retrieves all the data needed to construct the OT SDK Preference Center UI.
 - (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT;
 /// This API will opt-out of sale of data if the CCPA value is already initialized.
-- (void)optOutOfSaleOfData;
+/// \param completion The completion handler that gets called once the opt-out for sale of data is complete.
+///
+- (void)optOutOfSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion;
 /// This API will opt-in for sale of data if the CCPA value is already initialized.
-- (void)optIntoSaleOfData;
+/// \param completion The completion handler that gets called once the opt-in for sale of data is complete.
+///
+- (void)optIntoSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion;
 /// This API will write logs to the log file created and maintained by OT SDK.
 /// \param enable enable write logs to file.
 ///
@@ -831,10 +835,21 @@ enum OTUIType : NSInteger;
 /// Consent will not be logged to server when interaction type is preference center close.
 /// note:
 /// consent will not logged to server when there are ATT linked categories and ATT permission is not determined.
-/// \param type The interaction type associated with the consent.
-///
-- (void)saveConsentWithType:(enum OTConsentInteractionType)type;
-/// Returns a boolean indicating if OT SDK is current displaying its views in the current view hierarchy.
+/// <ul>
+///   <li>
+///     :
+///     <ul>
+///       <li>
+///         type: The interaction type associated with the consent.
+///       </li>
+///       <li>
+///         completion: The completion handler that gets called once the saving is complete.
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+- (void)saveConsentWithType:(enum OTConsentInteractionType)type completion:(void (^ _Nonnull)(void))completion;
+/// Returns a boolean indicating if OT SDK is currently displaying its view in the current view hierarchy.
 - (BOOL)sdkViewsCurrentlyPresented SWIFT_WARN_UNUSED_RESULT;
 /// Returns the value stored in OT SDK that is associated with the passed in key.
 /// \param key The key for which the value has to be returned.
@@ -1510,55 +1525,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
-@class UIViewController;
-enum OTUIType : NSInteger;
-
-@interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
-/// This API sets up the OT SDK UI and checks if the UI needs to be shown and presents the UI based on this check.
-/// Call this method on application’s main view controller.
-/// note:
-/// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
-/// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
-///
-/// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
-///
-- (void)setupUI:(UIViewController * _Nonnull)viewController UIType:(enum OTUIType)UIType;
-/// This API will display the OT SDK Banner UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showBannerUI;
-/// This API will display the OT SDK Preference Center UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showPreferenceCenterUI;
-/// This API will display the OT SDK Consent Purposes UI.
-/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
-/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
-/// note:
-/// This method doesn’t consider value of <code>shouldShowBanner</code>.
-- (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
-/// This API adds an event listener to OT SDK UI.
-/// note:
-/// The object being passed should conform to <code>OTEventListener</code>. Otherwise this listener will not be set.
-/// \param eventListener Pass any object that conforms to <code>OTEventListener</code>, where you want to listen to events w.r.t OT SDK UI.
-///
-- (void)addEventListener:(id _Nonnull)eventListener;
-/// This API appends and stores the custom data elements which will be used while logging consent.
-/// \param dataElements The custom daata Elements which will be used while logging consent.
-///
-- (void)appendCustomDataElementsWithDataElements:(NSDictionary<NSString *, id> * _Nonnull)dataElements;
-/// This API retrieves the OT SDK consent string that can be injected using javascript in a webview.
-/// note:
-/// To avoid reconsent prompt in webview, inject this string using javascript before launching the webview.
-- (NSString * _Nullable)getOTConsentJSForWebView SWIFT_WARN_UNUSED_RESULT;
-/// This API dismisses the OT SDK UI if the UI is already present in the view hierarchy.
-- (void)dismissUI;
-@end
-
 
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Public function to update consent status for specified UCP purpose id.
@@ -1646,6 +1612,55 @@ enum OTUIType : NSInteger;
 /// 0 if consent not given
 /// -1 if invalid customPreferenceOptionID/customPreferenceID/purposeID is  passed
 - (NSInteger)getUCPurposeConsentWithCustomPreferenceOptionID:(NSString * _Nonnull)customPreferenceOptionID customPreferenceID:(NSString * _Nonnull)customPreferenceID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIViewController;
+enum OTUIType : NSInteger;
+
+@interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
+/// This API sets up the OT SDK UI and checks if the UI needs to be shown and presents the UI based on this check.
+/// Call this method on application’s main view controller.
+/// note:
+/// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
+/// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
+///
+/// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
+///
+- (void)setupUI:(UIViewController * _Nonnull)viewController UIType:(enum OTUIType)UIType;
+/// This API will display the OT SDK Banner UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showBannerUI;
+/// This API will display the OT SDK Preference Center UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showPreferenceCenterUI;
+/// This API will display the OT SDK Consent Purposes UI.
+/// Please call this method only after setupUI() method has been called atleast once in the current app launch.
+/// Please make sure that the OT SDK Data is downloaded prior to calling this API.
+/// note:
+/// This method doesn’t consider value of <code>shouldShowBanner</code>.
+- (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
+/// This API adds an event listener to OT SDK UI.
+/// note:
+/// The object being passed should conform to <code>OTEventListener</code>. Otherwise this listener will not be set.
+/// \param eventListener Pass any object that conforms to <code>OTEventListener</code>, where you want to listen to events w.r.t OT SDK UI.
+///
+- (void)addEventListener:(id _Nonnull)eventListener;
+/// This API appends and stores the custom data elements which will be used while logging consent.
+/// \param dataElements The custom daata Elements which will be used while logging consent.
+///
+- (void)appendCustomDataElementsWithDataElements:(NSDictionary<NSString *, id> * _Nonnull)dataElements;
+/// This API retrieves the OT SDK consent string that can be injected using javascript in a webview.
+/// note:
+/// To avoid reconsent prompt in webview, inject this string using javascript before launching the webview.
+- (NSString * _Nullable)getOTConsentJSForWebView SWIFT_WARN_UNUSED_RESULT;
+/// This API dismisses the OT SDK UI if the UI is already present in the view hierarchy.
+- (void)dismissUI;
 @end
 
 @class OTSdkParams;
@@ -1852,9 +1867,13 @@ enum OTUIType : NSInteger;
 /// Retrieves all the data needed to construct the OT SDK Preference Center UI.
 - (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT;
 /// This API will opt-out of sale of data if the CCPA value is already initialized.
-- (void)optOutOfSaleOfData;
+/// \param completion The completion handler that gets called once the opt-out for sale of data is complete.
+///
+- (void)optOutOfSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion;
 /// This API will opt-in for sale of data if the CCPA value is already initialized.
-- (void)optIntoSaleOfData;
+/// \param completion The completion handler that gets called once the opt-in for sale of data is complete.
+///
+- (void)optIntoSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion;
 /// This API will write logs to the log file created and maintained by OT SDK.
 /// \param enable enable write logs to file.
 ///
@@ -1879,10 +1898,21 @@ enum OTUIType : NSInteger;
 /// Consent will not be logged to server when interaction type is preference center close.
 /// note:
 /// consent will not logged to server when there are ATT linked categories and ATT permission is not determined.
-/// \param type The interaction type associated with the consent.
-///
-- (void)saveConsentWithType:(enum OTConsentInteractionType)type;
-/// Returns a boolean indicating if OT SDK is current displaying its views in the current view hierarchy.
+/// <ul>
+///   <li>
+///     :
+///     <ul>
+///       <li>
+///         type: The interaction type associated with the consent.
+///       </li>
+///       <li>
+///         completion: The completion handler that gets called once the saving is complete.
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+- (void)saveConsentWithType:(enum OTConsentInteractionType)type completion:(void (^ _Nonnull)(void))completion;
+/// Returns a boolean indicating if OT SDK is currently displaying its view in the current view hierarchy.
 - (BOOL)sdkViewsCurrentlyPresented SWIFT_WARN_UNUSED_RESULT;
 /// Returns the value stored in OT SDK that is associated with the passed in key.
 /// \param key The key for which the value has to be returned.

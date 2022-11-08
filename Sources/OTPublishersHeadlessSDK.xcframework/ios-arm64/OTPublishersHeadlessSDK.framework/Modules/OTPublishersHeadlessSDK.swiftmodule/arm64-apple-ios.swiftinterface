@@ -245,12 +245,12 @@ extension UIKit.UILabel {
   @objc dynamic public func getVendorDetails(vendorID: Swift.String, for mode: VendorListMode = .iab) -> [Swift.String : Any]?
   @objc dynamic public func getBannerData() -> [Swift.String : Any]?
   @objc dynamic public func getPreferenceCenterData() -> [Swift.String : Any]?
-  @objc dynamic public func optOutOfSaleOfData()
-  @objc dynamic public func optIntoSaleOfData()
+  @objc dynamic public func optOutOfSaleOfData(completion: @escaping () -> () = { /* Default empty block */ })
+  @objc dynamic public func optIntoSaleOfData(completion: @escaping () -> () = { /* Default empty block */ })
   @objc dynamic public func writeLogsToFile(_ enable: Swift.Bool, debugLog enableVerbose: Swift.Bool = false)
   @objc dynamic public func setFetchDataURL(_ urlString: Swift.String)
   @objc dynamic public func isBannerShown() -> Swift.Int
-  @objc dynamic public func saveConsent(type: ConsentInteractionType)
+  @objc dynamic public func saveConsent(type: ConsentInteractionType, completion: @escaping () -> () = { /* Default empty block */ })
   @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
   @objc dynamic public func getValue(forKey key: Swift.String) -> Any?
   @objc dynamic public func getAgeGatePromptValue() -> Swift.Int
