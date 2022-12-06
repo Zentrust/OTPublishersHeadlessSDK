@@ -6,6 +6,6 @@ framework module OTPublishersHeadlessSDK {
 }
 
 module OTPublishersHeadlessSDK.Swift {
-    header "OTPublishersHeadlessSDK-Swift.h"
-    requires objc
+  header "OTPublishersHeadlessSDK-Swift.h"
+  requires objc
 }

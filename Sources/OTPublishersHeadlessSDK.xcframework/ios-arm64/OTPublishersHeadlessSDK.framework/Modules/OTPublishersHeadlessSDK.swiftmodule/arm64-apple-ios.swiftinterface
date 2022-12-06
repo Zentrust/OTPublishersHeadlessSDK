@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OTPublishersHeadlessSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
 import Foundation
 @_exported import OTPublishersHeadlessSDK
@@ -9,6 +10,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
+import _StringProcessing
 @objc extension OTPublishersHeadlessSDK {
   @objc dynamic public func setupUI(_ viewController: UIKit.UIViewController, UIType: OTUIType = .none)
   @objc dynamic public func showBannerUI()
@@ -29,7 +31,7 @@ public struct OTCoreConstants {
   }
 }
 extension UIKit.UIColor {
-  convenience public init(hexString: Swift.String, alpha: CoreGraphics.CGFloat = 1.0)
+  convenience public init(hexString: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
   public func toHex() -> Swift.String
 }
 @objc extension OTPublishersHeadlessSDK {
@@ -53,7 +55,7 @@ extension Swift.String {
   public var booleanValue: Swift.Bool? {
     get
   }
-  public var asCGFloat: CoreGraphics.CGFloat? {
+  public var asCGFloat: CoreFoundation.CGFloat? {
     get
   }
   public var underlined: Foundation.NSAttributedString {
@@ -185,8 +187,8 @@ extension UIKit.UINavigationBar {
 public struct UIButtonData {
   public var backgroundColor: DynamicColor
   public var borderColor: DynamicColor
-  public var borderRadius: CoreGraphics.CGFloat
-  public var borderWidth: CoreGraphics.CGFloat
+  public var borderRadius: CoreFoundation.CGFloat
+  public var borderWidth: CoreFoundation.CGFloat
   public var contentAlignment: UIKit.UIControl.ContentHorizontalAlignment
   public var font: UIKit.UIFont
   public var show: Swift.Bool
@@ -271,11 +273,11 @@ extension UIKit.UILabel {
 extension UIKit.UIFont {
   public struct FontDetails {
     public var name: Swift.String
-    public var size: CoreGraphics.CGFloat
+    public var size: CoreFoundation.CGFloat
     public var textStyle: UIKit.UIFont.TextStyle?
     public var weight: UIKit.UIFont.Weight
     public func asFont() -> UIKit.UIFont?
-    public init(name: Swift.String = "", size: CoreGraphics.CGFloat = 0, textStyle: UIKit.UIFont.TextStyle? = nil, weight: UIKit.UIFont.Weight = .regular)
+    public init(name: Swift.String = "", size: CoreFoundation.CGFloat = 0, textStyle: UIKit.UIFont.TextStyle? = nil, weight: UIKit.UIFont.Weight = .regular)
     public mutating func update(using theme: TextTheme)
   }
 }

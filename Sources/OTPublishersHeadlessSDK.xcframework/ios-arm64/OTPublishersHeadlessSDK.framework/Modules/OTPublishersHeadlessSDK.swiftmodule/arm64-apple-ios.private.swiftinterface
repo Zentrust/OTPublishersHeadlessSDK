@@ -1,0 +1,908 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OTPublishersHeadlessSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppTrackingTransparency
+import Foundation
+@_exported import OTPublishersHeadlessSDK
+import SafariServices
+import Swift
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc extension OTPublishersHeadlessSDK {
+  @objc dynamic public func setupUI(_ viewController: UIKit.UIViewController, UIType: OTUIType = .none)
+  @objc dynamic public func showBannerUI()
+  @objc dynamic public func showPreferenceCenterUI()
+  @objc dynamic public func showConsentPurposesUI(_ viewController: UIKit.UIViewController)
+  @objc dynamic public func addEventListener(_ eventListener: Swift.AnyObject)
+  @objc dynamic public func appendCustomDataElements(dataElements: [Swift.String : Any])
+  @objc dynamic public func getOTConsentJSForWebView() -> Swift.String?
+  @objc dynamic public func dismissUI()
+}
+public struct OTCoreConstants {
+  public struct IABKeys {
+    public static let consentCMPPresent: Swift.String
+    public static let consentSubjectToGDPR: Swift.String
+    public static let consentString: Swift.String
+    public static let consentParsedPurposeConsents: Swift.String
+    public static let consentParsedVendorConsents: Swift.String
+  }
+}
+extension UIKit.UIColor {
+  convenience public init(hexString: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
+  public func toHex() -> Swift.String
+}
+@objc extension OTPublishersHeadlessSDK {
+  @objc dynamic public func updateUCPurposeConsent(purposeId: Swift.String, withConsent value: Swift.Bool)
+  @objc dynamic public func updateUCPurposeConsent(topicOptionId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
+  @objc dynamic public func updateUCPurposeConsent(cpOptionId: Swift.String, cpId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(purposeID:) API where return type is an Int.")
+  dynamic public func getUCPurposeConsent(purposeId: Swift.String) -> Swift.Bool
+  @objc dynamic public func getUCPurposeConsent(purposeID: Swift.String) -> Swift.Int
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(topicID:purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(topicID:purposeID:) API where return type is an Int.")
+  dynamic public func getUCPurposeConsent(topicOption: Swift.String, purposeId: Swift.String) -> Swift.Bool
+  @objc dynamic public func getUCPurposeConsent(topicID: Swift.String, purposeID: Swift.String) -> Swift.Int
+  @objc @available(*, deprecated, renamed: "getUCPurposeConsent(customPreferenceOptionID:customPreferenceID:purposeID:)", message: "This API will be removed in a couple of releases. Please use the new getUCPurposeConsent(cpOptionID:cpID:purposeID:) API where it takes an additional parameter called cpOptionID, which is custom preference OptionID in addition to customprefrenceID, purposeID and return type is an Int.")
+  dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
+  @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
+}
+extension Swift.String {
+  public var asUTCDate: Foundation.Date? {
+    get
+  }
+  public var booleanValue: Swift.Bool? {
+    get
+  }
+  public var asCGFloat: CoreFoundation.CGFloat? {
+    get
+  }
+  public var underlined: Foundation.NSAttributedString {
+    get
+  }
+  public var asLinkText: Foundation.NSAttributedString {
+    get
+  }
+  public func convertStringToDictionary() -> [Swift.String : Any]?
+  public func substring(from start: Swift.String, to end: Swift.String? = nil, options: Swift.String.CompareOptions = []) -> Swift.String.SubSequence?
+  public func replace(originalString: Swift.String, _ index: Swift.Int, _ newChar: Swift.Character) -> Swift.String
+  public func sliceAndReplace(sliceFrom: Swift.String, till: Swift.String, replaceWith: Swift.String) -> Swift.String?
+  public func slice(from: Swift.String, to: Swift.String) -> Swift.String?
+  public func encodeUrl() -> Swift.String?
+  public mutating func encodeString() -> Swift.String?
+  public func decodeUrl() -> Swift.String?
+  public func dynamicText(font: UIKit.UIFont? = nil, textStyle: UIKit.UIFont.TextStyle) -> Foundation.NSAttributedString
+  public mutating func removeWhiteSpaceAndCheckIfEmpty()
+}
+extension BannerUIDataModel {
+  public struct SummaryData {
+    public var titleData: UITextData
+    public var descriptionData: UITextData {
+      get
+    }
+    public var additionalDescriptionData: UITextData {
+      get
+    }
+    public var policyLinkData: UIButtonData {
+      get
+    }
+  }
+}
+public enum AppPermissionType {
+  case idfa
+  case ageGate
+  public func showConsentUI(from presenter: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
+  public func checkAndLogConsent()
+  public static func == (a: AppPermissionType, b: AppPermissionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct NtfyUIDataModel {
+  public init()
+}
+extension Foundation.FileManager {
+  public var preferencesDirectory: Foundation.URL {
+    get
+  }
+  public var preferencesDirContent: [Swift.String]? {
+    get
+  }
+}
+public struct UINavBarData {
+  public var tintColor: DynamicColor
+  public var barTintColor: DynamicColor
+  public var titleTextColor: DynamicColor
+  public var titleFontDetails: UIKit.UIFont.FontDetails
+  public var title: Swift.String
+  public init(tintColor: DynamicColor, barTintColor: DynamicColor, titleTextColor: DynamicColor, titleFontDetails: UIKit.UIFont.FontDetails, title: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class CommonTextButtonData {
+  public var buttonData: UIButtonData {
+    get
+  }
+  @objc deinit
+}
+@objc public enum OTCCPAGeolocation : Swift.Int {
+  case ALL
+  case US
+  case CA
+  public init?(value: Swift.String)
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum IabCcpaConsent : Swift.Int {
+  case notApplicable
+  case no
+  case yes
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VendorListJourneyType : Swift.Int {
+  case showConfirmMyChoices
+  case hideConfirmMyChoices
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RejectAllButtonData : AcceptAllButtonData {
+  @objc deinit
+}
+@objc public class OTSdkParams : ObjectiveC.NSObject {
+  @objc public init(countryCode: Swift.String?, regionCode: Swift.String?)
+  @objc public func setSDKVersion(_ sdkVersion: Swift.String)
+  @objc public func setProfileSyncParams(_ crossDeviceParams: OTProfileSyncParams)
+  @objc public func setShouldCreateProfile(_ shouldCreateProfile: Swift.String)
+  @objc public func syncWebSDKConsent(_ shouldSync: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ConfirmChoicesButtonData : CommonTextButtonData {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Cache : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "This variable will be removed in a couple of releases (6.37.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier and use OTPublisherHeadlessSDK.shared.currentActiveProfile for retrieving the current active data subject/profile identifier.")
+  public var dataSubjectIdentifier: Swift.String? {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public func setup(navBarData: UINavBarData, forceRefresh: Swift.Bool = false)
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) public func setup(navBarData: UINavBarData, forceRefresh: Swift.Bool = false)
+}
+public struct UIButtonData {
+  public var backgroundColor: DynamicColor
+  public var borderColor: DynamicColor
+  public var borderRadius: CoreFoundation.CGFloat
+  public var borderWidth: CoreFoundation.CGFloat
+  public var contentAlignment: UIKit.UIControl.ContentHorizontalAlignment
+  public var font: UIKit.UIFont
+  public var show: Swift.Bool
+  public var text: Foundation.NSAttributedString
+  public var textAlignment: UIKit.NSTextAlignment
+  public var textColor: DynamicColor
+  public var url: Swift.String
+  public var showAsLink: Swift.Bool
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func setup(buttonData: UIButtonData)
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func setup(using buttonData: UIButtonData)
+}
+@_inheritsConvenienceInitializers @objc public class OTProfileSyncParams : ObjectiveC.NSObject {
+  @objc public func setSyncProfile(_ syncProfile: Swift.String)
+  @objc public func setSyncProfileAuth(_ profileAuth: Swift.String)
+  @objc public func setSyncGroupId(_ groupId: Swift.String)
+  @objc public func setIdentifier(_ dsid: Swift.String)
+  @objc public func setTenantId(_ tenantId: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension OTPublishersHeadlessSDK {
+  @objc dynamic public func startSDK(storageLocation: Swift.String, domainIdentifier: Swift.String, languageCode: Swift.String, params: OTSdkParams? = nil, loadOffline: Swift.Bool = false, completionHandler: @escaping ((OTResponse) -> Swift.Void))
+  @objc dynamic public func shouldShowBanner() -> Swift.Bool
+  @objc dynamic public func getDomainGroupData() -> [Swift.String : Any]?
+  @objc dynamic public func getCommonData() -> [Swift.String : Any]?
+  @objc dynamic public func getDomainInfo() -> [Swift.String : Any]?
+  @objc dynamic public func updatePurposeConsent(forGroup groupId: Swift.String, consentValue: Swift.Bool, updateHierarchy: Swift.Bool = false)
+  @objc dynamic public func updatePurposeLegitInterest(forGroup groupId: Swift.String, legIntValue: Swift.Bool)
+  @objc dynamic public func getPurposeLegitInterestLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getPurposeConsentLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getConsentStatus(forCategory categoryId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getConsentStatus(forSDKId sdkId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getLastDataDownloadedLocation() -> OTGeolocationModel
+  @objc dynamic public func getLastUserConsentedLocation() -> OTGeolocationModel?
+  @objc @available(*, deprecated, message: "This API will be removed in a couple of releases (6.37.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier.")
+  dynamic public func overrideDataSubjectIdentifier(_ identifier: Swift.String)
+  @objc dynamic public func enableOTSDKLog(_ level: OTLoggerConstant)
+  @objc dynamic public func clearOTSDKData()
+  @objc dynamic public func resetUpdatedConsent()
+  @objc dynamic public func setEnviroment(_ environment: Swift.String)
+  @objc dynamic public func updateAllVendorsConsentLocal(_ isSelected: Swift.Bool, for mode: VendorListMode = .iab)
+  @objc @available(*, deprecated, renamed: "updateVendorConsent(vendorID:consentStatus:for:)", message: "This API will be removed in a couple of releases. Please use the new updateVendorConsent(vendorID:consentStatus:for:) API where vendorID is a String argument.")
+  dynamic public func updateVendorConsent(vendorId: Swift.Int, consentStatus: Swift.Bool, for mode: VendorListMode = .iab)
+  @objc @available(*, deprecated, renamed: "updateVendorLegitInterest(vendorID:legIntStatus:for:)", message: "This API will be removed in a couple of releases. Please use the new updateVendorLegitInterest(vendorID:legIntStatus:for:) API where vendorId is a String argument.")
+  dynamic public func updateVendorLegitInterest(vendorId: Swift.Int, legIntStatus: Swift.Bool, for mode: VendorListMode = .iab)
+  @objc dynamic public func updateVendorConsent(vendorID: Swift.String, consentStatus: Swift.Bool, for mode: VendorListMode = .iab)
+  @objc dynamic public func updateVendorLegitInterest(vendorID: Swift.String, legIntStatus: Swift.Bool, for mode: VendorListMode = .iab)
+  @objc dynamic public func getVendorListData(for mode: VendorListMode = .iab) -> [Swift.String : Any]?
+  @objc dynamic public func getVendorListUI(for mode: VendorListMode = .iab) -> [Swift.String : Any]?
+  @objc @available(*, deprecated, renamed: "getVendorDetails(vendorID:for:)", message: "This API will be removed in a couple of releases. Please use the new getVendorDetails(vendorID:for:) API where vendorID is a String argument.")
+  dynamic public func getVendorDetails(vendorId: Swift.Int, for mode: VendorListMode = .iab) -> [Swift.String : Any]?
+  @objc dynamic public func getVendorDetails(vendorID: Swift.String, for mode: VendorListMode = .iab) -> [Swift.String : Any]?
+  @objc dynamic public func getBannerData() -> [Swift.String : Any]?
+  @objc dynamic public func getPreferenceCenterData() -> [Swift.String : Any]?
+  @objc dynamic public func optOutOfSaleOfData(completion: @escaping () -> () = { /* Default empty block */ })
+  @objc dynamic public func optIntoSaleOfData(completion: @escaping () -> () = { /* Default empty block */ })
+  @objc dynamic public func writeLogsToFile(_ enable: Swift.Bool, debugLog enableVerbose: Swift.Bool = false)
+  @objc dynamic public func setFetchDataURL(_ urlString: Swift.String)
+  @objc dynamic public func isBannerShown() -> Swift.Int
+  @objc dynamic public func saveConsent(type: ConsentInteractionType, completion: @escaping () -> () = { /* Default empty block */ })
+  @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
+  @objc dynamic public func getValue(forKey key: Swift.String) -> Any?
+  @objc dynamic public func getAgeGatePromptValue() -> Swift.Int
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class OTResponse : ObjectiveC.NSObject {
+  @objc public var error: Swift.Error? {
+    get
+  }
+  @objc public var responseString: Swift.String? {
+    get
+  }
+  @objc public var status: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public struct FontDetails {
+    public var name: Swift.String
+    public var size: CoreFoundation.CGFloat
+    public var textStyle: UIKit.UIFont.TextStyle?
+    public var weight: UIKit.UIFont.Weight
+    public func asFont() -> UIKit.UIFont?
+    public init(name: Swift.String = "", size: CoreFoundation.CGFloat = 0, textStyle: UIKit.UIFont.TextStyle? = nil, weight: UIKit.UIFont.Weight = .regular)
+    public mutating func update(using theme: TextTheme)
+  }
+}
+extension Foundation.Thread {
+  public static func runOnMain(forceAsync: Swift.Bool = false, _ completion: @escaping () -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class CloseButtonData {
+  public var buttonData: UIButtonData {
+    get
+  }
+  @objc deinit
+}
+extension OTPublishersHeadlessSDK {
+  public func setOTOfflineData(_ data: OTOfflineData)
+}
+public struct OTOfflineData {
+  public struct VendorListData {
+    public var iabData: Foundation.Data?
+    public var googleData: Foundation.Data?
+    public init(iab: Foundation.Data?, google: Foundation.Data?)
+  }
+  public struct LogoData {
+    public var banner: UIKit.UIImage?
+    public var preferenceCenter: UIKit.UIImage?
+    public var ageGate: UIKit.UIImage?
+    public var att: UIKit.UIImage?
+    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
+  }
+  public var otData: Foundation.Data? {
+    get
+  }
+  public var vendorListData: OTOfflineData.VendorListData? {
+    get
+  }
+  public var logoData: OTOfflineData.LogoData? {
+    get
+  }
+  public init(otData: Foundation.Data, vendorListData: OTOfflineData.VendorListData, logoData: OTOfflineData.LogoData)
+}
+@objc(OTUIConfigurator) public protocol UIConfigurator {
+  @objc func shouldUseCustomUIConfig() -> Swift.Bool
+  @objc optional func customUIConfigFilePath() -> Swift.String?
+  @objc optional func getVendorListJourney() -> VendorListJourneyType
+  @available(iOS 13.0, tvOS 13.0, *)
+  @objc optional func shouldEnableDarkMode() -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTPublishersHeadlessSDK : ObjectiveC.NSObject {
+  @objc weak public var uiConfigurator: UIConfigurator?
+  @objc public static var shared: OTPublishersHeadlessSDK {
+    get
+  }
+  public var cache: Cache {
+    get
+    set
+  }
+  @objc deinit
+}
+extension OTPublishersHeadlessSDK {
+  public var currentActiveProfile: Swift.String {
+    get
+  }
+  public func deleteProfile(_ profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func switchProfile(to profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+}
+public struct UITextData {
+  public var fontDetails: UIKit.UIFont.FontDetails
+  public var show: Swift.Bool
+  public var text: Swift.String
+  public var textAlignment: UIKit.NSTextAlignment
+  public var textColor: DynamicColor
+  public var url: Swift.String
+  public var showAsLink: Swift.Bool
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func setup(using modelData: UITextData)
+}
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public func setupTextView(using modelData: UITextData, customText: Swift.String? = nil)
+}
+public struct BannerUIDataModel {
+  public var backgroundColor: DynamicColor {
+    get
+  }
+  public var logoDetails: BannerUIDataModel.LogoDetails {
+    get
+  }
+  public var summaryData: BannerUIDataModel.SummaryData {
+    get
+  }
+  public var iabSummaryData: BannerUIDataModel.IABSummaryData {
+    get
+  }
+  public var linkAccessibilityHint: Swift.String {
+    get
+  }
+  public let acceptAllButton: AcceptAllButtonData
+  public let rejectAllButton: RejectAllButtonData
+  public let privacySettingsButton: ConfirmChoicesButtonData
+  public let closeButtonData: CloseButtonData
+  public init()
+}
+extension BannerUIDataModel {
+  public struct LogoDetails {
+    public var show: Swift.Bool {
+      get
+    }
+    public var logoImage: UIKit.UIImage? {
+      get
+    }
+    public var logoAriaLabel: Swift.String {
+      get
+    }
+  }
+}
+public struct OTUIKeys {
+  public struct BannerKeys {
+    public static let alertNoticeText: Swift.String
+    public static let alertCloseText: Swift.String
+    public static let alertMoreInfoText: Swift.String
+    public static let cookieSettingButtonText: Swift.String
+    public static let alertAllowCookiesText: Swift.String
+    public static let bannerTitle: Swift.String
+    public static let forceConsent: Swift.String
+    public static let bannerPosition: Swift.String
+    public static let bannerCloseButtonText: Swift.String
+    public static let showBannerCloseButton: Swift.String
+    public static let alertLayout: Swift.String
+    public static let flat: Swift.String
+    public static let floatingFlat: Swift.String
+    public static let floatingRoundedCorner: Swift.String
+    public static let floatingRoundedIcon: Swift.String
+    public static let floatingRounded: Swift.String
+    public static let centerRounded: Swift.String
+    public static let bannerIABPartnersLink: Swift.String
+    public static let bannerPurposeTitle: Swift.String
+    public static let bannerPurposeDescription: Swift.String
+    public static let bannerFeatureTitle: Swift.String
+    public static let bannerAdditionalDescription: Swift.String
+    public static let bannerAdditionalDescPlacement: Swift.String
+    public static let bannerFeatureDescription: Swift.String
+    public static let bannerShowRejectAllButton: Swift.String
+    public static let bannerRejectAllButtonText: Swift.String
+    public static let bannerDPDTitle: Swift.String
+    public static let bannerDPDDescription: Swift.String
+    public static let textColor: Swift.String
+    public static let buttonColor: Swift.String
+    public static let buttonTextColor: Swift.String
+    public static let settingsButtonColor: Swift.String
+    public static let settingsButtonTextColor: Swift.String
+    public static let backgroundColor: Swift.String
+    public static let bannerLinksTextColor: Swift.String
+    public static let bannerLink: Swift.String
+    public static let bannerLinkText: Swift.String
+    public static let optanonLogo: Swift.String
+    public static let showBannerAcceptButton: Swift.String
+    public static let showBannerCookieSettings: Swift.String
+    public static let showBannerCookieSettingsAsLink: Swift.String
+    public static let isIabEnabled: Swift.String
+  }
+  public struct PreferenceCenterKeys {
+    public static let mainText: Swift.String
+    public static let mainInfoText: Swift.String
+    public static let aboutText: Swift.String
+    public static let aboutLink: Swift.String
+    public static let alwaysActiveText: Swift.String
+    public static let pCenterRejectAllButtonText: Swift.String
+    public static let pCenterShowRejectAllButton: Swift.String
+    public static let confirmText: Swift.String
+    public static let vendorLevelOptOut: Swift.String
+    public static let preferenceCenterPosition: Swift.String
+    public static let preferenceCenterConfirmText: Swift.String
+    public static let isIabEnabled: Swift.String
+    public static let pcDescriptionLinkPosition: Swift.String
+    public static let pcDescriptionType: Swift.String
+    public static let vendorListText: Swift.String
+    public static let pCVendorFullLegalText: Swift.String
+    public static let iabLegalTextUrl: Swift.String
+    public static let thirdPartyCookieListText: Swift.String
+    public static let preferenceCenterManagePreferencesText: Swift.String
+    public static let showPreferenceCenterCloseButton: Swift.String
+    public static let closeText: Swift.String
+    public static let addLinksToCookiepedia: Swift.String
+    public static let cookieListEnabled: Swift.String
+    public static let center: Swift.String
+    public static let panel: Swift.String
+    public static let popup: Swift.String
+    public static let list: Swift.String
+    public static let tab: Swift.String
+    public static let pcFirstPartyCookieListText: Swift.String
+    public static let pcViewCookiesText: Swift.String
+    public static let pCenterBackText: Swift.String
+    public static let pCenterVendorsListText: Swift.String
+    public static let vendorListDescription: Swift.String
+    public static var pcIABVendorListTitle: Swift.String {
+      get
+    }
+    public static let pCenterViewPrivacyPolicyText: Swift.String
+    public static let pCenterClearFiltersText: Swift.String
+    public static let pCenterApplyFiltersText: Swift.String
+    public static let pCenterAllowAllConsentText: Swift.String
+    public static let pCenterCookiesListText: Swift.String
+    public static let pCenterCancelFiltersText: Swift.String
+    public static let pCenterEnableAccordion: Swift.String
+    public static let pcTextColor: Swift.String
+    public static let pcButtonColor: Swift.String
+    public static let pcButtonTextColor: Swift.String
+    public static let pcBackgroundColor: Swift.String
+    public static let pcMenuColor: Swift.String
+    public static let pcMenuHighLightColor: Swift.String
+    public static let pcLinksTextColor: Swift.String
+    public static let optanonLogo: Swift.String
+    public static let showCookieList: Swift.String
+    public static let pcShowCookieHost: Swift.String
+    public static let pcShowCookieDuration: Swift.String
+    public static let pcShowCookieType: Swift.String
+    public static let pcShowCookieCategory: Swift.String
+    public static let pcShowCookieDescription: Swift.String
+    public static let allowHostOptOut: Swift.String
+    public static let consentPurposesText: Swift.String
+    public static let featuresText: Swift.String
+    public static let legitInterestPurposesText: Swift.String
+    public static let specialFeaturesText: Swift.String
+    public static let specialPurposesText: Swift.String
+    public static let groups: Swift.String
+    public static let legIntSettings: Swift.String
+    public static let pCenterVendorListLifespan: Swift.String
+    public static let pCenterVendorListDomainsUsed: Swift.String
+    public static let pCenterVendorListDomainUse: Swift.String
+    public static let pCenterVendorListStorageIdentifier: Swift.String
+    public static let pCenterVendorListStorageType: Swift.String
+    public static let pCenterVendorListStoragePurposes: Swift.String
+    public static let pCenterVendorListStorageDomain: Swift.String
+    public static let pCenterVendorListDisclosure: Swift.String
+    public static let pCenterVendorListNonCookieUsage: Swift.String
+    public static let pCenterVendorListLifespanDay: Swift.String
+    public static let pCenterVendorListLifespanDays: Swift.String
+    public static let pCenterVendorListLifespanMonth: Swift.String
+    public static let pCenterVendorListLifespanMonths: Swift.String
+    public static var consentText: Swift.String {
+      get
+    }
+    public static var legitInterestText: Swift.String {
+      get
+    }
+    public static var vendorListSearchBarPlaceholder: Swift.String {
+      get
+    }
+    public static var sdkListSearchBarPlaceholder: Swift.String {
+      get
+    }
+  }
+}
+public protocol TextTheme : Swift.Decodable, Swift.Encodable {
+  var fontName: Swift.String { get }
+  var fontSize: Swift.Int { get }
+  var fontTextStyle: Swift.String { get }
+  var textAlignment: Swift.String { get }
+  var textColor: Swift.String { get }
+}
+public struct LabelTheme : TextTheme {
+  public let fontName: Swift.String
+  public let fontSize: Swift.Int
+  public let fontTextStyle: Swift.String
+  public let textAlignment: Swift.String
+  public let textColor: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LinkTheme : TextTheme {
+  public let fontName: Swift.String
+  public let fontSize: Swift.Int
+  public let fontTextStyle: Swift.String
+  public let textAlignment: Swift.String
+  public let textColor: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct PageHeaderTheme : TextTheme {
+  public let backgroundColor: Swift.String
+  public let tintColor: Swift.String
+  public let fontName: Swift.String
+  public let fontSize: Swift.Int
+  public let fontTextStyle: Swift.String
+  public let textColor: Swift.String
+  public var textAlignment: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc(OTConsentInteractionType) public enum ConsentInteractionType : Swift.Int {
+  case bannerAllowAll = 1
+  case bannerRejectAll
+  case bannerContinueWithoutAccepting
+  case bannerClose
+  case preferenceCenterAllowAll
+  case preferenceCenterRejectAll
+  case preferenceCenterConfirm
+  case preferenceCenterClose
+  @available(*, deprecated, message: "This will be removed in a couple of releases (6.40.0). Instead please use `ucPreferenceCenterConfirm`.")
+  case consentPurposesConfim
+  case consentPurposesClose
+  case vendorListConfirm
+  case appTrackingConfirm
+  case appTrackingOptOut
+  case ucPreferenceCenterConfirm
+  public var description: Swift.String? {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum OTUIType : Swift.Int {
+  case none = -1
+  case banner = 0
+  case preferenceCenter = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class OTIABTCFKeys : ObjectiveC.NSObject {
+  @objc public static var iabTcf2CmpSdkId: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2CmpSdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PolicyVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2GdprApplies: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCC: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeOneTreatment: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2UseNonStandardStacks: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2TCString: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2VendorConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2VendorLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PurposeLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2SpecialFeaturesOptIns: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherRestrictions: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherConsent: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCustomPurposesConsents: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2PublisherCustomPurposesLegitimateInterests: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2AddtlConsent: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@propertyWrapper public struct DynamicColor {
+  public var lightHex: Swift.String {
+    get
+  }
+  public var darkHex: Swift.String {
+    get
+  }
+  public var wrappedValue: UIKit.UIColor {
+    get
+  }
+  public var cgColor: CoreGraphics.CGColor {
+    get
+  }
+  public init(lightHex: Swift.String, darkHex: Swift.String, isClear: Swift.Bool = false)
+  public mutating func update(themeHex: Swift.String?, lightModeHex: Swift.String? = nil, defaultLightHex: Swift.String? = nil, darkModeHex: Swift.String? = nil, defaultDarkHex: Swift.String? = nil)
+}
+extension UIKit.UIColor {
+  @DynamicColor public static var dynamicGray: UIKit.UIColor {
+    get
+  }
+  @DynamicColor public static var dynamicBlack: UIKit.UIColor {
+    get
+  }
+  @DynamicColor public static var dynamicWhite: UIKit.UIColor {
+    get
+  }
+}
+extension DynamicColor {
+  public static let clear: DynamicColor
+  public static let dynamicBlack: DynamicColor
+  public static let dynamicBlue: DynamicColor
+  public static let dynamicGray: DynamicColor
+  public static let lightGrayBackground: DynamicColor
+  public static let separator: DynamicColor
+  public static let dynamicDarkGray: DynamicColor
+  public static let dynamicWhite: DynamicColor
+  public static let dynamicOTButton: DynamicColor
+  public static let dynamicGreen: DynamicColor
+}
+public enum SDKViewMode {
+  case banner
+  case preferenceCenter
+  case purposeDetails
+  case sdkList
+  case sdkFilter
+  case vendorList
+  case vendorFilter
+  case vendorDetails
+  case idfa
+  case ucpurposes
+  public static func == (a: SDKViewMode, b: SDKViewMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BannerUIDataModel {
+  public struct IABSummaryData {
+    public var titleData: UITextData {
+      get
+    }
+    public var descriptionData: UITextData {
+      get
+    }
+    public var partnersLinkData: UIButtonData {
+      get
+    }
+  }
+}
+extension OTCoreConstants {
+  public struct IAB_CCPA_Keys {
+    public static var consentString: Swift.String {
+      get
+    }
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AcceptAllButtonData : CommonTextButtonData {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTGeolocationModel : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var country: Swift.String {
+    get
+  }
+  @objc public var state: Swift.String {
+    get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class OTUserDefaultKeys : ObjectiveC.NSObject {
+  @objc public static var cultureData: Swift.String {
+    @objc get
+  }
+  @objc public static var domainData: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum AgeGateAuthorizationStatus : Swift.Int {
+  case notGiven
+  case denied
+  case authorized
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol OTEventListener {
+  @objc optional func onShowBanner()
+  @objc optional func onShowPreferenceCenter()
+  @objc optional func onShowVendorList()
+  @objc optional func onShowConsentPurposesUI()
+  @objc optional func allSDKViewsDismissed(interactionType: ConsentInteractionType)
+  @objc optional func onBannerClickedAcceptAll()
+  @objc optional func onBannerClickedRejectAll()
+  @objc optional func onHideBanner()
+  @objc optional func onPreferenceCenterAcceptAll()
+  @objc optional func onPreferenceCenterRejectAll()
+  @objc optional func onPreferenceCenterConfirmChoices()
+  @objc optional func onHidePreferenceCenter()
+  @objc optional func onVendorConfirmChoices()
+  @objc optional func onHideVendorList()
+  @objc optional func onPreferenceCenterPurposeConsentChanged(purposeId: Swift.String, consentStatus: Swift.Int8)
+  @objc optional func onPreferenceCenterPurposeLegitimateInterestChanged(purposeId: Swift.String, legitInterest: Swift.Int8)
+  @available(*, deprecated, renamed: "onVendorListVendorConsentChanged(vendorID:consentStatus:for:)", message: "This API will be removed in a couple of releases. Please use the new onVendorListVendorConsentChanged(vendorID:consentStatus:for:) API where vendorId is a String argument.")
+  @objc optional func onVendorListVendorConsentChanged(vendorId: Swift.String, consentStatus: Swift.Int8)
+  @objc optional func onVendorListVendorLegitimateInterestChanged(vendorId: Swift.String, legitInterest: Swift.Int8)
+  @objc optional func onVendorListVendorConsentChanged(vendorID: Swift.String, consentStatus: Swift.Int8, for mode: VendorListMode)
+}
+@objc public enum OTLoggerConstant : Swift.Int {
+  case noLogs = -1
+  case error = 1
+  case warning = 2
+  case info = 3
+  case debug = 4
+  case verbose = 5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension OTUserDefaultKeys {
+  @objc public static var profileData: Swift.String {
+    @objc get
+  }
+  @objc public static var userConsentStatus: Swift.String {
+    @objc get
+  }
+}
+extension NtfyUIDataModel {
+  public struct DisplayData {
+    public var backgroundColor: DynamicColor {
+      get
+    }
+    public var borderColor: DynamicColor {
+      get
+    }
+    public var iconBgColor: DynamicColor {
+      get
+    }
+    public var showClose: Swift.Bool {
+      get
+    }
+    public var showIcon: Swift.Bool {
+      get
+    }
+    public var titleData: UITextData {
+      get
+    }
+    public var descriptionData: UITextData {
+      get
+    }
+    public var cookieSettingsBtbData: UIButtonData? {
+      get
+    }
+  }
+}
+@objc public enum OTBannerHeightRatio : Swift.Int {
+  case full = 1
+  case two_third
+  case one_half
+  case one_third
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension OTPublishersHeadlessSDK {
+  public func showConsentUI(for permissionType: AppPermissionType, from presenter: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
+  public func checkAndLogConsent(for permissionType: AppPermissionType)
+}
+@objc public enum VendorListMode : Swift.Int {
+  case google
+  case iab
+  case general
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension AppPermissionType : Swift.Equatable {}
+extension AppPermissionType : Swift.Hashable {}
+extension OTCCPAGeolocation : Swift.Equatable {}
+extension OTCCPAGeolocation : Swift.Hashable {}
+extension OTCCPAGeolocation : Swift.RawRepresentable {}
+extension IabCcpaConsent : Swift.Equatable {}
+extension IabCcpaConsent : Swift.Hashable {}
+extension IabCcpaConsent : Swift.RawRepresentable {}
+extension VendorListJourneyType : Swift.Equatable {}
+extension VendorListJourneyType : Swift.Hashable {}
+extension VendorListJourneyType : Swift.RawRepresentable {}
+extension ConsentInteractionType : Swift.Equatable {}
+extension ConsentInteractionType : Swift.Hashable {}
+extension ConsentInteractionType : Swift.RawRepresentable {}
+extension OTUIType : Swift.Equatable {}
+extension OTUIType : Swift.Hashable {}
+extension OTUIType : Swift.RawRepresentable {}
+extension SDKViewMode : Swift.Equatable {}
+extension SDKViewMode : Swift.Hashable {}
+extension AgeGateAuthorizationStatus : Swift.Equatable {}
+extension AgeGateAuthorizationStatus : Swift.Hashable {}
+extension AgeGateAuthorizationStatus : Swift.RawRepresentable {}
+extension OTLoggerConstant : Swift.Equatable {}
+extension OTLoggerConstant : Swift.Hashable {}
+extension OTLoggerConstant : Swift.RawRepresentable {}
+extension OTBannerHeightRatio : Swift.Equatable {}
+extension OTBannerHeightRatio : Swift.Hashable {}
+extension OTBannerHeightRatio : Swift.RawRepresentable {}
+extension VendorListMode : Swift.Equatable {}
+extension VendorListMode : Swift.Hashable {}
+extension VendorListMode : Swift.RawRepresentable {}
