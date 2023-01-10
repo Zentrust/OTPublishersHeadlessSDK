@@ -49,9 +49,7 @@ extension UIKit.UIColor {
   @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
 }
 extension Swift.String {
-  public var asUTCDate: Foundation.Date? {
-    get
-  }
+  public func asUTCDate(with localeID: Swift.String = "en_US_POSIX") -> Foundation.Date?
   public var booleanValue: Swift.Bool? {
     get
   }
