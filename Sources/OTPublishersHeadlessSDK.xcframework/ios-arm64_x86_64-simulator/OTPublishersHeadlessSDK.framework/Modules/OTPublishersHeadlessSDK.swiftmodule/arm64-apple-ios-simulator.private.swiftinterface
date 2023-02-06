@@ -48,6 +48,14 @@ extension UIKit.UIColor {
   dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
   @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
 }
+public enum IABGPPKeys : Swift.String {
+  case gppString
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension Swift.String {
   public func asUTCDate(with localeID: Swift.String = "en_US_POSIX") -> Foundation.Date?
   public var booleanValue: Swift.Bool? {
@@ -873,6 +881,9 @@ extension OTPublishersHeadlessSDK {
     get
   }
 }
+extension IABGPPKeys : Swift.Equatable {}
+extension IABGPPKeys : Swift.Hashable {}
+extension IABGPPKeys : Swift.RawRepresentable {}
 extension AppPermissionType : Swift.Equatable {}
 extension AppPermissionType : Swift.Hashable {}
 extension OTCCPAGeolocation : Swift.Equatable {}
