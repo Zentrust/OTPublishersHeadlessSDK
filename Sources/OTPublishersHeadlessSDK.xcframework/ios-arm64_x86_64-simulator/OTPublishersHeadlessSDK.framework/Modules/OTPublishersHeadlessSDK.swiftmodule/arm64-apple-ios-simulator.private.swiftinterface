@@ -48,10 +48,17 @@ extension UIKit.UIColor {
   dynamic public func getUCPurposeConsent(cpId: Swift.String, purposeId: Swift.String) -> [Swift.String : Swift.Int]
   @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
 }
-public enum IABGPPKeys : Swift.String {
+public enum IABGPPKeys : Swift.String, Swift.CaseIterable {
   case gppString
+  case headerVersion
+  case headerSections
+  case activeSections
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [IABGPPKeys]
   public typealias RawValue = Swift.String
+  public static var allCases: [IABGPPKeys] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
