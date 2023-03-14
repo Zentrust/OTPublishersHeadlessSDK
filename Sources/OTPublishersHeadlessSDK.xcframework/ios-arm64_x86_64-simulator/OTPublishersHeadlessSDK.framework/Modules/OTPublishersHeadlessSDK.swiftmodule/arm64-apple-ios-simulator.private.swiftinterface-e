@@ -21,6 +21,22 @@ import _StringProcessing
   @objc dynamic public func getOTConsentJSForWebView() -> Swift.String?
   @objc dynamic public func dismissUI()
 }
+public enum IABGPPUSPKeys : Swift.String, Swift.CaseIterable {
+  case string
+  case version
+  case notice
+  case optOut
+  case lspaCovered
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [OTPublishersHeadlessSDK.IABGPPUSPKeys]
+  public typealias RawValue = Swift.String
+  public static var allCases: [OTPublishersHeadlessSDK.IABGPPUSPKeys] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct OTCoreConstants {
   public struct IABKeys {
     public static let consentCMPPresent: Swift.String
@@ -53,6 +69,8 @@ public enum IABGPPKeys : Swift.String, Swift.CaseIterable {
   case headerVersion
   case headerSections
   case activeSections
+  case usnatString
+  case uscaString
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OTPublishersHeadlessSDK.IABGPPKeys]
   public typealias RawValue = Swift.String
@@ -110,6 +128,36 @@ public enum AppPermissionType {
   public static func == (a: OTPublishersHeadlessSDK.AppPermissionType, b: OTPublishersHeadlessSDK.AppPermissionType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum IABGPPTCFKeys : Swift.String, Swift.CaseIterable {
+  case tcfTCString
+  case cmpId
+  case cmpVersion
+  case policyVersion
+  case gdprApplies
+  case publisherCC
+  case purposeOneTreatment
+  case useNonStandardStacks
+  case vendorConsents
+  case vendorLegitimateInterests
+  case purposeConsents
+  case purposeLegitimateInterests
+  case specialFeaturesOptIns
+  case publisherRestrictions
+  case publisherConsent
+  case publisherLegitimateInterests
+  case publisherCustomPurposesConsents
+  case publisherCustomPurposesLegitimateInterests
+  case addtlConsent
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [OTPublishersHeadlessSDK.IABGPPTCFKeys]
+  public typealias RawValue = Swift.String
+  public static var allCases: [OTPublishersHeadlessSDK.IABGPPTCFKeys] {
+    get
+  }
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -888,11 +936,17 @@ extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
     get
   }
 }
+extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.Equatable {}
+extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.Hashable {}
+extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.AppPermissionType : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.AppPermissionType : Swift.Hashable {}
+extension OTPublishersHeadlessSDK.IABGPPTCFKeys : Swift.Equatable {}
+extension OTPublishersHeadlessSDK.IABGPPTCFKeys : Swift.Hashable {}
+extension OTPublishersHeadlessSDK.IABGPPTCFKeys : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.OTCCPAGeolocation : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.OTCCPAGeolocation : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.OTCCPAGeolocation : Swift.RawRepresentable {}
