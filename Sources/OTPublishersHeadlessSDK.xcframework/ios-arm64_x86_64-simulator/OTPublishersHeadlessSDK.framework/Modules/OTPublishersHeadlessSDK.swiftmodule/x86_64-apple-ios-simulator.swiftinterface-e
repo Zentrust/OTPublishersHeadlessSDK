@@ -72,6 +72,8 @@ public enum IABGPPKeys : Swift.String, Swift.CaseIterable {
   case usnatString
   case uscaString
   case usvaString
+  case uscoString
+  case usctString
   public init?(rawValue: Swift.String)
   public typealias AllCases = [OTPublishersHeadlessSDK.IABGPPKeys]
   public typealias RawValue = Swift.String
