@@ -269,6 +269,18 @@ extension UIKit.UIButton {
 extension UIKit.UILabel {
   @_Concurrency.MainActor(unsafe) public func setup(using buttonData: OTPublishersHeadlessSDK.UIButtonData)
 }
+public enum ProxyType {
+  case sdkDataDownload(Foundation.URL)
+  case logConsent(Foundation.URL)
+  case bannerLogo(Foundation.URL)
+  case pcLogo(Foundation.URL)
+  case attPrePromptLogo(Foundation.URL)
+  case attPostPromptLogo(Foundation.URL)
+  case ageGateLogo(Foundation.URL)
+  case generalVendors(Foundation.URL)
+  case iabVendors(Foundation.URL)
+  case googleVendors(Foundation.URL)
+}
 @_inheritsConvenienceInitializers @objc public class OTProfileSyncParams : ObjectiveC.NSObject {
   @objc public func setSyncProfile(_ syncProfile: Swift.String)
   @objc public func setSyncProfileAuth(_ profileAuth: Swift.String)
@@ -389,7 +401,11 @@ public struct OTOfflineData {
   @available(iOS 13.0, tvOS 13.0, *)
   @objc optional func shouldEnableDarkMode() -> Swift.Bool
 }
+public protocol CustomConfigurator : AnyObject {
+  func getProxyDomain(for type: OTPublishersHeadlessSDK.ProxyType) -> Foundation.URL?
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTPublishersHeadlessSDK : ObjectiveC.NSObject {
+  weak public var customConfigurator: OTPublishersHeadlessSDK.CustomConfigurator?
   @objc weak public var uiConfigurator: OTPublishersHeadlessSDK.UIConfigurator?
   @objc public static var shared: OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
     get
