@@ -598,6 +598,9 @@ public struct OTUIKeys {
     public static let pCenterVendorListLifespanDays: Swift.String
     public static let pCenterVendorListLifespanMonth: Swift.String
     public static let pCenterVendorListLifespanMonths: Swift.String
+    public static let pCVListDataDeclarationText: Swift.String
+    public static let pCVListDataRetentionText: Swift.String
+    public static let pCVListStdRetentionText: Swift.String
     public static var consentText: Swift.String {
       get
     }
