@@ -601,7 +601,9 @@ public struct OTUIKeys {
     public static let pCVListDataDeclarationText: Swift.String
     public static let pCVListDataRetentionText: Swift.String
     public static let pCVListStdRetentionText: Swift.String
+    public static let pCIABDataCategories: Swift.String
     public static let pCIABVListLegIntClaimText: Swift.String
+    public static let pCIllustrationText: Swift.String
     public static var consentText: Swift.String {
       get
     }
