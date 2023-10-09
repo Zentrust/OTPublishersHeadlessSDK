@@ -144,6 +144,7 @@ public enum IABGPPTCFKeys : Swift.String, Swift.CaseIterable {
   case publisherCC
   case purposeOneTreatment
   case useNonStandardStacks
+  case useNonStandardTexts
   case vendorConsents
   case vendorLegitimateInterests
   case purposeConsents
@@ -286,6 +287,7 @@ public enum ProxyType {
   @objc public func setSyncProfileAuth(_ profileAuth: Swift.String)
   @objc public func setSyncGroupId(_ groupId: Swift.String)
   @objc public func setIdentifier(_ dsid: Swift.String)
+  @objc public func setIdentifierType(_ identifierType: Swift.String)
   @objc public func setTenantId(_ tenantId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -421,7 +423,7 @@ extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
     get
   }
   public func deleteProfile(_ profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
-  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", completion: @escaping (Swift.Bool) -> Swift.Void)
   public func switchProfile(to profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
 }
 public struct UITextData {
@@ -711,6 +713,9 @@ public struct PageHeaderTheme : OTPublishersHeadlessSDK.TextTheme {
     @objc get
   }
   @objc public static var iabTcf2UseNonStandardStacks: Swift.String {
+    @objc get
+  }
+  @objc public static var iabTcf2UseNonStandardTexts: Swift.String {
     @objc get
   }
   @objc public static var iabTcf2TCString: Swift.String {

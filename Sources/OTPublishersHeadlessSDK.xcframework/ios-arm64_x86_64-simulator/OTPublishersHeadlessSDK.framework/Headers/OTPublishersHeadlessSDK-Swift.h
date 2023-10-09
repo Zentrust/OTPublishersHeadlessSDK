@@ -413,6 +413,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)iabTcf2PurposeOneTreatment SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardStacks;)
 + (NSString * _Nonnull)iabTcf2UseNonStandardStacks SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardTexts;)
++ (NSString * _Nonnull)iabTcf2UseNonStandardTexts SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2TCString;)
 + (NSString * _Nonnull)iabTcf2TCString SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2VendorConsents;)
@@ -470,6 +472,10 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK19OTProfileSyncParams")
 /// \param dsid String containing data subject identifier.
 ///
 - (void)setIdentifier:(NSString * _Nonnull)dsid;
+/// Public function to set data subject identifier type
+/// \param dsid String containing data subject identifier type.
+///
+- (void)setIdentifierType:(NSString * _Nonnull)identifierType;
 /// Public function to set tenant Id
 /// \param tenantId tenantId as String value
 ///
@@ -1522,6 +1528,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)iabTcf2PurposeOneTreatment SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardStacks;)
 + (NSString * _Nonnull)iabTcf2UseNonStandardStacks SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardTexts;)
++ (NSString * _Nonnull)iabTcf2UseNonStandardTexts SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2TCString;)
 + (NSString * _Nonnull)iabTcf2TCString SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2VendorConsents;)
@@ -1579,6 +1587,10 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK19OTProfileSyncParams")
 /// \param dsid String containing data subject identifier.
 ///
 - (void)setIdentifier:(NSString * _Nonnull)dsid;
+/// Public function to set data subject identifier type
+/// \param dsid String containing data subject identifier type.
+///
+- (void)setIdentifierType:(NSString * _Nonnull)identifierType;
 /// Public function to set tenant Id
 /// \param tenantId tenantId as String value
 ///
