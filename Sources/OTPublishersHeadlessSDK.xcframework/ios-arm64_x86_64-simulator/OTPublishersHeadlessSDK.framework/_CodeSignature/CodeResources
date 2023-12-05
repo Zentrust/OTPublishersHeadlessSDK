@@ -234,11 +234,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tkl9zfNcgs0BhFSdL1lzCa7Rv8M=
+		alMLcfzMN3H/gfLz/1BHQdRJV6s=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sd7Qs8hi4iH2J3a8lED9jIBbVfw=
+		XaWScUwB9ohGCfDBBkR5Fjajohk=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -254,11 +254,11 @@
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9+AEklNTXA0Xlx69Qt7U67IzwKo=
+		ugvJPkGpnr3dM97qLAeD5YiySkc=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sd7Qs8hi4iH2J3a8lED9jIBbVfw=
+		XaWScUwB9ohGCfDBBkR5Fjajohk=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tcwu9HCYk8QvPxV/g6lpEwzz3hE=
+		m8J+iuJLgCZWDl3xIfd7GKn9tdg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -283,6 +283,10 @@
 		<key>OTSDK-UIConfig-iOS.plist</key>
 		<data>
 		U9yjD2VAErZ3ZakfnKtIujDHloE=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		AQDY9Kpe5v/EMeiQhSCk0TSIL2s=
 		</data>
 		<key>SnackBarView.nib</key>
 		<data>
@@ -694,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RgHKbh/S0QvRghw4f3XGKDjH6LIs73utmiz6317iIbo=
+			v4o0e7ckhFJWw48Hh8t1uX7PTEOBFthkPtHxwNkOvTA=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -722,14 +726,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DhADmhTNszEuhfUSBdFPMC0cvyxIqy4SfTr2q8N9C+s=
+			/WV46dCCW3zkCzJgiYKovwRsTOwMuWwkG+HyyaNHFjE=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RgHKbh/S0QvRghw4f3XGKDjH6LIs73utmiz6317iIbo=
+			v4o0e7ckhFJWw48Hh8t1uX7PTEOBFthkPtHxwNkOvTA=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -757,7 +761,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aRPgzHRZ7pee32XN4k2CkpGajrHj1MFF0ggyyxIyiwQ=
+			byj6/EtTE7HajLTp3riDZ4JEhYPuDNRTSB3Vsy1Szg4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -772,6 +776,13 @@
 			<key>hash2</key>
 			<data>
 			SR+hQmw7xBB+n+ePDcL9FgZpESTTdrfEmd2ZD6bYabM=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rwdh6ntzN+m5X6nTHEZ+k3GlV/wqs3pF3Zs/XtlNqgs=
 			</data>
 		</dict>
 		<key>SnackBarView.nib</key>
