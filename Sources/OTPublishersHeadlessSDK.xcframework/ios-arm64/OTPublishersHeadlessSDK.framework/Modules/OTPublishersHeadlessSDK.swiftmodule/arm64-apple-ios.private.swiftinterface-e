@@ -304,6 +304,7 @@ public enum ProxyType {
   @objc dynamic public func getPurposeConsentLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
   @objc dynamic public func getConsentStatus(forCategory categoryId: Swift.String) -> Swift.Int8
   @objc dynamic public func getConsentStatus(forSDKId sdkId: Swift.String) -> Swift.Int8
+  @objc dynamic public func getVendorCount(forCategory categoryId: Swift.String) -> Swift.Int
   @objc dynamic public func getLastDataDownloadedLocation() -> OTPublishersHeadlessSDK.OTGeolocationModel
   @objc dynamic public func getLastUserConsentedLocation() -> OTPublishersHeadlessSDK.OTGeolocationModel?
   @objc @available(*, deprecated, message: "This API will be removed in a couple of releases (6.37.0). Please use OTPublisherHeadlessSDK.shared.renameProfile(from:to:) for overrding the data subject identifier.")

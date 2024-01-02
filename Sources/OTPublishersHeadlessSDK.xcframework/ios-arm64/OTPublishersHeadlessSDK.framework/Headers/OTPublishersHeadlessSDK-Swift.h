@@ -734,6 +734,13 @@ enum OTUIType : NSInteger;
 /// \param sdkId The SDK identifier represented as a string, for which value has to be return.
 ///
 - (int8_t)getConsentStatusForSDKId:(NSString * _Nonnull)sdkId SWIFT_WARN_UNUSED_RESULT;
+/// Method to get vendor count configured for a particular purpose.
+/// \param categoryId String, group id for which vendors have been assigned to. It can be a parent group id like Stack or an individual group like an IAB purpose.
+///
+///
+/// returns:
+/// Int, count from saved object, 0 (no vendors configured), -1(error cases) are the possible values.
+- (NSInteger)getVendorCountForCategory:(NSString * _Nonnull)categoryId SWIFT_WARN_UNUSED_RESULT;
 /// Returns the last location where the data was last downloaded.
 /// note:
 /// If data is not downloaded yet, this method will return a default geo location.
