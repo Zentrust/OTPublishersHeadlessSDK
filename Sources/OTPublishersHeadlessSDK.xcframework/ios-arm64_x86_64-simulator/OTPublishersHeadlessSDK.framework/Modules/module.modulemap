@@ -1,7 +1,7 @@
 framework module OTPublishersHeadlessSDK {
   umbrella header "OTPublishersHeadlessSDK.h"
-
   export *
+
   module * { export * }
 }
 

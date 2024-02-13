@@ -1,16 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OTPublishersHeadlessSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppTrackingTransparency
+import DeveloperToolsSupport
 import Foundation
 @_exported import OTPublishersHeadlessSDK
 import SafariServices
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc extension OTPublishersHeadlessSDK {
   @objc dynamic public func setupUI(_ viewController: UIKit.UIViewController, UIType: OTUIType = .none)
   @objc dynamic public func showBannerUI()
@@ -336,9 +339,10 @@ public enum ProxyType {
   @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
   @objc dynamic public func getValue(forKey key: Swift.String) -> Any?
   @objc dynamic public func getAgeGatePromptValue() -> Swift.Int
+  @objc dynamic public func getOTGoogleConsentModeData() -> OTGoogleConsentModeDataModel
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class OTResponse : ObjectiveC.NSObject {
-  @objc public var error: Swift.Error? {
+  @objc public var error: (any Swift.Error)? {
     get
   }
   @objc public var responseString: Swift.String? {
@@ -358,7 +362,7 @@ extension UIKit.UIFont {
     public var weight: UIKit.UIFont.Weight
     public func asFont() -> UIKit.UIFont?
     public init(name: Swift.String = "", size: CoreFoundation.CGFloat = 0, textStyle: UIKit.UIFont.TextStyle? = nil, weight: UIKit.UIFont.Weight = .regular)
-    public mutating func update(using theme: TextTheme)
+    public mutating func update(using theme: any TextTheme)
   }
 }
 extension Foundation.Thread {
@@ -408,8 +412,8 @@ public protocol CustomConfigurator : AnyObject {
   func getProxyDomain(for type: ProxyType) -> Foundation.URL?
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTPublishersHeadlessSDK : ObjectiveC.NSObject {
-  weak public var customConfigurator: CustomConfigurator?
-  @objc weak public var uiConfigurator: UIConfigurator?
+  weak public var customConfigurator: (any CustomConfigurator)?
+  @objc weak public var uiConfigurator: (any UIConfigurator)?
   @objc public static var shared: OTPublishersHeadlessSDK {
     get
   }
@@ -419,13 +423,66 @@ public protocol CustomConfigurator : AnyObject {
   }
   @objc deinit
 }
+public enum OTGoogleConsentMode : Swift.Int {
+  case undefined
+  case unassigned
+  case denied
+  case granted
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum OTSDKStatus : Swift.Int {
+  case notInitialized
+  case notConsented
+  case consented
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OTGoogleConsentModeDataModel : ObjectiveC.NSObject {
+  public var otSDKStatus: OTSDKStatus {
+    get
+  }
+  public var consentType: OTGoogleConsentType {
+    get
+  }
+  @objc deinit
+}
+public struct OTGoogleConsentType {
+  public var analyticsStorage: OTGoogleConsentMode {
+    get
+  }
+  public var adStorage: OTGoogleConsentMode {
+    get
+  }
+  public var adUserData: OTGoogleConsentMode {
+    get
+  }
+  public var adPersonalization: OTGoogleConsentMode {
+    get
+  }
+  public var functionalityStorage: OTGoogleConsentMode {
+    get
+  }
+  public var personalizationStorage: OTGoogleConsentMode {
+    get
+  }
+  public var securityStorage: OTGoogleConsentMode {
+    get
+  }
+}
 extension OTPublishersHeadlessSDK {
   public var currentActiveProfile: Swift.String {
     get
   }
-  public func deleteProfile(_ profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  public func deleteProfile(_ profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", forceRename: Swift.Bool = false, completion: @escaping (Swift.Bool) -> Swift.Void)
-  public func switchProfile(to profileID: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
+  public func switchProfile(to profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
 }
 public struct UITextData {
   public var fontDetails: UIKit.UIFont.FontDetails
@@ -634,8 +691,8 @@ public struct LabelTheme : TextTheme {
   public let fontTextStyle: Swift.String
   public let textAlignment: Swift.String
   public let textColor: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LinkTheme : TextTheme {
   public let fontName: Swift.String
@@ -643,8 +700,8 @@ public struct LinkTheme : TextTheme {
   public let fontTextStyle: Swift.String
   public let textAlignment: Swift.String
   public let textColor: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct PageHeaderTheme : TextTheme {
   public let backgroundColor: Swift.String
@@ -656,8 +713,8 @@ public struct PageHeaderTheme : TextTheme {
   public var textAlignment: Swift.String {
     get
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc(OTConsentInteractionType) public enum ConsentInteractionType : Swift.Int {
   case bannerAllowAll = 1
@@ -846,8 +903,8 @@ extension OTCoreConstants {
   }
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class OTUserDefaultKeys : ObjectiveC.NSObject {
   @objc public static var cultureData: Swift.String {
@@ -988,6 +1045,12 @@ extension IabCcpaConsent : Swift.RawRepresentable {}
 extension VendorListJourneyType : Swift.Equatable {}
 extension VendorListJourneyType : Swift.Hashable {}
 extension VendorListJourneyType : Swift.RawRepresentable {}
+extension OTGoogleConsentMode : Swift.Equatable {}
+extension OTGoogleConsentMode : Swift.Hashable {}
+extension OTGoogleConsentMode : Swift.RawRepresentable {}
+extension OTSDKStatus : Swift.Equatable {}
+extension OTSDKStatus : Swift.Hashable {}
+extension OTSDKStatus : Swift.RawRepresentable {}
 extension ConsentInteractionType : Swift.Equatable {}
 extension ConsentInteractionType : Swift.Hashable {}
 extension ConsentInteractionType : Swift.RawRepresentable {}
