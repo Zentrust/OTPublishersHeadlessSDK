@@ -266,6 +266,7 @@ public struct UIButtonData {
   public var textColor: DynamicColor
   public var url: Swift.String
   public var showAsLink: Swift.Bool
+  public var position: Swift.Int
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public func setup(buttonData: UIButtonData)
@@ -481,7 +482,7 @@ extension OTPublishersHeadlessSDK {
     get
   }
   public func deleteProfile(_ profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
-  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", forceRename: Swift.Bool = false, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", completion: @escaping (Swift.Bool) -> Swift.Void)
   public func switchProfile(to profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
 }
 public struct UITextData {

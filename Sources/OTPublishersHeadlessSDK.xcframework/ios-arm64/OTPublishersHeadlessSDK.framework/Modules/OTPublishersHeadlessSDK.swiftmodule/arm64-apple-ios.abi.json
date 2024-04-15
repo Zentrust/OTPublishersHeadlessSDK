@@ -7996,6 +7996,93 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "position",
+            "printedName": "position",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23OTPublishersHeadlessSDK12UIButtonDataV8positionSivp",
+            "mangledName": "$s23OTPublishersHeadlessSDK12UIButtonDataV8positionSivp",
+            "moduleName": "OTPublishersHeadlessSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23OTPublishersHeadlessSDK12UIButtonDataV8positionSivg",
+                "mangledName": "$s23OTPublishersHeadlessSDK12UIButtonDataV8positionSivg",
+                "moduleName": "OTPublishersHeadlessSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23OTPublishersHeadlessSDK12UIButtonDataV8positionSivs",
+                "mangledName": "$s23OTPublishersHeadlessSDK12UIButtonDataV8positionSivs",
+                "moduleName": "OTPublishersHeadlessSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23OTPublishersHeadlessSDK12UIButtonDataV8positionSivM",
+                "mangledName": "$s23OTPublishersHeadlessSDK12UIButtonDataV8positionSivM",
+                "moduleName": "OTPublishersHeadlessSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -13353,7 +13440,7 @@
           {
             "kind": "Function",
             "name": "renameProfile",
-            "printedName": "renameProfile(from:to:withIdentifierType:forceRename:completion:)",
+            "printedName": "renameProfile(from:to:withIdentifierType:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13397,13 +13484,6 @@
                 "usr": "s:Sq"
               },
               {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "(Swift.Bool) -> ()",
@@ -13423,8 +13503,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:23OTPublishersHeadlessSDKAAC13renameProfile4from2to18withIdentifierType11forceRename10completionySSSg_SSAISbySbctF",
-            "mangledName": "$s23OTPublishersHeadlessSDKAAC13renameProfile4from2to18withIdentifierType11forceRename10completionySSSg_SSAISbySbctF",
+            "usr": "s:23OTPublishersHeadlessSDKAAC13renameProfile4from2to18withIdentifierType10completionySSSg_SSAHySbctF",
+            "mangledName": "$s23OTPublishersHeadlessSDKAAC13renameProfile4from2to18withIdentifierType10completionySSSg_SSAHySbctF",
             "moduleName": "OTPublishersHeadlessSDK",
             "declAttributes": [
               "RawDocComment"
@@ -34971,14 +35051,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3735,
+      "offset": 3817,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4732,
+      "offset": 4814,
       "length": 5,
       "value": "false"
     },
@@ -35930,7 +36010,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/SDKs\/SDKListUIDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3794,
+      "offset": 3891,
       "length": 4,
       "value": "true"
     },
@@ -36035,161 +36115,168 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1667,
+      "offset": 1671,
+      "length": 36,
+      "value": "\"IABTCF_EnableAdvertiserConsentMode\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1780,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1902,
       "length": 17,
       "value": "\"OTHeadlessSDK: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1902,
       "length": 17,
       "value": "\"OTHeadlessSDK: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2049,
+      "offset": 2162,
       "length": 10,
       "value": "\"OneTrust\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2234,
+      "offset": 2347,
       "length": 9,
       "value": "\"IABTCF_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2049,
+      "offset": 2162,
       "length": 10,
       "value": "\"OneTrust\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2234,
+      "offset": 2347,
       "length": 9,
       "value": "\"IABTCF_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2353,
+      "offset": 2466,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2385,
+      "offset": 2498,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2415,
+      "offset": 2528,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2439,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2385,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2415,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2439,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2385,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2415,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2439,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
-      "kind": "StringLiteral",
       "offset": 2552,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2466,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2498,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2528,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2552,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2466,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2498,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2528,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2552,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2665,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2584,
+      "offset": 2697,
       "length": 6,
       "value": "\"1---\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2552,
+      "offset": 2665,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Commons\/OTCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2584,
+      "offset": 2697,
       "length": 6,
       "value": "\"1---\""
     },
@@ -39807,43 +39894,43 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1429,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1444,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1519,
+      "offset": 1680,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1779,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2059,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2330,
+      "offset": 1951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2443,
+      "offset": 2064,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6596,
+      "offset": 6577,
       "length": 1,
       "value": "5"
     },
@@ -40018,91 +40105,91 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1905,
+      "offset": 1867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2091,
+      "offset": 2053,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2407,
+      "offset": 2369,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3157,
+      "offset": 3066,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3893,
+      "offset": 3802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3952,
+      "offset": 3861,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4003,
+      "offset": 3912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4041,
+      "offset": 3950,
       "length": 21,
       "value": "\"Powered by OneTrust\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4531,
+      "offset": 4440,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5564,
+      "offset": 5473,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5612,
+      "offset": 5521,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5809,
+      "offset": 5718,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 6211,
+      "offset": 6120,
       "length": 4,
       "value": "true"
     },
@@ -44192,7 +44279,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202403.2.0\""
+      "value": "\"202404.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -49300,30 +49387,37 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Buttons\/CommonTextButtonData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5142,
+      "offset": 5188,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Buttons\/CommonTextButtonData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5626,
+      "offset": 5672,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Buttons\/CommonTextButtonData.swift",
       "kind": "BooleanLiteral",
-      "offset": 8119,
+      "offset": 8165,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Buttons\/CommonTextButtonData.swift",
       "kind": "BooleanLiteral",
-      "offset": 8173,
+      "offset": 8219,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Buttons\/CommonTextButtonData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8738,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/TCF Storage\/TCFStorage+KeysMigration.swift",
@@ -51022,245 +51116,287 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3176,
+      "offset": 3186,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3235,
+      "offset": 3245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3251,
+      "offset": 3261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3309,
+      "offset": 3319,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4733,
+      "offset": 4743,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5020,
+      "offset": 5030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5421,
-      "length": 4,
-      "value": "true"
+      "kind": "IntegerLiteral",
+      "offset": 5242,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5781,
-      "length": 4,
-      "value": "true"
+      "kind": "IntegerLiteral",
+      "offset": 5417,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5591,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7027,
+      "offset": 6566,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7156,
+      "offset": 6695,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7171,
+      "offset": 6710,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7795,
+      "offset": 7334,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8006,
+      "offset": 7545,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8291,
+      "offset": 7830,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8297,
+      "offset": 7836,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10674,
+      "offset": 9922,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9997,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10071,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10258,
       "length": 2,
       "value": "38"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10679,
+      "offset": 10263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10990,
+      "offset": 10574,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10997,
+      "offset": 10581,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11204,
+      "offset": 10788,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11515,
+      "offset": 11099,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11565,
+      "offset": 11149,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11740,
+      "offset": 11324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12070,
+      "offset": 11654,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12122,
+      "offset": 11706,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12324,
+      "offset": 11908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12681,
+      "offset": 12265,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12856,
+      "offset": 12440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13222,
+      "offset": 12806,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 13451,
+      "offset": 13035,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13959,
+      "offset": 13543,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14112,
+      "offset": 13696,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14297,
+      "offset": 13881,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14533,
+      "offset": 14429,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14808,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15179,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15911,
+      "offset": 16557,
       "length": 4,
       "value": "true"
     },
@@ -54346,29 +54482,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Helpers\/UIButtonData.swift",
-      "kind": "BooleanLiteral",
+      "kind": "IntegerLiteral",
       "offset": 1475,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Helpers\/UIButtonData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Helpers\/UIButtonData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3017,
+      "offset": 3206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Helpers\/UIButtonData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3803,
+      "offset": 3992,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Helpers\/UIButtonData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3896,
+      "offset": 4085,
       "length": 1,
       "value": "2"
     },
@@ -57173,6 +57316,27 @@
       "value": "\"categoryIds\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/GCM Data\/GCMMobileDataModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1516,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/GCM Data\/GCMMobileDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1524,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/GCM Data\/GCMMobileDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1528,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/USString\/USStringBits+KnowChild.swift",
       "kind": "BooleanLiteral",
       "offset": 503,
@@ -58771,350 +58935,357 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 4492,
+      "offset": 4389,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 4539,
+      "offset": 4569,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5313,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5424,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 4783,
+      "offset": 6417,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
+      "kind": "StringLiteral",
+      "offset": 6700,
       "length": 77,
       "value": "\"Old and new profile ID values are the same, renaming will not be performed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 4896,
+      "offset": 6813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5021,
+      "offset": 6938,
       "length": 78,
       "value": "\"No user profile found with ID: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5068,
+      "offset": 6985,
       "length": 1,
       "value": "\". Please pass a valid user ID.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 5135,
+      "offset": 7052,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5276,
+      "offset": 7193,
       "length": 137,
       "value": "\"User already exists with the new profile ID: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5337,
+      "offset": 7254,
       "length": 1,
       "value": "\". Two users cannot have same user ID. Pass a unique userID for the new one.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 5449,
+      "offset": 7366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5813,
+      "offset": 7730,
       "length": 75,
       "value": "\"Failed to perform rename profile operation - \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5886,
+      "offset": 7803,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5948,
+      "offset": 7865,
       "length": 50,
       "value": "\"Successfully renamed profile to \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 5996,
+      "offset": 7913,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 6124,
+      "offset": 8041,
       "length": 76,
       "value": "\"Failed to override data subject identifier: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 6198,
+      "offset": 8115,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 6225,
+      "offset": 8142,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 6926,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7037,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7559,
+      "offset": 8610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 7673,
+      "offset": 8724,
       "length": 63,
       "value": "\"Both the profile IDs are same, hence data will not be copied.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 7757,
+      "offset": 8808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 7958,
+      "offset": 9009,
       "length": 78,
       "value": "\"Invalid profile ID \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 7990,
+      "offset": 9041,
       "length": 6,
       "value": "\" passed, hence copying will not be performed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 8057,
+      "offset": 9108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8275,
+      "offset": 9326,
       "length": 81,
       "value": "\"Invalid profile ID \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8310,
+      "offset": 9361,
       "length": 6,
       "value": "\" passed, hence copying will not be performed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 8377,
+      "offset": 9428,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 8442,
+      "offset": 9493,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8620,
+      "offset": 9671,
       "length": 8,
       "value": "\"WebKit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8752,
+      "offset": 9803,
       "length": 84,
       "value": "\"Successfully copied data from profile \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8803,
+      "offset": 9854,
       "length": 2,
       "value": "\" to new profile \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 8834,
+      "offset": 9885,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 8853,
+      "offset": 9904,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 9852,
+      "offset": 10903,
       "length": 71,
       "value": "\"The passed in profile is already active. Hence no switching required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 10658,
+      "offset": 11709,
       "length": 87,
       "value": "\"Switching of profile when cross device sync is enabled - \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 10743,
+      "offset": 11794,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 10848,
+      "offset": 11899,
       "length": 41,
       "value": "\"Error occurred while switching profile.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 12856,
+      "offset": 13907,
       "length": 41,
       "value": "\"Successfully setup the profile storage.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 12942,
+      "offset": 13993,
       "length": 63,
       "value": "\"Error loading profile storage: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 13003,
+      "offset": 14054,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 13678,
+      "offset": 14729,
       "length": 58,
       "value": "\"Failed to switch profile: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 13734,
+      "offset": 14785,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 14219,
+      "offset": 15270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 14462,
+      "offset": 15513,
       "length": 54,
       "value": "\"OT SDK data not available to perform profile switch.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 14814,
+      "offset": 15865,
       "length": 78,
       "value": "\"Successfully completed switching profile using local data - \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 14890,
+      "offset": 15941,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 15157,
+      "offset": 16208,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "StringLiteral",
-      "offset": 15456,
+      "offset": 16507,
       "length": 66,
       "value": "\"Culture or domain data is missing when trying to switch profile.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublisherHeadlessSDK+Profile.swift",
       "kind": "BooleanLiteral",
-      "offset": 15553,
+      "offset": 16604,
       "length": 5,
       "value": "false"
     },
@@ -60079,8 +60250,50 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3462,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3515,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3574,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3628,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3680,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3738,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3959,
+      "offset": 4299,
       "length": 5,
       "value": "false"
     },
@@ -69313,56 +69526,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "StringLiteral",
-      "offset": 3367,
+      "offset": 3519,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6589,
+      "offset": 6742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "StringLiteral",
-      "offset": 6619,
+      "offset": 6772,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "StringLiteral",
-      "offset": 6692,
+      "offset": 6845,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6773,
+      "offset": 6926,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6871,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "StringLiteral",
-      "offset": 6929,
+      "offset": 7082,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/UI Model\/BannerUIDataModel+IABSummaryData.swift",
       "kind": "BooleanLiteral",
-      "offset": 7047,
+      "offset": 7200,
       "length": 5,
       "value": "false"
     },
@@ -70643,21 +70856,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/AgeGate\/AgeGateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1863,
+      "offset": 1859,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/AgeGate\/AgeGateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2503,
+      "offset": 2499,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/AgeGate\/AgeGateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2675,
+      "offset": 2671,
       "length": 4,
       "value": "true"
     },
@@ -70846,126 +71059,126 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 4479,
+      "offset": 4475,
       "length": 55,
       "value": "\"Permission consent view is already in view hierarchy.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4786,
+      "offset": 4782,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 5079,
+      "offset": 5075,
       "length": 65,
       "value": "\"The user consent for IDFA has been provided: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 5143,
+      "offset": 5139,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5313,
+      "offset": 5309,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5335,
+      "offset": 5331,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6351,
+      "offset": 6347,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 6485,
+      "offset": 6481,
       "length": 74,
       "value": "\"IDFA permission data missing from OT server when status change detected.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6580,
+      "offset": 6576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 6616,
+      "offset": 6612,
       "length": 87,
       "value": "\"Logging consent for App Tracking Transparency with status: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 6701,
+      "offset": 6697,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7650,
+      "offset": 7646,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8216,
+      "offset": 8212,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 8355,
+      "offset": 8351,
       "length": 83,
       "value": "\"Not showing consent for App Tracking Transparency. The Purpose Id does not exist.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 8657,
+      "offset": 8653,
       "length": 132,
       "value": "\"Not showing consent for App Tracking Transparency. The Purpose Id exists, but the pre-Prompt has not been enabled on the Template.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 8927,
+      "offset": 8923,
       "length": 133,
       "value": "\"Not showing consent for App Tracking Transparency. The Purpose Id exists, but the post-prompt has not been enabled on the Template.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 9761,
+      "offset": 9757,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Permissions\/IDFA\/IDFAManager.swift",
       "kind": "StringLiteral",
-      "offset": 9782,
+      "offset": 9778,
       "length": 1,
       "value": "\"\""
     },
@@ -73989,317 +74202,338 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 931,
       "length": 13,
       "value": "\"borderColor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 980,
       "length": 17,
       "value": "\"borderColorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1004,
+      "offset": 1030,
       "length": 14,
       "value": "\"borderRadius\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1076,
       "length": 13,
       "value": "\"borderWidth\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1115,
       "length": 7,
       "value": "\"color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1152,
       "length": 11,
       "value": "\"colorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1192,
       "length": 10,
       "value": "\"fontSize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1227,
       "length": 6,
       "value": "\"show\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1259,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1265,
+      "offset": 1291,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1328,
       "length": 12,
       "value": "\"textNonIAB\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1371,
       "length": 11,
       "value": "\"textColor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1417,
       "length": 15,
       "value": "\"textColorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1436,
+      "offset": 1462,
       "length": 11,
       "value": "\"underline\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1504,
       "length": 12,
       "value": "\"showAsLink\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 1545,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
       "length": 13,
       "value": "\"borderColor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 954,
+      "offset": 980,
       "length": 17,
       "value": "\"borderColorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1004,
+      "offset": 1030,
       "length": 14,
       "value": "\"borderRadius\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1076,
       "length": 13,
       "value": "\"borderWidth\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1089,
+      "offset": 1115,
       "length": 7,
       "value": "\"color\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1152,
       "length": 11,
       "value": "\"colorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1192,
       "length": 10,
       "value": "\"fontSize\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1227,
       "length": 6,
       "value": "\"show\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1259,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1265,
+      "offset": 1291,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1328,
       "length": 12,
       "value": "\"textNonIAB\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1371,
       "length": 11,
       "value": "\"textColor\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1417,
       "length": 15,
       "value": "\"textColorDark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1436,
+      "offset": 1462,
       "length": 11,
       "value": "\"underline\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1504,
       "length": 12,
       "value": "\"showAsLink\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
+      "kind": "StringLiteral",
+      "offset": 1545,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "BooleanLiteral",
-      "offset": 1570,
+      "offset": 1635,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1664,
+      "offset": 1729,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1790,
+      "offset": 1855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1880,
+      "offset": 1945,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 1968,
+      "offset": 2033,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2044,
+      "offset": 2109,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2193,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2210,
+      "offset": 2275,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2366,
+      "offset": 2431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2440,
+      "offset": 2505,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2526,
+      "offset": 2591,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2610,
+      "offset": 2675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "StringLiteral",
-      "offset": 2702,
+      "offset": 2767,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "BooleanLiteral",
-      "offset": 2784,
+      "offset": 2849,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
       "kind": "BooleanLiteral",
-      "offset": 2871,
+      "offset": 2936,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Mobile Data\/Helpers\/MobileButtonTextData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3018,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/VendorListDataModel.swift",
