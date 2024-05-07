@@ -253,6 +253,16 @@ extension UIKit.UINavigationController {
 extension UIKit.UINavigationBar {
   @_Concurrency.MainActor(unsafe) public func setup(navBarData: UINavBarData, forceRefresh: Swift.Bool = false)
 }
+public enum ButtonSection {
+  case none
+  case above
+  case below
+  public static func == (a: ButtonSection, b: ButtonSection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct UIButtonData {
   public var backgroundColor: DynamicColor
   public var borderColor: DynamicColor
@@ -267,6 +277,7 @@ public struct UIButtonData {
   public var url: Swift.String
   public var showAsLink: Swift.Bool
   public var position: Swift.Int
+  public var section: ButtonSection
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public func setup(buttonData: UIButtonData)
@@ -1046,6 +1057,8 @@ extension IabCcpaConsent : Swift.RawRepresentable {}
 extension VendorListJourneyType : Swift.Equatable {}
 extension VendorListJourneyType : Swift.Hashable {}
 extension VendorListJourneyType : Swift.RawRepresentable {}
+extension ButtonSection : Swift.Equatable {}
+extension ButtonSection : Swift.Hashable {}
 extension OTGoogleConsentMode : Swift.Equatable {}
 extension OTGoogleConsentMode : Swift.Hashable {}
 extension OTGoogleConsentMode : Swift.RawRepresentable {}
