@@ -108,7 +108,6 @@ extension Swift.String {
   public func sliceAndReplace(sliceFrom: Swift.String, till: Swift.String, replaceWith: Swift.String) -> Swift.String?
   public func slice(from: Swift.String, to: Swift.String) -> Swift.String?
   public func encodeUrl() -> Swift.String?
-  public func byUpdatingVendorCount() -> Swift.String
   public mutating func encodeString() -> Swift.String?
   public func decodeUrl() -> Swift.String?
   public func dynamicText(font: UIKit.UIFont? = nil, textStyle: UIKit.UIFont.TextStyle) -> Foundation.NSAttributedString
@@ -254,16 +253,6 @@ extension UIKit.UINavigationController {
 extension UIKit.UINavigationBar {
   @_Concurrency.MainActor(unsafe) public func setup(navBarData: UINavBarData, forceRefresh: Swift.Bool = false)
 }
-public enum ButtonSection {
-  case none
-  case above
-  case below
-  public static func == (a: ButtonSection, b: ButtonSection) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public struct UIButtonData {
   public var backgroundColor: DynamicColor
   public var borderColor: DynamicColor
@@ -277,8 +266,6 @@ public struct UIButtonData {
   public var textColor: DynamicColor
   public var url: Swift.String
   public var showAsLink: Swift.Bool
-  public var position: Swift.Int
-  public var section: ButtonSection
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) public func setup(buttonData: UIButtonData)
@@ -494,7 +481,7 @@ extension OTPublishersHeadlessSDK {
     get
   }
   public func deleteProfile(_ profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
-  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", completion: @escaping (Swift.Bool) -> Swift.Void)
+  public func renameProfile(from currentProfileID: Swift.String? = nil, to newProfileID: Swift.String, withIdentifierType identifierType: Swift.String? = "", forceRename: Swift.Bool = false, completion: @escaping (Swift.Bool) -> Swift.Void)
   public func switchProfile(to profileID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
 }
 public struct UITextData {
@@ -1058,8 +1045,6 @@ extension IabCcpaConsent : Swift.RawRepresentable {}
 extension VendorListJourneyType : Swift.Equatable {}
 extension VendorListJourneyType : Swift.Hashable {}
 extension VendorListJourneyType : Swift.RawRepresentable {}
-extension ButtonSection : Swift.Equatable {}
-extension ButtonSection : Swift.Hashable {}
 extension OTGoogleConsentMode : Swift.Equatable {}
 extension OTGoogleConsentMode : Swift.Hashable {}
 extension OTGoogleConsentMode : Swift.RawRepresentable {}
