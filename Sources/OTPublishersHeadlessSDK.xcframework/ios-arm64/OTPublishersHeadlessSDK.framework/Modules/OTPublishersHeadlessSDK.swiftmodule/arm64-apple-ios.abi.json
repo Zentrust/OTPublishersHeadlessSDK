@@ -44685,7 +44685,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202406.1.0\""
+      "value": "\"202407.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -65382,28 +65382,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Purposes\/PurposeDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1838,
+      "offset": 1896,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Purposes\/PurposeDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1988,
+      "offset": 2046,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Purposes\/PurposeDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2004,
+      "offset": 2062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Purposes\/PurposeDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5920,
+      "offset": 5978,
       "length": 4,
       "value": "true"
     },
