@@ -44685,7 +44685,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202407.1.0\""
+      "value": "\"202407.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -59019,140 +59019,140 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "BooleanLiteral",
-      "offset": 2188,
+      "offset": 2232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "BooleanLiteral",
-      "offset": 2300,
+      "offset": 2304,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "BooleanLiteral",
-      "offset": 2677,
+      "offset": 2681,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "BooleanLiteral",
-      "offset": 2699,
+      "offset": 2703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "BooleanLiteral",
-      "offset": 2935,
+      "offset": 2939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 3148,
+      "offset": 3152,
       "length": 82,
       "value": "\"Couldn't update purpose legit. interest. PAllowLI is disabled in LegIntSettings.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 3336,
+      "offset": 3340,
       "length": 55,
       "value": "\"Nothing to save iab 2.0 purpose legitimate interests.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 3793,
+      "offset": 3797,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 3851,
+      "offset": 3855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 4778,
+      "offset": 4782,
       "length": 78,
       "value": "\"Updated iab 2.0 purpose legitimate interests are saved to persistent storage\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 5015,
+      "offset": 5019,
       "length": 44,
       "value": "\"Couldn't find stored legitimate interests.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "Dictionary",
-      "offset": 5164,
+      "offset": 5168,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "IntegerLiteral",
-      "offset": 5753,
+      "offset": 5757,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "IntegerLiteral",
-      "offset": 6033,
+      "offset": 6037,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 8348,
+      "offset": 8717,
       "length": 99,
       "value": "\"Couldn't accept all or reject all vendor legit. interest. PAllowLI is disabled in LegIntSettings.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 9059,
+      "offset": 9428,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 10504,
+      "offset": 10873,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 12637,
+      "offset": 13006,
       "length": 80,
       "value": "\"Couldn't accept\/reject all purpose LI. PAllowLI is disabled in LegIntSettings.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 13464,
+      "offset": 13833,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+Save.swift",
       "kind": "StringLiteral",
-      "offset": 13530,
+      "offset": 13899,
       "length": 3,
       "value": "\"_\""
     },
@@ -65452,56 +65452,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "Dictionary",
-      "offset": 715,
+      "offset": 755,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 1021,
+      "offset": 1061,
       "length": 58,
       "value": "\"Couldn't find stored category consent mapped dictionary.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "BooleanLiteral",
-      "offset": 2300,
+      "offset": 2340,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 4281,
+      "offset": 4321,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 4340,
+      "offset": 4380,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 4393,
+      "offset": 4433,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 6376,
+      "offset": 6416,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/CategoryConsentStatusHandler+SaveUpdatedConsentMapping.swift",
       "kind": "StringLiteral",
-      "offset": 7406,
+      "offset": 7446,
       "length": 3,
       "value": "\"_\""
     },
