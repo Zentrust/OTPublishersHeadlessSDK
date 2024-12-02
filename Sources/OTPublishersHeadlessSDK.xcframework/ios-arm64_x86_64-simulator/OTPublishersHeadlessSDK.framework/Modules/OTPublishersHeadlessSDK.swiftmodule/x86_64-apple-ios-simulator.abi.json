@@ -44692,7 +44692,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202411.1.0\""
+      "value": "\"202411.2.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -55735,155 +55735,169 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
-      "kind": "Array",
-      "offset": 4054,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
-      "kind": "Array",
-      "offset": 4305,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
-      "kind": "Array",
-      "offset": 4381,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
-      "kind": "Array",
-      "offset": 4454,
-      "length": 2,
-      "value": "[]"
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 3,
+      "value": "\"-\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 4822,
+      "offset": 4114,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "Array",
-      "offset": 4886,
+      "offset": 4186,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
+      "kind": "Array",
+      "offset": 4437,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
+      "kind": "Array",
+      "offset": 4513,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
+      "kind": "Array",
+      "offset": 4586,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 5690,
+      "offset": 4954,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
+      "kind": "Array",
+      "offset": 5018,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5822,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 5818,
+      "offset": 5950,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 6928,
+      "offset": 7060,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "StringLiteral",
-      "offset": 7903,
+      "offset": 8035,
       "length": 42,
       "value": "\"Couldn't find IAB Special Feature Optins\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 8119,
+      "offset": 8251,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 8438,
+      "offset": 8570,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 8845,
+      "offset": 8977,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 8873,
+      "offset": 9005,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 9538,
+      "offset": 9670,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "StringLiteral",
-      "offset": 10290,
+      "offset": 10422,
       "length": 27,
       "value": "\"Couldn't find IAB Purpose\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 10488,
+      "offset": 10620,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 11492,
+      "offset": 11624,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 12424,
+      "offset": 12556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 12455,
+      "offset": 12587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "StringLiteral",
-      "offset": 13262,
+      "offset": 13394,
       "length": 48,
       "value": "\"Couldn't find IAB Purpose Legitimate Interests\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/IABTCF2DataHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 13494,
+      "offset": 13626,
       "length": 1,
       "value": "1"
     },
@@ -57500,210 +57514,210 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 4905,
+      "offset": 4882,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "Dictionary",
-      "offset": 5202,
+      "offset": 5178,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "Dictionary",
-      "offset": 5319,
+      "offset": 5295,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "Dictionary",
-      "offset": 5513,
+      "offset": 5489,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5674,
+      "offset": 5650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8324,
+      "offset": 8300,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8988,
+      "offset": 8964,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10247,
+      "offset": 10223,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10688,
+      "offset": 10664,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11567,
+      "offset": 11543,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11598,
+      "offset": 11574,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11811,
+      "offset": 11787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11988,
+      "offset": 11964,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 12135,
+      "offset": 12111,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 12613,
+      "offset": 12589,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 13096,
+      "offset": 13072,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 13593,
+      "offset": 13569,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 13672,
+      "offset": 13648,
       "length": 62,
       "value": "\"Unable to parse iab group id from custom group id \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 13733,
+      "offset": 13709,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 14293,
+      "offset": 14269,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 16326,
+      "offset": 16302,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 16454,
+      "offset": 16430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "StringLiteral",
-      "offset": 16599,
+      "offset": 16575,
       "length": 75,
       "value": "\"Since the template is not IAB, we will skip updated the Vendor List data.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "Dictionary",
-      "offset": 16960,
+      "offset": 16936,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18671,
+      "offset": 18647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19062,
+      "offset": 19038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19114,
+      "offset": 19090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19796,
+      "offset": 19772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20100,
+      "offset": 20076,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Domain Data\/DomainDataResponseModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20132,
+      "offset": 20108,
       "length": 4,
       "value": "true"
     },
@@ -70764,57 +70778,64 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2216,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "Dictionary",
-      "offset": 2373,
+      "offset": 2558,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 2541,
+      "offset": 2726,
       "length": 47,
       "value": "\"Domain id contains Overridden Google Vendors.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2870,
+      "offset": 3055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3042,
+      "offset": 3227,
       "length": 47,
       "value": "\"Domain id is using global google vendor List.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3271,
+      "offset": 3456,
       "length": 53,
       "value": "\"Active vendor list count \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3507,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4411,
+      "offset": 4596,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Vendor List\/GoogleVendorsDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4415,
+      "offset": 4600,
       "length": 1,
       "value": "0"
     },
