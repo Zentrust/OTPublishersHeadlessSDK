@@ -844,7 +844,7 @@ public protocol CustomConfigurator : AnyObject {
   }
   @objc deinit
 }
-public enum OTGoogleConsentMode : Swift.Int, Swift.Codable {
+@objc public enum OTGoogleConsentMode : Swift.Int, Swift.Codable {
   case undefined
   case unassigned
   case denied
@@ -855,7 +855,7 @@ public enum OTGoogleConsentMode : Swift.Int, Swift.Codable {
     get
   }
 }
-public enum OTSDKStatus : Swift.Int {
+@objc public enum OTSDKStatus : Swift.Int {
   case notInitialized
   case notConsented
   case consented
@@ -865,39 +865,40 @@ public enum OTSDKStatus : Swift.Int {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OTGoogleConsentModeDataModel : ObjectiveC.NSObject {
-  public var otSDKStatus: OTPublishersHeadlessSDK.OTSDKStatus {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTGoogleConsentModeDataModel : ObjectiveC.NSObject {
+  @objc public var otSDKStatus: OTPublishersHeadlessSDK.OTSDKStatus {
     get
   }
-  public var consentType: OTPublishersHeadlessSDK.OTGoogleConsentType {
+  @objc public var consentType: OTPublishersHeadlessSDK.OTGoogleConsentType {
     get
   }
   @objc deinit
 }
-public struct OTGoogleConsentType : Swift.Codable {
-  public var analyticsStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTGoogleConsentType : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var analyticsStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var adStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var adStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var adUserData: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var adUserData: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var adPersonalization: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var adPersonalization: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var functionalityStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var functionalityStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var personalizationStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var personalizationStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
-  public var securityStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
+  @objc public var securityStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
+  @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   public var currentActiveProfile: Swift.String {
