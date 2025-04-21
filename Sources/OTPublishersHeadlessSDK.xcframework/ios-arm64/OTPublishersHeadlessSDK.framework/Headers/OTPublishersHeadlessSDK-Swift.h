@@ -746,16 +746,22 @@ enum OTUIType : NSInteger;
 
 
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
-- (NSDictionary<NSString *, id> * _Nullable)getVendorListDataFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). From 202502.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
-- (NSDictionary<NSString *, id> * _Nullable)getVendorListUIFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). From 202502.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
-- (NSDictionary<NSString *, id> * _Nullable)getVendorDetailsWithVendorID:(NSString * _Nonnull)vendorID for:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). From 202502.1.0 onwards, please use getVendorDetails(for:mode:) to get the vendor details assocaited with the passed in vendor identifier.");
-- (NSDictionary<NSString *, id> * _Nullable)getBannerData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). Please use BannerUIDataModel to get all the styling configurations required for Banner UI.");
-- (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). Please use PreferenceCenterUIDataModel to get all the styling configurations required for Preference Center.");
-- (NSDictionary<NSString *, id> * _Nullable)getDomainGroupData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). Please refer to the new list of public methods exposed in 202502.1.0 as domain data will no longer be available directly. We will be exposing individual items that are necessary under domain data via new public methods.");
-- (NSDictionary<NSString *, id> * _Nullable)getCommonData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). Please refer to the new list of public methods exposed in 202502.1.0 as common data will no longer be available directly. We will be exposing individual items that are necessary under common data via new public methods.");
-- (NSDictionary<NSString *, id> * _Nullable)getDomainInfo SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). Please refer to the new list of public methods exposed in 202502.1.0 as domain information will no longer be available directly. We will be exposing individual items that are necessary under domain information data via new public methods.");
-- (void)optOutOfSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). From 202502.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
-- (void)optIntoSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202504.1.0, couple of releases after Cmp Api adoption in 202502.1.0). From 202502.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
+- (NSDictionary<NSString *, id> * _Nullable)getVendorListDataFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
+- (NSDictionary<NSString *, id> * _Nullable)getVendorListUIFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
+- (NSDictionary<NSString *, id> * _Nullable)getVendorDetailsWithVendorID:(NSString * _Nonnull)vendorID for:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getVendorDetails(for:mode:) to get the vendor details assocaited with the passed in vendor identifier.");
+/// Retrieves all the data needed to construct the OT SDK Banner UI.
+/// note:
+/// The keys will not be the same when Cmp Api is enabled vs disabled.
+- (NSDictionary<NSString *, id> * _Nullable)getBannerData SWIFT_WARN_UNUSED_RESULT;
+/// Retrieves all the data needed to construct the OT SDK Preference Center UI.
+/// note:
+/// The keys will not be the same when Cmp Api is enabled vs disabled.
+- (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nullable)getDomainGroupData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain data will no longer be available directly. We will be exposing individual items that are necessary under domain data via new public methods.");
+- (NSDictionary<NSString *, id> * _Nullable)getCommonData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as common data will no longer be available directly. We will be exposing individual items that are necessary under common data via new public methods.");
+- (NSDictionary<NSString *, id> * _Nullable)getDomainInfo SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain information will no longer be available directly. We will be exposing individual items that are necessary under domain information data via new public methods.");
+- (void)optOutOfSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
+- (void)optIntoSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
 @end
 
 @class OTSdkParams;
@@ -790,6 +796,9 @@ enum OTUIType : NSInteger;
 /// This status is not the most update status present in the OT SDK as the consent could be updated locally and not synced yet. Please use <code>getPurposeConsentLocal</code> for fetching the latest consent status.
 /// \param categoryId The group represented as a string, for which consent value has to be returned.
 ///
+///
+/// returns:
+/// Integer value representing the consent status of the passed in category identifier.
 - (int8_t)getConsentStatusForCategory:(NSString * _Nonnull)categoryId SWIFT_WARN_UNUSED_RESULT;
 /// Updates the consent value for a specified group (purpose/category) identifier.
 /// note:
