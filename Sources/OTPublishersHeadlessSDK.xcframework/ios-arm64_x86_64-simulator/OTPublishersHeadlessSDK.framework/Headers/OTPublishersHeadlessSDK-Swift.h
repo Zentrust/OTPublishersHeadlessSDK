@@ -723,6 +723,8 @@ enum OTUIType : NSInteger;
 /// Call this method on application’s main view controller.
 /// note:
 /// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
+/// note:
+/// Starting 202504.1.0, if a valid UI Type is passed, OneTrust SDK will check if corresponding data already exists and if it does not exist, it will make a network call to Cmp Api to download that data and then display the corresponding UI.
 /// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
 ///
 /// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
@@ -733,18 +735,26 @@ enum OTUIType : NSInteger;
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if Banner data already exists and if it does not exist, it will make a network call to Banner Cmp Api to download that data and then display the UI.
 - (void)showBannerUI;
 /// This API will display the OT SDK Preference Center UI.
 /// Please call this method only after setupUI() method has been called atleast once in the current app launch.
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if Preference Center data already exists and if it does not exist, it will make a network call to Preferences Cmp Api to download that data and then display the UI.
 - (void)showPreferenceCenterUI;
 /// This API will display the OT SDK Consent Purposes UI.
 /// Please call this method only after setupUI() method has been called atleast once in the current app launch.
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if UC Purposes data already exists and if it does not exist, it will make a network call to UCP Cmp Api to download that data and then display the UI.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will not download UC Purposes data by default. Applications would have to call this API or <code>fetchUCPurposesCmpApiData(completion:)</code> to fetch the UC purposes data.
 - (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
 /// This API adds an event listener to OT SDK UI.
 /// note:
@@ -771,6 +781,10 @@ enum OTUIType : NSInteger;
 /// Starts the OT SDK, downloads data and returns the response required to create OT SDK UI.
 /// note:
 /// This call would fail if there are internet connectivity issues, invalid storage url/domain-Identifier/language-code is passed.
+/// note:
+/// Starting 202504.1.0, this API will only download either Banner or Preference Center data. This depends on the <code>setupUI</code> method being called prior to <code>startSDK</code>. If <code>setupUI</code> is called with <code>.preferenceCenter</code>, it will download Preference Center data, else we will be downloading Banner data by default.
+/// note:
+/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data.
 /// \param storageLocation Contains the storage location from where data has to be fetched (ex: “cdn.cookielaw.org”).
 ///
 /// \param domainIdentifier Containins unique Domain Identifier to be passed (ex: “5376c4e0-8367-450c-8669-a0d41bed69ac”).
@@ -805,6 +819,8 @@ enum OTUIType : NSInteger;
 /// If the purpose/category passed is linked with ATT and ATT permission is not granted, update of consent will not be permitted.
 /// note:
 /// Once this operation is complete, a notification will be posted with the updated legitimate interest value.
+/// note:
+/// Starting 202504.1.0, this API will update the consent status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
 /// \param groupId The group represented as a string, for which consent value has to be updated.
 ///
 /// \param consentValue Boolean value specifying updated consent value.
@@ -813,6 +829,8 @@ enum OTUIType : NSInteger;
 ///
 - (void)updatePurposeConsentForGroup:(NSString * _Nonnull)groupId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
 /// Updates the legitimate interest value for a specified group (purpose/category) Identifier.
+/// note:
+/// Starting 202504.1.0, this API will update the legit interest status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
 /// \param groupId The group represented as a string, for which legitimate interest value has to be updated.
 ///
 /// \param legIntValue Boolean value specifying updated legitimate interest value.
@@ -847,6 +865,8 @@ enum OTUIType : NSInteger;
 ///
 - (int8_t)getConsentStatusForSDKId:(NSString * _Nonnull)sdkId SWIFT_WARN_UNUSED_RESULT;
 /// Method to get vendor count configured for a particular purpose.
+/// note:
+/// Starting 202504.1.0, this API will return vendor count only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> and retry this public API.
 /// \param categoryId String, group id for which vendors have been assigned to. It can be a parent group id like Stack or an individual group like an IAB purpose.
 ///
 ///
@@ -869,12 +889,16 @@ enum OTUIType : NSInteger;
 /// By default, the environment is set to production.
 - (void)setEnviroment:(NSString * _Nonnull)environment;
 /// Updates consent status for all the vendors locally, based on the mode passed.
+/// note:
+/// Starting 202504.1.0, this API will update vendor consent only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param isSelected Pass true/false to update all vendor consent to 1/0 locally.
 ///
 /// \param mode The mode of the Vendor List. If no mode is passed, we will consider it as IAB by default.
 ///
 - (void)updateAllVendorsConsentLocal:(BOOL)isSelected for:(enum VendorListMode)mode;
 /// Updates the consent status for a specific vendor locally.
+/// note:
+/// Starting 202504.1.0, this API will update vendor consent only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param vendorID The vendor identifier for which the consent status needs to be updated.
 ///
 /// \param consentStatus Updated consent status.
@@ -885,6 +909,8 @@ enum OTUIType : NSInteger;
 /// Updates the legitimate interest status for the specified vendor.
 /// note:
 /// Legitimate interest is supported only for IAB vendors.
+/// note:
+/// Starting 202504.1.0, this API will update vendor legit interest only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param vendorID The vendor identifier for which the LI status needs to be updated.
 ///
 /// \param legIntStatus Updated legitimate interest status.
@@ -960,10 +986,14 @@ enum OTUIType : NSInteger;
 /// Retrieves all the data needed to construct the OT SDK Banner UI.
 /// note:
 /// The keys will not be the same when Cmp Api is enabled vs disabled.
+/// note:
+/// Starting 202504.1.0, this API will return banner data only if Banner data is already downloaded by the OneTrust SDK locally. Applications can download Banner data by calling <code>fetchBannerCmpApiData(completion:)</code> public api and retry this public API. It can also be downloaded by calling <code>setupUI(_:UIType:)</code>.
 - (NSDictionary<NSString *, id> * _Nullable)getBannerData SWIFT_WARN_UNUSED_RESULT;
 /// Retrieves all the data needed to construct the OT SDK Preference Center UI.
 /// note:
 /// The keys will not be the same when Cmp Api is enabled vs disabled.
+/// note:
+/// Starting 202504.1.0, this API will return preference center data only if Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API. It can also be downloaded by calling <code>setupUI(_:UIType:)</code> with <code>.preferenceCenter</code>.
 - (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1882,6 +1912,8 @@ enum OTUIType : NSInteger;
 /// Call this method on application’s main view controller.
 /// note:
 /// This API uses the <code>shouldShowBanner</code> logic to determine if the OT SDK UI should be shown to the user.
+/// note:
+/// Starting 202504.1.0, if a valid UI Type is passed, OneTrust SDK will check if corresponding data already exists and if it does not exist, it will make a network call to Cmp Api to download that data and then display the corresponding UI.
 /// \param viewController The View Controller of the application on which the OT SDK UI will be presented.
 ///
 /// \param UIType Represents the various types of OT SDK UI that can be presented using this API. Whatever type is passed here, will be displayed if the conditions are satisfied. If the app does not want to show OT SDK UI, then skip this parameter or pass in <code>.none</code>.
@@ -1892,18 +1924,26 @@ enum OTUIType : NSInteger;
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if Banner data already exists and if it does not exist, it will make a network call to Banner Cmp Api to download that data and then display the UI.
 - (void)showBannerUI;
 /// This API will display the OT SDK Preference Center UI.
 /// Please call this method only after setupUI() method has been called atleast once in the current app launch.
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if Preference Center data already exists and if it does not exist, it will make a network call to Preferences Cmp Api to download that data and then display the UI.
 - (void)showPreferenceCenterUI;
 /// This API will display the OT SDK Consent Purposes UI.
 /// Please call this method only after setupUI() method has been called atleast once in the current app launch.
 /// Please make sure that the OT SDK Data is downloaded prior to calling this API.
 /// note:
 /// This method doesn’t consider value of <code>shouldShowBanner</code>.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will check if UC Purposes data already exists and if it does not exist, it will make a network call to UCP Cmp Api to download that data and then display the UI.
+/// note:
+/// Starting 202504.1.0, OneTrust SDK will not download UC Purposes data by default. Applications would have to call this API or <code>fetchUCPurposesCmpApiData(completion:)</code> to fetch the UC purposes data.
 - (void)showConsentPurposesUI:(UIViewController * _Nonnull)viewController;
 /// This API adds an event listener to OT SDK UI.
 /// note:
@@ -1930,6 +1970,10 @@ enum OTUIType : NSInteger;
 /// Starts the OT SDK, downloads data and returns the response required to create OT SDK UI.
 /// note:
 /// This call would fail if there are internet connectivity issues, invalid storage url/domain-Identifier/language-code is passed.
+/// note:
+/// Starting 202504.1.0, this API will only download either Banner or Preference Center data. This depends on the <code>setupUI</code> method being called prior to <code>startSDK</code>. If <code>setupUI</code> is called with <code>.preferenceCenter</code>, it will download Preference Center data, else we will be downloading Banner data by default.
+/// note:
+/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data.
 /// \param storageLocation Contains the storage location from where data has to be fetched (ex: “cdn.cookielaw.org”).
 ///
 /// \param domainIdentifier Containins unique Domain Identifier to be passed (ex: “5376c4e0-8367-450c-8669-a0d41bed69ac”).
@@ -1964,6 +2008,8 @@ enum OTUIType : NSInteger;
 /// If the purpose/category passed is linked with ATT and ATT permission is not granted, update of consent will not be permitted.
 /// note:
 /// Once this operation is complete, a notification will be posted with the updated legitimate interest value.
+/// note:
+/// Starting 202504.1.0, this API will update the consent status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
 /// \param groupId The group represented as a string, for which consent value has to be updated.
 ///
 /// \param consentValue Boolean value specifying updated consent value.
@@ -1972,6 +2018,8 @@ enum OTUIType : NSInteger;
 ///
 - (void)updatePurposeConsentForGroup:(NSString * _Nonnull)groupId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
 /// Updates the legitimate interest value for a specified group (purpose/category) Identifier.
+/// note:
+/// Starting 202504.1.0, this API will update the legit interest status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
 /// \param groupId The group represented as a string, for which legitimate interest value has to be updated.
 ///
 /// \param legIntValue Boolean value specifying updated legitimate interest value.
@@ -2006,6 +2054,8 @@ enum OTUIType : NSInteger;
 ///
 - (int8_t)getConsentStatusForSDKId:(NSString * _Nonnull)sdkId SWIFT_WARN_UNUSED_RESULT;
 /// Method to get vendor count configured for a particular purpose.
+/// note:
+/// Starting 202504.1.0, this API will return vendor count only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> and retry this public API.
 /// \param categoryId String, group id for which vendors have been assigned to. It can be a parent group id like Stack or an individual group like an IAB purpose.
 ///
 ///
@@ -2028,12 +2078,16 @@ enum OTUIType : NSInteger;
 /// By default, the environment is set to production.
 - (void)setEnviroment:(NSString * _Nonnull)environment;
 /// Updates consent status for all the vendors locally, based on the mode passed.
+/// note:
+/// Starting 202504.1.0, this API will update vendor consent only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param isSelected Pass true/false to update all vendor consent to 1/0 locally.
 ///
 /// \param mode The mode of the Vendor List. If no mode is passed, we will consider it as IAB by default.
 ///
 - (void)updateAllVendorsConsentLocal:(BOOL)isSelected for:(enum VendorListMode)mode;
 /// Updates the consent status for a specific vendor locally.
+/// note:
+/// Starting 202504.1.0, this API will update vendor consent only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param vendorID The vendor identifier for which the consent status needs to be updated.
 ///
 /// \param consentStatus Updated consent status.
@@ -2044,6 +2098,8 @@ enum OTUIType : NSInteger;
 /// Updates the legitimate interest status for the specified vendor.
 /// note:
 /// Legitimate interest is supported only for IAB vendors.
+/// note:
+/// Starting 202504.1.0, this API will update vendor legit interest only if Preference Center and Vendors data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code>, Vendors data by calling <code>fetchVendorsCmpApiData(completion:)</code> public api and retry this public API.
 /// \param vendorID The vendor identifier for which the LI status needs to be updated.
 ///
 /// \param legIntStatus Updated legitimate interest status.
@@ -2119,10 +2175,14 @@ enum OTUIType : NSInteger;
 /// Retrieves all the data needed to construct the OT SDK Banner UI.
 /// note:
 /// The keys will not be the same when Cmp Api is enabled vs disabled.
+/// note:
+/// Starting 202504.1.0, this API will return banner data only if Banner data is already downloaded by the OneTrust SDK locally. Applications can download Banner data by calling <code>fetchBannerCmpApiData(completion:)</code> public api and retry this public API. It can also be downloaded by calling <code>setupUI(_:UIType:)</code>.
 - (NSDictionary<NSString *, id> * _Nullable)getBannerData SWIFT_WARN_UNUSED_RESULT;
 /// Retrieves all the data needed to construct the OT SDK Preference Center UI.
 /// note:
 /// The keys will not be the same when Cmp Api is enabled vs disabled.
+/// note:
+/// Starting 202504.1.0, this API will return preference center data only if Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API. It can also be downloaded by calling <code>setupUI(_:UIType:)</code> with <code>.preferenceCenter</code>.
 - (NSDictionary<NSString *, id> * _Nullable)getPreferenceCenterData SWIFT_WARN_UNUSED_RESULT;
 @end
 
