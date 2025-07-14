@@ -57730,77 +57730,77 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 569,
+      "offset": 493,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 617,
+      "offset": 541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1437,
+      "offset": 1453,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1452,
+      "offset": 1468,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1587,
+      "offset": 1598,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1745,
+      "offset": 1746,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2090,
+      "offset": 2086,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2094,
+      "offset": 2090,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2362,
+      "offset": 2518,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2475,
+      "offset": 2631,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel+UIConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6981,
+      "offset": 7363,
       "length": 1,
       "value": "5"
     },
@@ -58356,6 +58356,20 @@
       "offset": 316,
       "length": 2,
       "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Helpers\/AccessibilityHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 22,
+      "value": "\"Opens in a new view.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Helpers\/AccessibilityHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 22,
+      "value": "\"Opens in a new view.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Error Handling\/ManagerError.swift",
@@ -62583,7 +62597,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202506.1.0\""
+      "value": "\"202507.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -66868,6 +66882,20 @@
       "offset": 740,
       "length": 28,
       "value": "\"illustrationsSeperatorCell\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Illustrations\/IllustrationsViewModel+CellConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4773,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Illustrations\/IllustrationsViewModel+CellConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4838,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Consent\/SDKsLocalConsent.swift",
@@ -72416,42 +72444,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4600,
+      "offset": 4322,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 4740,
+      "offset": 4462,
       "length": 6,
       "value": "\"TEST\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 5691,
+      "offset": 5413,
       "length": 66,
       "value": "\"Consent Logging Payload Params \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 5756,
+      "offset": 5478,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 5885,
+      "offset": 5607,
       "length": 66,
       "value": "\"Consent Logging Payload Params \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/Consent\/ConsentLoggingPayload.swift",
       "kind": "StringLiteral",
-      "offset": 5950,
+      "offset": 5672,
       "length": 2,
       "value": "\"\""
     },
@@ -73516,160 +73544,153 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
       "offset": 7924,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7951,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "BooleanLiteral",
-      "offset": 7967,
+      "offset": 7940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 8086,
+      "offset": 8059,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "BooleanLiteral",
-      "offset": 8124,
+      "offset": 8097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 8293,
+      "offset": 8266,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 8313,
+      "offset": 8286,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "BooleanLiteral",
-      "offset": 8329,
+      "offset": 8302,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 8453,
+      "offset": 8426,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "BooleanLiteral",
-      "offset": 8491,
+      "offset": 8464,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9234,
+      "offset": 9207,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9239,
+      "offset": 9212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9416,
+      "offset": 9389,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9420,
+      "offset": 9393,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9558,
+      "offset": 9531,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 9562,
+      "offset": 9535,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 10204,
+      "offset": 10177,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "StringLiteral",
-      "offset": 12423,
+      "offset": 12396,
       "length": 8,
       "value": "\"(\\d+)\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "Array",
-      "offset": 12501,
+      "offset": 12474,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "Array",
-      "offset": 12676,
+      "offset": 12649,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 12819,
+      "offset": 12792,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "StringLiteral",
-      "offset": 12895,
+      "offset": 12868,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/PurposeTreeGroup.swift",
       "kind": "StringLiteral",
-      "offset": 12924,
+      "offset": 12897,
       "length": 1,
       "value": "\"\""
     },
@@ -74642,28 +74663,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Illustrations\/IllustrationsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1545,
+      "offset": 1612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Illustrations\/IllustrationsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1695,
+      "offset": 1822,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Illustrations\/IllustrationsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1711,
+      "offset": 1972,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Illustrations\/IllustrationsViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Illustrations\/IllustrationsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3515,
+      "offset": 3792,
       "length": 4,
       "value": "true"
     },
@@ -84197,7 +84225,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI Helpers\/Main UI\/Purposes\/PurposeDetailsViewModel+CellConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 18243,
+      "offset": 18248,
       "length": 5,
       "value": "false"
     },
@@ -86269,133 +86297,126 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
-      "length": 28,
-      "value": "\"OneTrustCustomDataElements\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 3224,
+      "offset": 3111,
       "length": 29,
       "value": "\"OneTrustGeoRuleBannerStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3346,
+      "offset": 3233,
       "length": 25,
       "value": "\"OneTrustRuleDetailsType\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3451,
+      "offset": 3338,
       "length": 31,
       "value": "\"OneTrustRuleDetailsTypeChange\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3458,
       "length": 23,
       "value": "\"OneTrustGCMMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3605,
       "length": 49,
       "value": "\"OneTrustPreferenceMultiProfileConsentMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3896,
+      "offset": 3783,
       "length": 31,
       "value": "\"OneTrustIsMultiProfileEnabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4035,
+      "offset": 3922,
       "length": 27,
       "value": "\"OneTrustGeneralMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4167,
+      "offset": 4054,
       "length": 26,
       "value": "\"OneTrustBannerMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4162,
       "length": 30,
       "value": "\"OneTrustBannerMobileDataLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4393,
+      "offset": 4280,
       "length": 33,
       "value": "\"OneTrustBannerMobileDataLogoUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4429,
       "length": 36,
       "value": "\"OneTrustPreferenceCenterMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4652,
+      "offset": 4539,
       "length": 40,
       "value": "\"OneTrustPreferenceCenterMobileDataLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4772,
+      "offset": 4659,
       "length": 43,
       "value": "\"OneTrustPreferenceCenterMobileDataLogoUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4908,
+      "offset": 4795,
       "length": 23,
       "value": "\"OneTrustGPPMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5021,
+      "offset": 4908,
       "length": 22,
       "value": "\"OneTrustIsGppEnabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5126,
+      "offset": 5013,
       "length": 31,
       "value": "\"OneTrustApplicationIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5224,
+      "offset": 5111,
       "length": 27,
       "value": "\"OneTrustSyncWebSDKConsent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5341,
+      "offset": 5228,
       "length": 38,
       "value": "\"OneTrustWebSDKConsentMigrationStatus\""
     },
@@ -86563,637 +86584,630 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
-      "length": 28,
-      "value": "\"OneTrustCustomDataElements\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
-      "kind": "StringLiteral",
-      "offset": 3224,
+      "offset": 3111,
       "length": 29,
       "value": "\"OneTrustGeoRuleBannerStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3346,
+      "offset": 3233,
       "length": 25,
       "value": "\"OneTrustRuleDetailsType\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3451,
+      "offset": 3338,
       "length": 31,
       "value": "\"OneTrustRuleDetailsTypeChange\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3458,
       "length": 23,
       "value": "\"OneTrustGCMMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3718,
+      "offset": 3605,
       "length": 49,
       "value": "\"OneTrustPreferenceMultiProfileConsentMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3896,
+      "offset": 3783,
       "length": 31,
       "value": "\"OneTrustIsMultiProfileEnabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4035,
+      "offset": 3922,
       "length": 27,
       "value": "\"OneTrustGeneralMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4167,
+      "offset": 4054,
       "length": 26,
       "value": "\"OneTrustBannerMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4162,
       "length": 30,
       "value": "\"OneTrustBannerMobileDataLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4393,
+      "offset": 4280,
       "length": 33,
       "value": "\"OneTrustBannerMobileDataLogoUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4429,
       "length": 36,
       "value": "\"OneTrustPreferenceCenterMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4652,
+      "offset": 4539,
       "length": 40,
       "value": "\"OneTrustPreferenceCenterMobileDataLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4772,
+      "offset": 4659,
       "length": 43,
       "value": "\"OneTrustPreferenceCenterMobileDataLogoUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4908,
+      "offset": 4795,
       "length": 23,
       "value": "\"OneTrustGPPMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5021,
+      "offset": 4908,
       "length": 22,
       "value": "\"OneTrustIsGppEnabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5126,
+      "offset": 5013,
       "length": 31,
       "value": "\"OneTrustApplicationIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5224,
+      "offset": 5111,
       "length": 27,
       "value": "\"OneTrustSyncWebSDKConsent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 5341,
+      "offset": 5228,
       "length": 38,
       "value": "\"OneTrustWebSDKConsentMigrationStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6542,
+      "offset": 6429,
       "length": 21,
       "value": "\"OneTrustOptanonLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6591,
+      "offset": 6478,
       "length": 21,
       "value": "\"OneTrustConsentText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6646,
+      "offset": 6533,
       "length": 27,
       "value": "\"OneTrustLegitInterestText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6542,
+      "offset": 6429,
       "length": 21,
       "value": "\"OneTrustOptanonLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6591,
+      "offset": 6478,
       "length": 21,
       "value": "\"OneTrustConsentText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6646,
+      "offset": 6533,
       "length": 27,
       "value": "\"OneTrustLegitInterestText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6858,
+      "offset": 6745,
       "length": 32,
       "value": "\"OneTrustApplicationOptedStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6964,
+      "offset": 6851,
       "length": 25,
       "value": "\"OneTrustCCPAParamsModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6858,
+      "offset": 6745,
       "length": 32,
       "value": "\"OneTrustApplicationOptedStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 6964,
+      "offset": 6851,
       "length": 25,
       "value": "\"OneTrustCCPAParamsModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7107,
+      "offset": 6994,
       "length": 18,
       "value": "\"OneTrustPAllowLI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7157,
+      "offset": 7044,
       "length": 10,
       "value": "\"PAllowLI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7107,
+      "offset": 6994,
       "length": 18,
       "value": "\"OneTrustPAllowLI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7157,
+      "offset": 7044,
       "length": 10,
       "value": "\"PAllowLI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7355,
+      "offset": 7242,
       "length": 17,
       "value": "\"OneTrustIABType\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7444,
+      "offset": 7331,
       "length": 31,
       "value": "\"OneTrustIAB2V2VendorCountText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7575,
+      "offset": 7462,
       "length": 38,
       "value": "\"OneTrustIAB2V2VendorCountFeatureText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7724,
+      "offset": 7611,
       "length": 41,
       "value": "\"OneTrustIAB2V2VendorCountSpcFeatureText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7868,
+      "offset": 7755,
       "length": 41,
       "value": "\"OneTrustIAB2V2VendorCountSpcPurposeText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7991,
+      "offset": 7878,
       "length": 32,
       "value": "\"OneTrustIABTCFGlobalVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8109,
+      "offset": 7996,
       "length": 36,
       "value": "\"OneTrustIABTCFOverriddenVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8246,
+      "offset": 8133,
       "length": 37,
       "value": "\"OneTrustIABTCFPublisherRestrictions\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7355,
+      "offset": 7242,
       "length": 17,
       "value": "\"OneTrustIABType\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7444,
+      "offset": 7331,
       "length": 31,
       "value": "\"OneTrustIAB2V2VendorCountText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7575,
+      "offset": 7462,
       "length": 38,
       "value": "\"OneTrustIAB2V2VendorCountFeatureText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7724,
+      "offset": 7611,
       "length": 41,
       "value": "\"OneTrustIAB2V2VendorCountSpcFeatureText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7868,
+      "offset": 7755,
       "length": 41,
       "value": "\"OneTrustIAB2V2VendorCountSpcPurposeText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 7991,
+      "offset": 7878,
       "length": 32,
       "value": "\"OneTrustIABTCFGlobalVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8109,
+      "offset": 7996,
       "length": 36,
       "value": "\"OneTrustIABTCFOverriddenVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8246,
+      "offset": 8133,
       "length": 37,
       "value": "\"OneTrustIABTCFPublisherRestrictions\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8382,
+      "offset": 8269,
       "length": 16,
       "value": "\"OneTrust_cmpId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8427,
+      "offset": 8314,
       "length": 7,
       "value": "\"cmpId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8462,
+      "offset": 8349,
       "length": 21,
       "value": "\"OneTrust_cmpVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8517,
+      "offset": 8404,
       "length": 12,
       "value": "\"cmpVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8560,
+      "offset": 8447,
       "length": 24,
       "value": "\"OneTrust_consentScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8621,
+      "offset": 8508,
       "length": 15,
       "value": "\"consentScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8671,
+      "offset": 8558,
       "length": 28,
       "value": "\"OneTrust_vendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8740,
+      "offset": 8627,
       "length": 19,
       "value": "\"vendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8382,
+      "offset": 8269,
       "length": 16,
       "value": "\"OneTrust_cmpId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8427,
+      "offset": 8314,
       "length": 7,
       "value": "\"cmpId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8462,
+      "offset": 8349,
       "length": 21,
       "value": "\"OneTrust_cmpVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8517,
+      "offset": 8404,
       "length": 12,
       "value": "\"cmpVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8560,
+      "offset": 8447,
       "length": 24,
       "value": "\"OneTrust_consentScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8621,
+      "offset": 8508,
       "length": 15,
       "value": "\"consentScreen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8671,
+      "offset": 8558,
       "length": 28,
       "value": "\"OneTrust_vendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 8740,
+      "offset": 8627,
       "length": 19,
       "value": "\"vendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9143,
+      "offset": 9030,
       "length": 27,
       "value": "\"OneTrustConsentLoggingApi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9275,
+      "offset": 9162,
       "length": 31,
       "value": "\"OneTrustConsentLoggingReqInfo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9381,
+      "offset": 9268,
       "length": 41,
       "value": "\"OneTrustConsentLoggingDefaultIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9520,
+      "offset": 9407,
       "length": 50,
       "value": "\"OneTrustConsentLoggingDefaultAnonymousIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9653,
+      "offset": 9540,
       "length": 50,
       "value": "\"OneTrustConsentLoggingEnableJWTAuthForKnownUsers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9840,
+      "offset": 9727,
       "length": 47,
       "value": "\"OneTrustConsentLoggingIdentifierReciptAllowed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9143,
+      "offset": 9030,
       "length": 27,
       "value": "\"OneTrustConsentLoggingApi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9275,
+      "offset": 9162,
       "length": 31,
       "value": "\"OneTrustConsentLoggingReqInfo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9381,
+      "offset": 9268,
       "length": 41,
       "value": "\"OneTrustConsentLoggingDefaultIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9520,
+      "offset": 9407,
       "length": 50,
       "value": "\"OneTrustConsentLoggingDefaultAnonymousIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9653,
+      "offset": 9540,
       "length": 50,
       "value": "\"OneTrustConsentLoggingEnableJWTAuthForKnownUsers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 9840,
+      "offset": 9727,
       "length": 47,
       "value": "\"OneTrustConsentLoggingIdentifierReciptAllowed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10144,
+      "offset": 10031,
       "length": 27,
       "value": "\"OneTrustUseGeneralVendors\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10323,
+      "offset": 10210,
       "length": 40,
       "value": "\"OneTrustHideGeneralVendorConsentToggle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10144,
+      "offset": 10031,
       "length": 27,
       "value": "\"OneTrustUseGeneralVendors\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10323,
+      "offset": 10210,
       "length": 40,
       "value": "\"OneTrustHideGeneralVendorConsentToggle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10567,
+      "offset": 10454,
       "length": 33,
       "value": "\"OneTrustGoogleVendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10677,
+      "offset": 10564,
       "length": 32,
       "value": "\"OneTrustGoogleGlobalVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10790,
+      "offset": 10677,
       "length": 36,
       "value": "\"OneTrustGoogleOverriddenVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10912,
+      "offset": 10799,
       "length": 32,
       "value": "\"OneTrustGoogleVendorsTitleText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 11065,
+      "offset": 10952,
       "length": 26,
       "value": "\"OneTrustUseGoogleVendors\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10567,
+      "offset": 10454,
       "length": 33,
       "value": "\"OneTrustGoogleVendorListVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10677,
+      "offset": 10564,
       "length": 32,
       "value": "\"OneTrustGoogleGlobalVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10790,
+      "offset": 10677,
       "length": 36,
       "value": "\"OneTrustGoogleOverriddenVendorList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 10912,
+      "offset": 10799,
       "length": 32,
       "value": "\"OneTrustGoogleVendorsTitleText\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageOldKeys.swift",
       "kind": "StringLiteral",
-      "offset": 11065,
+      "offset": 10952,
       "length": 26,
       "value": "\"OneTrustUseGoogleVendors\""
     },
@@ -90784,105 +90798,105 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 11729,
+      "offset": 11726,
       "length": 31,
       "value": "\"No saved Custom Data Elements\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 12103,
+      "offset": 12097,
       "length": 85,
       "value": "\"Passed Custom Data Elements dictionay is empty. Cleaning saved custom data elements\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 12820,
+      "offset": 13488,
       "length": 38,
       "value": "\"Publisher restrictions list is empty\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 12898,
+      "offset": 13566,
       "length": 31,
       "value": "\"Saving Publisher restrictions\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 13532,
+      "offset": 14200,
       "length": 35,
       "value": "\"Changing Log level to \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 13566,
+      "offset": 14234,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "BooleanLiteral",
-      "offset": 13978,
+      "offset": 14646,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14061,
+      "offset": 14729,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14093,
+      "offset": 14761,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14163,
+      "offset": 14831,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14172,
+      "offset": 14840,
       "length": 7,
       "value": "\"false\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14205,
+      "offset": 14873,
       "length": 50,
       "value": "\"Saving Cross Device Sync Status as \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 14253,
+      "offset": 14921,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "BooleanLiteral",
-      "offset": 14718,
+      "offset": 15386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/UserDefaultsUtility.swift",
       "kind": "StringLiteral",
-      "offset": 15100,
+      "offset": 15768,
       "length": 2,
       "value": "\"\""
     },
@@ -91960,6 +91974,13 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
+      "offset": 1544,
+      "length": 28,
+      "value": "\"OneTrustCustomDataElements\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
+      "kind": "StringLiteral",
       "offset": 281,
       "length": 24,
       "value": "\"OneTrustBlobStorageUrl\""
@@ -92051,280 +92072,287 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1544,
+      "length": 28,
+      "value": "\"OneTrustCustomDataElements\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 1807,
       "length": 28,
       "value": "\"OTStoredProfileIdentifiers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1825,
+      "offset": 1938,
       "length": 34,
       "value": "\"OneTrustStoredProfileMappingData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2067,
       "length": 34,
       "value": "\"OneTrustConsentLoggingIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2092,
+      "offset": 2205,
       "length": 42,
       "value": "\"OneTrustPreviousConsentLoggingIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2344,
       "length": 34,
       "value": "\"OneTrustDefaultProfileIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1807,
       "length": 28,
       "value": "\"OTStoredProfileIdentifiers\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1825,
+      "offset": 1938,
       "length": 34,
       "value": "\"OneTrustStoredProfileMappingData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2067,
       "length": 34,
       "value": "\"OneTrustConsentLoggingIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2092,
+      "offset": 2205,
       "length": 42,
       "value": "\"OneTrustPreviousConsentLoggingIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2344,
       "length": 34,
       "value": "\"OneTrustDefaultProfileIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2471,
+      "offset": 2584,
       "length": 25,
       "value": "\"OneTrustIabGroupsPrefix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2607,
+      "offset": 2720,
       "length": 32,
       "value": "\"OneTrustNotificationMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2471,
+      "offset": 2584,
       "length": 25,
       "value": "\"OneTrustIabGroupsPrefix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2607,
+      "offset": 2720,
       "length": 32,
       "value": "\"OneTrustNotificationMobileData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2935,
+      "offset": 3048,
       "length": 31,
       "value": "\"OneTrustPermissionPromptsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3073,
+      "offset": 3186,
       "length": 27,
       "value": "\"OneTrustIDFAPrePromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3209,
+      "offset": 3322,
       "length": 28,
       "value": "\"OneTrustIDFAPostPromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3348,
+      "offset": 3461,
       "length": 31,
       "value": "\"OneTrustAgeGatePostPromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3505,
+      "offset": 3618,
       "length": 33,
       "value": "\"OneTrustLastConsentedIDFAStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2935,
+      "offset": 3048,
       "length": 31,
       "value": "\"OneTrustPermissionPromptsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3073,
+      "offset": 3186,
       "length": 27,
       "value": "\"OneTrustIDFAPrePromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3209,
+      "offset": 3322,
       "length": 28,
       "value": "\"OneTrustIDFAPostPromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3348,
+      "offset": 3461,
       "length": 31,
       "value": "\"OneTrustAgeGatePostPromptLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3505,
+      "offset": 3618,
       "length": 33,
       "value": "\"OneTrustLastConsentedIDFAStatus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3770,
+      "offset": 3883,
       "length": 13,
       "value": "\"OTUseCmpApi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3991,
       "length": 18,
       "value": "\"OTCMPAPIBannerUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3984,
+      "offset": 4097,
       "length": 28,
       "value": "\"OTCMPAPIPreferenceCenterUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4113,
+      "offset": 4226,
       "length": 22,
       "value": "\"OTCMPAPIVendorListUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4227,
+      "offset": 4340,
       "length": 24,
       "value": "\"OTCMPAPIUCPurposesData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4345,
+      "offset": 4458,
       "length": 21,
       "value": "\"OTCMPAPIPromptsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4445,
+      "offset": 4558,
       "length": 26,
       "value": "\"OneTrustCMPAPIBannerLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4655,
       "length": 36,
       "value": "\"OneTrustCMPAPIPreferenceCenterLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3770,
+      "offset": 3883,
       "length": 13,
       "value": "\"OTUseCmpApi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3991,
       "length": 18,
       "value": "\"OTCMPAPIBannerUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 3984,
+      "offset": 4097,
       "length": 28,
       "value": "\"OTCMPAPIPreferenceCenterUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4113,
+      "offset": 4226,
       "length": 22,
       "value": "\"OTCMPAPIVendorListUI\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4227,
+      "offset": 4340,
       "length": 24,
       "value": "\"OTCMPAPIUCPurposesData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4345,
+      "offset": 4458,
       "length": 21,
       "value": "\"OTCMPAPIPromptsData\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4445,
+      "offset": 4558,
       "length": 26,
       "value": "\"OneTrustCMPAPIBannerLogo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Storage\/User Defaults\/Keys\/SDKStorageKeys.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4655,
       "length": 36,
       "value": "\"OneTrustCMPAPIPreferenceCenterLogo\""
     },
