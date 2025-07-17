@@ -62597,7 +62597,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202507.1.0\""
+      "value": "\"202507.1.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -79325,28 +79325,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Helpers\/GPPHeaderResponseKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 2014,
       "length": 216,
       "value": "\"        IABGPP_HDR_GppString: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Helpers\/GPPHeaderResponseKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2088,
       "length": 19,
       "value": "\"\n        IABGPP_HDR_Sections: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Helpers\/GPPHeaderResponseKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2156,
+      "offset": 2157,
       "length": 13,
       "value": "\"\n        IABGPP_GppSID: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Helpers\/GPPHeaderResponseKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2218,
       "length": 13,
       "value": "\"\""
     },
