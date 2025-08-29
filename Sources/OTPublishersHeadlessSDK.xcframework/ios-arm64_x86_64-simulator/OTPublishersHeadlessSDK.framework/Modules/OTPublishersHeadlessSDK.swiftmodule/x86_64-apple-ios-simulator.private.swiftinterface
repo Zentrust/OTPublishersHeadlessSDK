@@ -159,6 +159,12 @@ extension UIKit.UIColor {
   convenience public init(hexString: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
   public func toHex() -> Swift.String
 }
+extension Swift.Array where Element : Swift.Decodable, Element : Swift.Encodable {
+  public func codableListAsListDictionariesList() -> [[Swift.String : Any]]?
+}
+extension Swift.Encodable {
+  public func asDictionary() -> [Swift.String : Any]?
+}
 extension PreferenceCenterUIDataModel {
   public struct PurposeListItemData {
     public var titleTextData: UITextData {
@@ -1460,7 +1466,7 @@ extension PreferenceCenterUIDataModel {
     }
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTGeolocationModel : ObjectiveC.NSObject, Swift.Codable {
+@_hasMissingDesignatedInitializers @objc public class OTGeolocationModel : ObjectiveC.NSObject, Swift.Codable {
   @objc public var country: Swift.String {
     get
   }
