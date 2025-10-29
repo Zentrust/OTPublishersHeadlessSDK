@@ -163,7 +163,7 @@ extension Swift.Array where Element : Swift.Decodable, Element : Swift.Encodable
   public func codableListAsListDictionariesList() -> [[Swift.String : Any]]?
 }
 extension Swift.Encodable {
-  public func asDictionary() -> [Swift.String : Any]?
+  public func asDictionary(prefix: Swift.String? = nil) -> [Swift.String : Any]?
 }
 extension OTPublishersHeadlessSDK.PreferenceCenterUIDataModel {
   public struct PurposeListItemData {
@@ -302,7 +302,7 @@ public enum AppPermissionType {
   case idfa
   case ageGate
   public func showConsentUI(from presenter: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
-  public func checkAndLogConsent()
+  public func checkAndLogConsent(completion: ((Swift.Bool) -> Swift.Void)? = nil)
   public static func == (a: OTPublishersHeadlessSDK.AppPermissionType, b: OTPublishersHeadlessSDK.AppPermissionType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1573,7 +1573,7 @@ extension OTPublishersHeadlessSDK.NtfyUIDataModel {
 }
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   public func showConsentUI(for permissionType: OTPublishersHeadlessSDK.AppPermissionType, from presenter: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
-  public func checkAndLogConsent(for permissionType: OTPublishersHeadlessSDK.AppPermissionType)
+  public func checkAndLogConsent(for permissionType: OTPublishersHeadlessSDK.AppPermissionType, completion: ((Swift.Bool) -> Swift.Void)? = nil)
 }
 public struct DataElements {
   public struct Link : Swift.Codable {
