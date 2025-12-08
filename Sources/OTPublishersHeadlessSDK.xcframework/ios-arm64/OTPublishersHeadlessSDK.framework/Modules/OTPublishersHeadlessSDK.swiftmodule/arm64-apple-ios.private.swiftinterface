@@ -721,6 +721,8 @@ public enum ProxyType : Swift.Equatable {
   @objc dynamic public func shouldShowBanner() -> Swift.Bool
   @objc dynamic public func getConsentStatus(forCategory categoryId: Swift.String) -> Swift.Int8
   @objc dynamic public func updatePurposeConsent(forGroup groupId: Swift.String, consentValue: Swift.Bool, updateHierarchy: Swift.Bool = false)
+  @objc dynamic public func updateSDKConsent(for sdkId: Swift.String, consentValue: Swift.Bool, updateHierarchy: Swift.Bool = false)
+  @objc dynamic public func updateAllSDKsConsentLocal(consentValue: Swift.Bool, updateHierarchy: Swift.Bool = false)
   @objc dynamic public func updatePurposeLegitInterest(forGroup groupId: Swift.String, legIntValue: Swift.Bool)
   @objc dynamic public func getPurposeLegitInterestLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
   @objc dynamic public func getPurposeConsentLocal(forCustomGroupId customGroupId: Swift.String) -> Swift.Int8
@@ -739,7 +741,8 @@ public enum ProxyType : Swift.Equatable {
   @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
   @objc dynamic public func getValue(forKey key: Swift.String) -> Any?
   @objc dynamic public func getAgeGatePromptValue() -> Swift.Int
-  @objc dynamic public func getOTGoogleConsentModeData() -> OTGoogleConsentModeDataModel
+  @objc @available(*, deprecated, message: "Google Consent Mode consent logging will be taken care by OneTrust SDK, avoid to log duplicate consent from App side. Please add -ObjC flag into the app target’s Other Linker Flags to make Firebase SDK accessible from OneTrust SDK.")
+  dynamic public func getOTGoogleConsentModeData() -> OTGoogleConsentModeDataModel
   @objc dynamic public func isBannerShown() -> Swift.Int
   @objc dynamic public func getBannerData() -> [Swift.String : Any]?
   @objc dynamic public func getPreferenceCenterData() -> [Swift.String : Any]?

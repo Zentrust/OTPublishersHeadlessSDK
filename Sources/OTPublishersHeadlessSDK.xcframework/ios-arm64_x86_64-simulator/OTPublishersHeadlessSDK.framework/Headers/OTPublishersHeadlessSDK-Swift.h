@@ -830,6 +830,31 @@ enum OTUIType : NSInteger;
 /// \param updateHierarchy If set to true, this will update the hierarchy of the group ID (parents/siblings/children). This value will be false by default.
 ///
 - (void)updatePurposeConsentForGroup:(NSString * _Nonnull)groupId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
+/// Updates the consent value for a specified sdk identifier.
+/// note:
+/// If the sdkId passed is linked with ATT associated purpose/category and ATT permission is not granted, update of consent will not be permitted.
+/// note:
+/// Once this operation is complete, a notification will be posted with the updated consent value.
+/// \param sdkId The sdkId represented as a string, for which consent value has to be updated.
+///
+/// \param consentValue Boolean value specifying updated consent value.
+///
+/// \param updateHierarchy If set to true, this will update the hierarchy of the sdk ID (parents/siblings/children) purpose id. This value will be false by default.
+///
+- (void)updateSDKConsentFor:(NSString * _Nonnull)sdkId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
+/// Updates consent status for all the sdk id locally.
+/// <ul>
+///   <li>
+///     Parameters :
+///   </li>
+///   <li>
+///     consentValue: Pass true/false to update all sdk consent to 1/0 locally.
+///   </li>
+///   <li>
+///     updateHierarchy: If set to true, this will update the hierarchy of the sdk ID (parents/siblings/children) purpose id. This value will be false by default.
+///   </li>
+/// </ul>
+- (void)updateAllSDKsConsentLocalWithConsentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
 /// Updates the legitimate interest value for a specified group (purpose/category) Identifier.
 /// note:
 /// Starting 202504.1.0, this API will update the legit interest status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
@@ -971,11 +996,7 @@ enum OTUIType : NSInteger;
 ///   </li>
 /// </ul>
 - (NSInteger)getAgeGatePromptValue SWIFT_WARN_UNUSED_RESULT;
-/// Get google consent mode status.
-///
-/// returns:
-/// Return OTGoogleConsentModeDataModel object. Variable otSDKStatus will retirn the OneTrust SDK status and variable consentType will return consent mode of GCM consent types
-- (OTGoogleConsentModeDataModel * _Nonnull)getOTGoogleConsentModeData SWIFT_WARN_UNUSED_RESULT;
+- (OTGoogleConsentModeDataModel * _Nonnull)getOTGoogleConsentModeData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Google Consent Mode consent logging will be taken care by OneTrust SDK, avoid to log duplicate consent from App side. Please add -ObjC flag into the app target’s Other Linker Flags to make Firebase SDK accessible from OneTrust SDK.");
 /// Determines if OT SDK Banner/Preference center was presented to user at least once.
 /// This method will support only if SDK UI methods are used.
 ///
@@ -2021,6 +2042,31 @@ enum OTUIType : NSInteger;
 /// \param updateHierarchy If set to true, this will update the hierarchy of the group ID (parents/siblings/children). This value will be false by default.
 ///
 - (void)updatePurposeConsentForGroup:(NSString * _Nonnull)groupId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
+/// Updates the consent value for a specified sdk identifier.
+/// note:
+/// If the sdkId passed is linked with ATT associated purpose/category and ATT permission is not granted, update of consent will not be permitted.
+/// note:
+/// Once this operation is complete, a notification will be posted with the updated consent value.
+/// \param sdkId The sdkId represented as a string, for which consent value has to be updated.
+///
+/// \param consentValue Boolean value specifying updated consent value.
+///
+/// \param updateHierarchy If set to true, this will update the hierarchy of the sdk ID (parents/siblings/children) purpose id. This value will be false by default.
+///
+- (void)updateSDKConsentFor:(NSString * _Nonnull)sdkId consentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
+/// Updates consent status for all the sdk id locally.
+/// <ul>
+///   <li>
+///     Parameters :
+///   </li>
+///   <li>
+///     consentValue: Pass true/false to update all sdk consent to 1/0 locally.
+///   </li>
+///   <li>
+///     updateHierarchy: If set to true, this will update the hierarchy of the sdk ID (parents/siblings/children) purpose id. This value will be false by default.
+///   </li>
+/// </ul>
+- (void)updateAllSDKsConsentLocalWithConsentValue:(BOOL)consentValue updateHierarchy:(BOOL)updateHierarchy;
 /// Updates the legitimate interest value for a specified group (purpose/category) Identifier.
 /// note:
 /// Starting 202504.1.0, this API will update the legit interest status only if the Preference Center data is already downloaded by the OneTrust SDK locally. Applications can download Preference Center data by calling <code>fetchPreferencesCmpApiData(completion:)</code> public api and retry this public API.
@@ -2162,11 +2208,7 @@ enum OTUIType : NSInteger;
 ///   </li>
 /// </ul>
 - (NSInteger)getAgeGatePromptValue SWIFT_WARN_UNUSED_RESULT;
-/// Get google consent mode status.
-///
-/// returns:
-/// Return OTGoogleConsentModeDataModel object. Variable otSDKStatus will retirn the OneTrust SDK status and variable consentType will return consent mode of GCM consent types
-- (OTGoogleConsentModeDataModel * _Nonnull)getOTGoogleConsentModeData SWIFT_WARN_UNUSED_RESULT;
+- (OTGoogleConsentModeDataModel * _Nonnull)getOTGoogleConsentModeData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Google Consent Mode consent logging will be taken care by OneTrust SDK, avoid to log duplicate consent from App side. Please add -ObjC flag into the app target’s Other Linker Flags to make Firebase SDK accessible from OneTrust SDK.");
 /// Determines if OT SDK Banner/Preference center was presented to user at least once.
 /// This method will support only if SDK UI methods are used.
 ///
