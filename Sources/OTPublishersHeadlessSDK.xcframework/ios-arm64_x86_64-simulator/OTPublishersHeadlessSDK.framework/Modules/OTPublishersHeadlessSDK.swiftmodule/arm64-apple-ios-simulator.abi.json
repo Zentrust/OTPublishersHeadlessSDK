@@ -63998,7 +63998,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202601.1.0\""
+      "value": "\"202601.2.0\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
@@ -99738,49 +99738,49 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "BooleanLiteral",
-      "offset": 12641,
+      "offset": 12555,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 12751,
+      "offset": 12665,
       "length": 117,
       "value": "\"Successful to override DSID for authenticated consent from \""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 12837,
+      "offset": 12751,
       "length": 2,
       "value": "\" to \""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 12866,
+      "offset": 12780,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 12990,
+      "offset": 12904,
       "length": 113,
       "value": "\"Failed to override DSID for authenticated consent from \""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 13072,
+      "offset": 12986,
       "length": 2,
       "value": "\" to \""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Headless SDK\/OTPublishersHeadlessSDK+Setup.swift",
       "kind": "StringLiteral",
-      "offset": 13101,
+      "offset": 13015,
       "length": 1,
       "value": "\".\""
     },
@@ -102923,44 +102923,51 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6090,
+      "offset": 6103,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6194,
+      "offset": 6207,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6198,
+      "offset": 6211,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
       "kind": "StringLiteral",
-      "offset": 6780,
-      "length": 4,
-      "value": "\"1~\""
-    },
-    {
-      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
-      "kind": "StringLiteral",
-      "offset": 6792,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
-      "kind": "StringLiteral",
-      "offset": 6861,
+      "offset": 7041,
       "length": 3,
       "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7073,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
+      "kind": "StringLiteral",
+      "offset": 7442,
+      "length": 3,
+      "value": "\"~\""
+    },
+    {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GoogleVendorsResponseData.swift",
+      "kind": "StringLiteral",
+      "offset": 7613,
+      "length": 3,
+      "value": "\"~\""
     },
     {
       "filePath": "\/Users\/builduser\/Library\/Developer\/Xcode\/DerivedData\/OTPublishersHeadlessSDK-dtmcxplyozhwkshbsfielrmpehjl\/Build\/Intermediates.noindex\/ArchiveIntermediates\/OTPublishersHeadlessSDK\/IntermediateBuildFilesPath\/OTPublishersHeadlessSDK.build\/Release-iphonesimulator\/OTPublishersHeadlessSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
