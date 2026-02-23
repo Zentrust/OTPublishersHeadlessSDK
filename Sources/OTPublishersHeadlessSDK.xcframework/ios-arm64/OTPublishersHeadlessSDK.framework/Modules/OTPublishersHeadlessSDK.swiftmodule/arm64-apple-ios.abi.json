@@ -52694,14 +52694,14 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3784,
+      "offset": 3817,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI\/Main UI\/Permission Type\/PermissionConsentViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4781,
+      "offset": 4814,
       "length": 5,
       "value": "false"
     },
@@ -64029,7 +64029,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202601.2.5\""
+      "value": "\"202602.1.0\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Extension\/UIApplication+Extensions.swift",
