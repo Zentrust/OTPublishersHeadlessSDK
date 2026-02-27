@@ -234,11 +234,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qow/eYSLlpraNusLBICgajbhT2U=
+		ueHiTRGGqf+k5pEbgP41BSMB8/4=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qy11oBBdRDaIdy9ZynyyGI+To4Q=
+		3GlroqJYFd9Eg4mU8xUus0O8USE=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -254,11 +254,11 @@
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		A4LNQdZOy2QMA7gRdFVto1sWXzw=
+		oKKq2jJVjndo0LcTe6sdV14wNx8=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Qy11oBBdRDaIdy9ZynyyGI+To4Q=
+		3GlroqJYFd9Eg4mU8xUus0O8USE=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PnbsRi/T06K88nfO2QTcXs9iYSw=
+		54yx40ItzP52RUzQw/qTdqz6ef0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -698,7 +698,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Rj2lTlt/HPn7Wxivx/nN57hFoMRMI5lK07eJVMXiBY=
+			WG/S6U4wwH5W0SNJHhtUYBdVCsUJy4LPuJMyItfDKnQ=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -726,14 +726,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7hEmdg3i/CACEp+CbRvSzt4mP89I+Biym6z1wXrO6c8=
+			y4F2UWCc9aembv+n4lMmBTkGpuKoekHGutLueGGyyPI=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Rj2lTlt/HPn7Wxivx/nN57hFoMRMI5lK07eJVMXiBY=
+			WG/S6U4wwH5W0SNJHhtUYBdVCsUJy4LPuJMyItfDKnQ=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -761,7 +761,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JgP/4hgJ34G0TUqtD/HmI1dWCHnczFoElhIeFwC5BHs=
+			tL4tk0PzDVks9WCd++pciGItqDcAgf7yMXtW/fnc+2Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
