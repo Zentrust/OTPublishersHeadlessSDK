@@ -713,6 +713,9 @@ public enum ProxyType : Swift.Equatable {
   @objc public var responseString: Swift.String? {
     get
   }
+  @objc public var warning: Swift.String? {
+    get
+  }
   @objc public var status: Swift.Bool {
     @objc get
   }
@@ -794,49 +797,6 @@ extension Foundation.Thread {
 }
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   public func setOTOfflineData(_ data: OTPublishersHeadlessSDK.OTOfflineData)
-}
-public struct OTOfflineData {
-  public var logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? {
-    get
-  }
-  public var cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var otData: Foundation.Data? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var vendorListData: OTPublishersHeadlessSDK.OTOfflineData.VendorListData? {
-    get
-  }
-  @available(*, deprecated, message: "This method will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.init(cmpApiData:logoData:)` instead.")
-  public init(otData: Foundation.Data, vendorListData: OTPublishersHeadlessSDK.OTOfflineData.VendorListData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData)
-  public init(cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData)
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct VendorListData {
-    public var iabData: Foundation.Data?
-    public var googleData: Foundation.Data?
-    public init(iab: Foundation.Data?, google: Foundation.Data?)
-  }
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct LogoData {
-    public var banner: UIKit.UIImage?
-    public var preferenceCenter: UIKit.UIImage?
-    public var ageGate: UIKit.UIImage?
-    public var att: UIKit.UIImage?
-    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
-  }
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct CmpApiData {
-    public var banner: Foundation.Data?
-    public var preferences: Foundation.Data?
-    public var vendors: Foundation.Data?
-    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
-  }
 }
 @objc(OTUIConfigurator) public protocol UIConfigurator {
   @objc func shouldUseCustomUIConfig() -> Swift.Bool
@@ -1020,6 +980,32 @@ extension OTPublishersHeadlessSDK.BannerUIDataModel {
     public var logoAriaLabel: Swift.String {
       get
     }
+  }
+}
+public struct OTOfflineData {
+  public var logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? {
+    get
+  }
+  public var cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData? {
+    get
+  }
+  public init(cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? = nil)
+}
+extension OTPublishersHeadlessSDK.OTOfflineData {
+  public struct LogoData {
+    public var banner: UIKit.UIImage?
+    public var preferenceCenter: UIKit.UIImage?
+    public var ageGate: UIKit.UIImage?
+    public var att: UIKit.UIImage?
+    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
+  }
+}
+extension OTPublishersHeadlessSDK.OTOfflineData {
+  public struct CmpApiData {
+    public var banner: Foundation.Data?
+    public var preferences: Foundation.Data?
+    public var vendors: Foundation.Data?
+    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
   }
 }
 public struct FilterUIResponseData : Swift.Codable {

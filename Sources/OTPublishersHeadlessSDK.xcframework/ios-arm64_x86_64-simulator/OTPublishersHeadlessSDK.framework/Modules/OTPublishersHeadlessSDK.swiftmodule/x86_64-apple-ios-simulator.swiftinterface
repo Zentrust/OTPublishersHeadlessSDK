@@ -713,6 +713,9 @@ public enum ProxyType : Swift.Equatable {
   @objc public var responseString: Swift.String? {
     get
   }
+  @objc public var warning: Swift.String? {
+    get
+  }
   @objc public var status: Swift.Bool {
     @objc get
   }
@@ -794,49 +797,6 @@ extension Foundation.Thread {
 }
 extension OTPublishersHeadlessSDK {
   public func setOTOfflineData(_ data: OTOfflineData)
-}
-public struct OTOfflineData {
-  public var logoData: OTOfflineData.LogoData? {
-    get
-  }
-  public var cmpApiData: OTOfflineData.CmpApiData? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var otData: Foundation.Data? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var vendorListData: OTOfflineData.VendorListData? {
-    get
-  }
-  @available(*, deprecated, message: "This method will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.init(cmpApiData:logoData:)` instead.")
-  public init(otData: Foundation.Data, vendorListData: OTOfflineData.VendorListData, logoData: OTOfflineData.LogoData)
-  public init(cmpApiData: OTOfflineData.CmpApiData, logoData: OTOfflineData.LogoData)
-}
-extension OTOfflineData {
-  public struct VendorListData {
-    public var iabData: Foundation.Data?
-    public var googleData: Foundation.Data?
-    public init(iab: Foundation.Data?, google: Foundation.Data?)
-  }
-}
-extension OTOfflineData {
-  public struct LogoData {
-    public var banner: UIKit.UIImage?
-    public var preferenceCenter: UIKit.UIImage?
-    public var ageGate: UIKit.UIImage?
-    public var att: UIKit.UIImage?
-    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
-  }
-}
-extension OTOfflineData {
-  public struct CmpApiData {
-    public var banner: Foundation.Data?
-    public var preferences: Foundation.Data?
-    public var vendors: Foundation.Data?
-    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
-  }
 }
 @objc(OTUIConfigurator) public protocol UIConfigurator {
   @objc func shouldUseCustomUIConfig() -> Swift.Bool
@@ -1020,6 +980,32 @@ extension BannerUIDataModel {
     public var logoAriaLabel: Swift.String {
       get
     }
+  }
+}
+public struct OTOfflineData {
+  public var logoData: OTOfflineData.LogoData? {
+    get
+  }
+  public var cmpApiData: OTOfflineData.CmpApiData? {
+    get
+  }
+  public init(cmpApiData: OTOfflineData.CmpApiData, logoData: OTOfflineData.LogoData? = nil)
+}
+extension OTOfflineData {
+  public struct LogoData {
+    public var banner: UIKit.UIImage?
+    public var preferenceCenter: UIKit.UIImage?
+    public var ageGate: UIKit.UIImage?
+    public var att: UIKit.UIImage?
+    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
+  }
+}
+extension OTOfflineData {
+  public struct CmpApiData {
+    public var banner: Foundation.Data?
+    public var preferences: Foundation.Data?
+    public var vendors: Foundation.Data?
+    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
   }
 }
 public struct FilterUIResponseData : Swift.Codable {

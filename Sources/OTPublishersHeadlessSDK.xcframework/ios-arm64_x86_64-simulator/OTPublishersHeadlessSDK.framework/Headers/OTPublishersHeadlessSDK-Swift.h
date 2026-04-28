@@ -606,7 +606,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
-
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Returns the last location where the data was last downloaded.
 /// note:
@@ -776,6 +775,7 @@ enum OTUIType : NSInteger;
 - (void)dismissUI;
 @end
 
+
 @class OTSdkParams;
 @class OTResponse;
 
@@ -786,7 +786,7 @@ enum OTUIType : NSInteger;
 /// note:
 /// Starting 202504.1.0, this API will only download either Banner or Preference Center data. This depends on the <code>setupUI</code> method being called prior to <code>startSDK</code>. If <code>setupUI</code> is called with <code>.preferenceCenter</code>, it will download Preference Center data, else we will be downloading Banner data by default.
 /// note:
-/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data.
+/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data .
 /// \param storageLocation Contains the storage location from where data has to be fetched (ex: “cdn.cookielaw.org”).
 ///
 /// \param domainIdentifier Containins unique Domain Identifier to be passed (ex: “5376c4e0-8367-450c-8669-a0d41bed69ac”).
@@ -797,7 +797,7 @@ enum OTUIType : NSInteger;
 ///
 /// \param completionHandler The block of code that will be triggered once the startSDK setup is complete. Completion Handler contains response object that contains either the server response in the form of a string or an error object if in case the call has failed.
 ///
-/// \param loadOffline Sets up the OT SDK using offline data that is set via API <code>setOTOffileData(_:)</code>. By default this value will be set to false.
+/// \param loadOffline Sets up the OT SDK using offline/locally cached data. The SDK prioritizes cached data (from previous online sessions) when available, falling back to offline data set via <code>setOTOfflineData(_:)</code>. When <code>true</code>, the SDK remains in offline mode for the entire session, preventing all on-demand network calls (e.g., Vendor List fetch, logo downloads). The flag persists until the next <code>startSDK</code> call or the app session. By default this value will be set to false.
 ///
 - (void)startSDKWithStorageLocation:(NSString * _Nonnull)storageLocation domainIdentifier:(NSString * _Nonnull)domainIdentifier languageCode:(NSString * _Nonnull)languageCode params:(OTSdkParams * _Nullable)params loadOffline:(BOOL)loadOffline completionHandler:(void (^ _Nonnull)(OTResponse * _Nonnull))completionHandler;
 /// Determines if OT SDK UI should be displayed for a user location.
@@ -1028,6 +1028,10 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK10OTResponse")
 @property (nonatomic, readonly) NSError * _Nullable error;
 /// Represents the entire server response received while starting OT SDK..
 @property (nonatomic, readonly, copy) NSString * _Nullable responseString;
+/// Represents a non-fatal warning that occurred during SDK setup (e.g., network failed but cached data was used).
+/// note:
+/// When set, <code>status</code> will still be <code>true</code> and <code>error</code> will be <code>nil</code>. The SDK is functional using locally cached data.
+@property (nonatomic, readonly, copy) NSString * _Nullable warning;
 /// Represents if the OT SDK data download call was successful or not.
 /// note:
 /// Refer to <code>responseString</code> and <code>error</code> for more details.
@@ -1818,7 +1822,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 
 
 
-
 @interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
 /// Returns the last location where the data was last downloaded.
 /// note:
@@ -1988,6 +1991,7 @@ enum OTUIType : NSInteger;
 - (void)dismissUI;
 @end
 
+
 @class OTSdkParams;
 @class OTResponse;
 
@@ -1998,7 +2002,7 @@ enum OTUIType : NSInteger;
 /// note:
 /// Starting 202504.1.0, this API will only download either Banner or Preference Center data. This depends on the <code>setupUI</code> method being called prior to <code>startSDK</code>. If <code>setupUI</code> is called with <code>.preferenceCenter</code>, it will download Preference Center data, else we will be downloading Banner data by default.
 /// note:
-/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data.
+/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data .
 /// \param storageLocation Contains the storage location from where data has to be fetched (ex: “cdn.cookielaw.org”).
 ///
 /// \param domainIdentifier Containins unique Domain Identifier to be passed (ex: “5376c4e0-8367-450c-8669-a0d41bed69ac”).
@@ -2009,7 +2013,7 @@ enum OTUIType : NSInteger;
 ///
 /// \param completionHandler The block of code that will be triggered once the startSDK setup is complete. Completion Handler contains response object that contains either the server response in the form of a string or an error object if in case the call has failed.
 ///
-/// \param loadOffline Sets up the OT SDK using offline data that is set via API <code>setOTOffileData(_:)</code>. By default this value will be set to false.
+/// \param loadOffline Sets up the OT SDK using offline/locally cached data. The SDK prioritizes cached data (from previous online sessions) when available, falling back to offline data set via <code>setOTOfflineData(_:)</code>. When <code>true</code>, the SDK remains in offline mode for the entire session, preventing all on-demand network calls (e.g., Vendor List fetch, logo downloads). The flag persists until the next <code>startSDK</code> call or the app session. By default this value will be set to false.
 ///
 - (void)startSDKWithStorageLocation:(NSString * _Nonnull)storageLocation domainIdentifier:(NSString * _Nonnull)domainIdentifier languageCode:(NSString * _Nonnull)languageCode params:(OTSdkParams * _Nullable)params loadOffline:(BOOL)loadOffline completionHandler:(void (^ _Nonnull)(OTResponse * _Nonnull))completionHandler;
 /// Determines if OT SDK UI should be displayed for a user location.
@@ -2240,6 +2244,10 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK10OTResponse")
 @property (nonatomic, readonly) NSError * _Nullable error;
 /// Represents the entire server response received while starting OT SDK..
 @property (nonatomic, readonly, copy) NSString * _Nullable responseString;
+/// Represents a non-fatal warning that occurred during SDK setup (e.g., network failed but cached data was used).
+/// note:
+/// When set, <code>status</code> will still be <code>true</code> and <code>error</code> will be <code>nil</code>. The SDK is functional using locally cached data.
+@property (nonatomic, readonly, copy) NSString * _Nullable warning;
 /// Represents if the OT SDK data download call was successful or not.
 /// note:
 /// Refer to <code>responseString</code> and <code>error</code> for more details.
