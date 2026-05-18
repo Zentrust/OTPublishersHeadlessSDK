@@ -30,19 +30,19 @@
 		</data>
 		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/objects-12.3+.nib</key>
 		<data>
-		SHYHF55gESY8/XFQMijXwHyuf4k=
+		7ixXbUZgTnSHtX2y2bDMFo6VjEY=
 		</data>
 		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/runtime.nib</key>
 		<data>
-		SHYHF55gESY8/XFQMijXwHyuf4k=
+		7ixXbUZgTnSHtX2y2bDMFo6VjEY=
 		</data>
 		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/objects-12.3+.nib</key>
 		<data>
-		l76PdQQ6l6RD0y77xIP8T01r9/k=
+		ITporrRIVAG7ar6gRB0SDzarDTo=
 		</data>
 		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/runtime.nib</key>
 		<data>
-		l76PdQQ6l6RD0y77xIP8T01r9/k=
+		ITporrRIVAG7ar6gRB0SDzarDTo=
 		</data>
 		<key>ConsentUINative.storyboardc/SDKListController.nib/objects-12.3+.nib</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/objects-12.3+.nib</key>
 		<data>
-		cIeGJUlL/QKt9HZfePJpPHQeQVc=
+		Tmej4kcK/9toCINF1KGa7mv8ld4=
 		</data>
 		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/runtime.nib</key>
 		<data>
-		cIeGJUlL/QKt9HZfePJpPHQeQVc=
+		Tmej4kcK/9toCINF1KGa7mv8ld4=
 		</data>
 		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/objects-12.3+.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/objects-12.3+.nib</key>
 		<data>
-		nvLumLA8vatu+QR1f582XDH9uR8=
+		3zAJSAA28NpGJ9RGzst8niL5dqg=
 		</data>
 		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/runtime.nib</key>
 		<data>
-		nvLumLA8vatu+QR1f582XDH9uR8=
+		3zAJSAA28NpGJ9RGzst8niL5dqg=
 		</data>
 		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/objects-12.3+.nib</key>
 		<data>
@@ -222,55 +222,59 @@
 		</data>
 		<key>Headers/OTPublishersHeadlessSDK-Swift.h</key>
 		<data>
-		d/SaiwLXs3wXuFsc0iWG63cOKnA=
+		9XaqUn36+OisCBv8NadLIlIKsGw=
 		</data>
 		<key>Headers/OTPublishersHeadlessSDK.h</key>
 		<data>
-		GF2uck8QkwCUePbzsFrUmI2cs+c=
+		EO1NKli2xRUbRiOIjtiglI3V3d0=
+		</data>
+		<key>Headers/TCF2Encoder.h</key>
+		<data>
+		ZgD0JLuO2ff8YmUYzYnTMnWGZHQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fdd0G3l83Pc35gV59HvxHs1HPek=
+		pVUmAl6oy8ohXhOyFz8GifZ4uXU=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HVIhXHOHZ2D27PY7tYXtv0XYncI=
+		nTdug+ukiW+2glXKmAP7MB2rGbw=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/xVKRj3W7kU+bXcFSZ2nhQC6tbg=
+		d6uP4q2IwifUz5xNjFs7pfcMDPM=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		lrJV9LVf8CR66y0czAAhoO3lgH8=
+		fg1BgAlOO+2FEeg+3JSOzoPqF50=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/xVKRj3W7kU+bXcFSZ2nhQC6tbg=
+		d6uP4q2IwifUz5xNjFs7pfcMDPM=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		a/s+A3IWx6+eq/SPt0gdGAKIWvg=
+		ZJwNcois1uByGal0GOW29hzgglM=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HVIhXHOHZ2D27PY7tYXtv0XYncI=
+		nTdug+ukiW+2glXKmAP7MB2rGbw=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vk9CZuHmi4RCVpcWhfHbwDcYM0w=
+		PIVKwGV/g9ZywjQ0bBUCnDAML7k=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mP0hkzl4iB8OHDATbCrtLsU1aiQ=
+		IHh6/ggrd47yAxMnBi3/JRvLpZI=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vk9CZuHmi4RCVpcWhfHbwDcYM0w=
+		PIVKwGV/g9ZywjQ0bBUCnDAML7k=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9EKlIbbC7J1R2IA3fqYwxb90tRg=
+		iTsJLa9SkSDaurSj8vFiygmxJiM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -282,7 +286,11 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		cV+RGemri9sarx9gT9XK7slGk1E=
+		UJVvW7jpEm6ENQUP1qEMCSfSzNk=
+		</data>
+		<key>SnackBarView.nib</key>
+		<data>
+		k0KWmbWaOb4zX/Nz5CqJnzsC7ps=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -333,28 +341,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hBTgyqFnFR3REo94ZTKXUsy3MoY8QUTk06aSYBRIIXA=
+			SV1F+lCIkucm6NgUs1VCGxIoGAESEfrB/kxKFjES944=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hBTgyqFnFR3REo94ZTKXUsy3MoY8QUTk06aSYBRIIXA=
+			SV1F+lCIkucm6NgUs1VCGxIoGAESEfrB/kxKFjES944=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WjPepqx1FwQ4bWmvD++mUBjy27fSP79VcY+GV0dIDng=
+			vosKDSvfatc59FmbWeD5M9Kw3mvhcLIekrjqxLpObMw=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WjPepqx1FwQ4bWmvD++mUBjy27fSP79VcY+GV0dIDng=
+			vosKDSvfatc59FmbWeD5M9Kw3mvhcLIekrjqxLpObMw=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/SDKListController.nib/objects-12.3+.nib</key>
@@ -529,14 +537,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GeTZBvVGBXIAU7dkv7j+t/vrkx2l39pddmGOATN4fnM=
+			NtaQDJgzqKTUQjnt7hhNscCl2kezy8Hn8BAb7gXCMhY=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GeTZBvVGBXIAU7dkv7j+t/vrkx2l39pddmGOATN4fnM=
+			NtaQDJgzqKTUQjnt7hhNscCl2kezy8Hn8BAb7gXCMhY=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/objects-12.3+.nib</key>
@@ -613,14 +621,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rW0DhJNfow14+0KD3nVHjkQjyq5N7+Sc3beUQVwLg68=
+			S8r8JvgHaewifqRMMObiVN2rsQ9Fec7AsCdyrENxlBQ=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rW0DhJNfow14+0KD3nVHjkQjyq5N7+Sc3beUQVwLg68=
+			S8r8JvgHaewifqRMMObiVN2rsQ9Fec7AsCdyrENxlBQ=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/objects-12.3+.nib</key>
@@ -669,84 +677,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BroUkXU8PyZNDaE+TONA7U5cA5LclIMgnUa1LjDsLGM=
+			N9lu5tz+BiVXUgt70XgkaEnnVCMTRNR7lyysGfJhbu4=
 			</data>
 		</dict>
 		<key>Headers/OTPublishersHeadlessSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wfmuRNX9tv54KOtZu5QNDhTkHTdraIPzfzXeHKLEwo0=
+			v2v8MKz8jVdO6PaoTIA+RFwfUa6VehLw/fqvnm41aU0=
+			</data>
+		</dict>
+		<key>Headers/TCF2Encoder.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			semvQpTPkXQJwDb3j1SgRUpPGFPA6VBaxACNuq1h4YQ=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dRN0YLYqI9rOb3948ae4sf+t4s+7cFjL6Up1gFHJ6kM=
+			bwDkA7r1G/NsiqsIWGBcDNTOUsidu6ZjlcPBVFfW7Zw=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UI1iA53c3iGy0kopEYunanpmwfWRN/Yamis0PPYpBX8=
+			QwgFVmYUllIh2JkxRy1xlH6C3jdIs/C1G7w5Da/h7LE=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gk8ST5tM8Udnub0L6NIceMdk2srYcSzb9x3C15bMl00=
+			4tfp92o7dLgM0k143Zp7GlV7Hu3axXpM4I0i4WCqiBQ=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UI1iA53c3iGy0kopEYunanpmwfWRN/Yamis0PPYpBX8=
+			QwgFVmYUllIh2JkxRy1xlH6C3jdIs/C1G7w5Da/h7LE=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yKPO0G8Qhmq65iyUgv+33PenwxS7dYqH4sBJJBX9sLc=
+			dF/Zsn81DJYevkvXNesyDs+uoiq6vzhF3rKJf3hsSus=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dRN0YLYqI9rOb3948ae4sf+t4s+7cFjL6Up1gFHJ6kM=
+			bwDkA7r1G/NsiqsIWGBcDNTOUsidu6ZjlcPBVFfW7Zw=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9oUgjZF7D+MSE5cUKNJ9d5wqDOS6IPEugeAZEvmUQKQ=
+			62nlS34ScvQJpp1lOiNCNB4Xa7+OuYSQwscBy6qMSMM=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h46KqWRreSm7e6Etsr1Jigf/hj9SpCgYO61jc637vL8=
+			DebThqyhgVxXh1FOEK93iYRPquWXnLp3iwjbR6oki1k=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9oUgjZF7D+MSE5cUKNJ9d5wqDOS6IPEugeAZEvmUQKQ=
+			62nlS34ScvQJpp1lOiNCNB4Xa7+OuYSQwscBy6qMSMM=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BL8zHPbK6qrmupVaaLjKLJSRkWn4/ibUa4G2/JPbxq0=
+			KFiuDUogQLEYnSI4s6RtPdygGzIySAIUpNqfqd3bmY0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -767,7 +782,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5DrB+gz8ybi/k8UoqDKNWiX+6bgTQOSJEdZ42IStkSQ=
+			NgfzGV2DI8NMjUUUCj3A9e5uVfY9H20fwQjXbJolkwI=
+			</data>
+		</dict>
+		<key>SnackBarView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NfrW43Vui9QNEt1l3cARc3UJ4CrlA8CWYMEHiQJtu9Y=
 			</data>
 		</dict>
 	</dict>
