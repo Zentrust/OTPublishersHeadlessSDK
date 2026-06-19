@@ -864,7 +864,7 @@ public enum ProxyType : Swift.Equatable {
   @objc dynamic public func updateVendorLegitInterest(vendorID: Swift.String, legIntStatus: Swift.Bool, for mode: VendorListMode = .iab)
   @objc dynamic public func writeLogsToFile(_ enable: Swift.Bool, debugLog enableVerbose: Swift.Bool = false)
   @objc dynamic public func setFetchDataURL(_ urlString: Swift.String)
-  @objc dynamic public func saveConsent(type: ConsentInteractionType, completion: @escaping () -> () = {   })
+  @objc dynamic public func saveConsent(type: ConsentInteractionType, explicitConsent: Swift.Bool = false, completion: @escaping () -> () = {   })
   @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getValue(forKey key: Swift.String) -> Any?

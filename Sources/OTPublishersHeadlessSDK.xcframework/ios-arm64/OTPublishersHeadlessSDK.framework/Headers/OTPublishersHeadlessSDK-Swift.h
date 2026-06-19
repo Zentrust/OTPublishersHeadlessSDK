@@ -849,6 +849,8 @@ enum OTUIType : NSInteger;
 /// Consent will not be logged to server when interaction type is preference center close.
 /// note:
 /// consent will not logged to server when there are ATT linked categories and ATT permission is not determined.
+/// note:
+/// CMP API will only honor explicitConsent for UCP interaction type for now.
 /// <ul>
 ///   <li>
 ///     :
@@ -857,12 +859,15 @@ enum OTUIType : NSInteger;
 ///         type: The interaction type associated with the consent.
 ///       </li>
 ///       <li>
+///         explicitConsent: When set to true, passes OT-Explicit-Consent header to Save And Long Consent CMP API. Default is false.
+///       </li>
+///       <li>
 ///         completion: The completion handler that gets called once the saving is complete.
 ///       </li>
 ///     </ul>
 ///   </li>
 /// </ul>
-- (void)saveConsentWithType:(enum OTConsentInteractionType)type completion:(void (^ _Nonnull)(void))completion;
+- (void)saveConsentWithType:(enum OTConsentInteractionType)type explicitConsent:(BOOL)explicitConsent completion:(void (^ _Nonnull)(void))completion;
 /// Returns a boolean indicating if OT SDK is currently displaying its view in the current view hierarchy.
 - (BOOL)sdkViewsCurrentlyPresented SWIFT_WARN_UNUSED_RESULT;
 /// Returns the value stored in OT SDK that is associated with the passed in key.
