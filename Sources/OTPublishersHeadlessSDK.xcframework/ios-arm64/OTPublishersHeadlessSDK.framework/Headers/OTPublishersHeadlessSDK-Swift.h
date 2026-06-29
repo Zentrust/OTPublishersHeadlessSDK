@@ -797,6 +797,10 @@ enum OTUIType : NSInteger;
 ///
 - (void)enableOTSDKLog:(enum OTLoggerConstant)level;
 /// Use this API to clear all the OT SDK data.
+/// note:
+/// Safe to call from any thread. Concurrent calls are serialized internally
+/// via a dedicated serial queue. The method is synchronous — when it returns, all
+/// data has been cleared.
 - (void)clearOTSDKData;
 /// This API will reset the local consents of the Categories, Puposes, Vendors and SDKs.
 - (void)resetUpdatedConsent;
