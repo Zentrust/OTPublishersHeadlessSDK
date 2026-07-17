@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OTPublishersHeadlessSDK
+// swift-module-flags: -target arm64-apple-ios15-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OTPublishersHeadlessSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AppTrackingTransparency
 import DeveloperToolsSupport
@@ -14,6 +14,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 @objc extension OTPublishersHeadlessSDK {
   @objc dynamic public func setupUI(_ viewController: UIKit.UIViewController, UIType: OTUIType = .none)
   @objc dynamic public func showBannerUI()
@@ -1163,6 +1164,11 @@ extension OTOfflineData {
     #endif
   }
 }
+extension Foundation.ProcessInfo {
+  public static var isRunningOnMac: Swift.Bool {
+    get
+  }
+}
 public struct FilterUIResponseData : Swift.Codable {
   public let onColor: Swift.String
   public let onColorDark: Swift.String
@@ -1622,6 +1628,7 @@ public enum AgeGateAuthorizationStatus : Swift.Int {
   case info = 3
   case debug = 4
   case verbose = 5
+  case automation = 6
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
