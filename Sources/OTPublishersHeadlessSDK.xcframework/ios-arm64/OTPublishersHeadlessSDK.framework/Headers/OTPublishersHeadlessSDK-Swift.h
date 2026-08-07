@@ -360,10 +360,12 @@ typedef SWIFT_ENUM_NAMED(NSInteger, OTConsentInteractionType, "ConsentInteractio
   OTConsentInteractionTypeAppTrackingOptOut = 12,
 /// The user has not given ATT permission yet.
   OTConsentInteractionTypeAppTrackingNotGiven = 13,
+/// The user’s age range has been confirmed.
+  OTConsentInteractionTypeAgeGateRange = 14,
 /// Use this interaction type if the current profile needs to be synced.
-  OTConsentInteractionTypeSyncProfile = 14,
+  OTConsentInteractionTypeSyncProfile = 15,
 /// The user has clicked on confirm  button in Universal Consent Preference Center View.
-  OTConsentInteractionTypeUcPreferenceCenterConfirm = 15,
+  OTConsentInteractionTypeUcPreferenceCenterConfirm = 16,
 };
 
 /// Enum for IAB CCPA expected values
@@ -495,52 +497,6 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK19OTGoogleConsentType")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Struct for IAB 2.0 TCF UserDefaults keys
-SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK12OTIABTCFKeys")
-@interface OTIABTCFKeys : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2CmpSdkId;)
-+ (NSString * _Nonnull)iabTcf2CmpSdkId SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2CmpSdkVersion;)
-+ (NSString * _Nonnull)iabTcf2CmpSdkVersion SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PolicyVersion;)
-+ (NSString * _Nonnull)iabTcf2PolicyVersion SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2GdprApplies;)
-+ (NSString * _Nonnull)iabTcf2GdprApplies SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherCC;)
-+ (NSString * _Nonnull)iabTcf2PublisherCC SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PurposeOneTreatment;)
-+ (NSString * _Nonnull)iabTcf2PurposeOneTreatment SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardStacks;)
-+ (NSString * _Nonnull)iabTcf2UseNonStandardStacks SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2UseNonStandardTexts;)
-+ (NSString * _Nonnull)iabTcf2UseNonStandardTexts SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2TCString;)
-+ (NSString * _Nonnull)iabTcf2TCString SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2VendorConsents;)
-+ (NSString * _Nonnull)iabTcf2VendorConsents SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2VendorLegitimateInterests;)
-+ (NSString * _Nonnull)iabTcf2VendorLegitimateInterests SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PurposeConsents;)
-+ (NSString * _Nonnull)iabTcf2PurposeConsents SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PurposeLegitimateInterests;)
-+ (NSString * _Nonnull)iabTcf2PurposeLegitimateInterests SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2SpecialFeaturesOptIns;)
-+ (NSString * _Nonnull)iabTcf2SpecialFeaturesOptIns SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherRestrictions;)
-+ (NSString * _Nonnull)iabTcf2PublisherRestrictions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherConsent;)
-+ (NSString * _Nonnull)iabTcf2PublisherConsent SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherLegitimateInterests;)
-+ (NSString * _Nonnull)iabTcf2PublisherLegitimateInterests SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherCustomPurposesConsents;)
-+ (NSString * _Nonnull)iabTcf2PublisherCustomPurposesConsents SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2PublisherCustomPurposesLegitimateInterests;)
-+ (NSString * _Nonnull)iabTcf2PublisherCustomPurposesLegitimateInterests SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull iabTcf2AddtlConsent;)
-+ (NSString * _Nonnull)iabTcf2AddtlConsent SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 /// enum to keep a state of Log Levels
 typedef SWIFT_ENUM(NSInteger, OTLoggerConstant, open) {
   OTLoggerConstantNoLogs = -1,
@@ -549,6 +505,7 @@ typedef SWIFT_ENUM(NSInteger, OTLoggerConstant, open) {
   OTLoggerConstantInfo = 3,
   OTLoggerConstantDebug = 4,
   OTLoggerConstantVerbose = 5,
+  OTLoggerConstantAutomation = 6,
 };
 
 /// Public class to handle OneTrust SDK’s additional parameters.
@@ -620,14 +577,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 /// \param value Boolean value specifying updated consent value. Permissible values : true or false
 ///
 - (void)updateUCPurposeConsentWithPurposeId:(NSString * _Nonnull)purposeId withConsent:(BOOL)value;
-/// Public function to update consent status for specified UCP topic option id.
-/// \param topicOptionId String topic option id for which consent status should be change.
-///
-/// \param purposeId String purpose id related with specified topic option id for which consent status should be change.
-///
-/// \param value Boolean value specifying updated consent value. Permissible values : true or false
-///
-- (void)updateUCPurposeConsentWithTopicOptionId:(NSString * _Nonnull)topicOptionId purposeId:(NSString * _Nonnull)purposeId withConsent:(BOOL)value SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases. Topics is no longer supported as part of Universal Consent Purposes.");
 /// Public function to update consent status for specified UCP custom preference option id.
 /// \param cpOptionId String custom preference option id for which consent status should be change.
 ///
@@ -648,18 +597,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 /// 0 if consent not given
 /// -1 if invalid purpose ID is  passed
 - (NSInteger)getUCPurposeConsentWithPurposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
-/// Public function to get consent status for specified UCP topic option id.
-/// \param topicID String topic Id for which consent status will be returned.
-///
-/// \param purposeID String purpose id top which the given topic belongs to.
-///
-///
-/// returns:
-/// Int consent
-/// 1 if consent given
-/// 0 if consent not given
-/// -1 if invalid purposeID/topicID is  passed
-- (NSInteger)getUCPurposeConsentWithTopicID:(NSString * _Nonnull)topicID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases. Topics is no longer supported as part of Universal Consent Purposes.");
 /// Public function to get consent status for an Option of the Custom preference under a given UCPurpose.
 /// \param customPreferenceOptionID String Option ID under a given custom preference for which consent status will be returnd.
 ///
@@ -674,17 +611,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) OTPublishers
 /// 0 if consent not given
 /// -1 if invalid customPreferenceOptionID/customPreferenceID/purposeID is  passed
 - (NSInteger)getUCPurposeConsentWithCustomPreferenceOptionID:(NSString * _Nonnull)customPreferenceOptionID customPreferenceID:(NSString * _Nonnull)customPreferenceID purposeID:(NSString * _Nonnull)purposeID SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@interface OTPublishersHeadlessSDK (SWIFT_EXTENSION(OTPublishersHeadlessSDK))
-- (NSDictionary<NSString *, id> * _Nullable)getVendorListDataFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
-- (NSDictionary<NSString *, id> * _Nullable)getVendorListUIFor:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.");
-- (NSDictionary<NSString *, id> * _Nullable)getVendorDetailsWithVendorID:(NSString * _Nonnull)vendorID for:(enum VendorListMode)mode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getVendorDetails(for:mode:) to get the vendor details assocaited with the passed in vendor identifier.");
-- (NSDictionary<NSString *, id> * _Nullable)getDomainGroupData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain data will no longer be available directly. We will be exposing individual items that are necessary under domain data via new public methods.");
-- (NSDictionary<NSString *, id> * _Nullable)getCommonData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as common data will no longer be available directly. We will be exposing individual items that are necessary under common data via new public methods.");
-- (NSDictionary<NSString *, id> * _Nullable)getDomainInfo SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain information will no longer be available directly. We will be exposing individual items that are necessary under domain information data via new public methods.");
-- (void)optOutOfSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
-- (void)optIntoSaleOfDataWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_DEPRECATED_MSG("This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.");
 @end
 
 @class UIViewController;
@@ -754,7 +680,7 @@ enum OTUIType : NSInteger;
 /// note:
 /// Starting 202504.1.0, this API will only download either Banner or Preference Center data. This depends on the <code>setupUI</code> method being called prior to <code>startSDK</code>. If <code>setupUI</code> is called with <code>.preferenceCenter</code>, it will download Preference Center data, else we will be downloading Banner data by default.
 /// note:
-/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data.
+/// Starting 202504.1.0, UCP data (if configured) will not be downloaded by default as part of <code>startSDK</code> call, applications will have to call <code>fetchUCPurposesCmpApiData(completion:)</code> API to fetch UCP data .
 /// \param storageLocation Contains the storage location from where data has to be fetched (ex: “cdn.cookielaw.org”).
 ///
 /// \param domainIdentifier Containins unique Domain Identifier to be passed (ex: “5376c4e0-8367-450c-8669-a0d41bed69ac”).
@@ -765,7 +691,7 @@ enum OTUIType : NSInteger;
 ///
 /// \param completionHandler The block of code that will be triggered once the startSDK setup is complete. Completion Handler contains response object that contains either the server response in the form of a string or an error object if in case the call has failed.
 ///
-/// \param loadOffline Sets up the OT SDK using offline data that is set via API <code>setOTOffileData(_:)</code>. By default this value will be set to false.
+/// \param loadOffline Sets up the OT SDK using offline/locally cached data. The SDK prioritizes cached data (from previous online sessions) when available, falling back to offline data set via <code>setOTOfflineData(_:)</code>. When <code>true</code>, the SDK remains in offline mode for the entire session, preventing all on-demand network calls (e.g., Vendor List fetch, logo downloads). The flag persists until the next <code>startSDK</code> call or the app session. By default this value will be set to false.
 ///
 - (void)startSDKWithStorageLocation:(NSString * _Nonnull)storageLocation domainIdentifier:(NSString * _Nonnull)domainIdentifier languageCode:(NSString * _Nonnull)languageCode params:(OTSdkParams * _Nullable)params loadOffline:(BOOL)loadOffline completionHandler:(void (^ _Nonnull)(OTResponse * _Nonnull))completionHandler;
 /// Determines if OT SDK UI should be displayed for a user location.
@@ -836,8 +762,6 @@ enum OTUIType : NSInteger;
 /// Retrieves the legitimate interest value for specified group (purpose/category) identifier.
 /// \param customGroupId The group represented as a string, for which legitimate interest value has to be retrieved.
 ///
-/// \param useCmpApi Retrieves the status from the CMP API data available.
-///
 ///
 /// returns:
 /// 1 if legitimate interest is given. 0 if legitimate interest not given. -1 invalid groupId passed.
@@ -846,8 +770,6 @@ enum OTUIType : NSInteger;
 /// note:
 /// Use this API to retrieve the most current consent value (this can be an unsaved value if save operation is not performed yet after toggling the status). Please use <code>getConsentStatus(forCategory:)</code> if you want to retrieve only the last saved value for a category/purpose.
 /// \param customGroupId The group represented as a string, for which consent value has to be retrieved.
-///
-/// \param useCmpApi Retrieves the status from the CMP API data available.
 ///
 ///
 /// returns:
@@ -876,6 +798,10 @@ enum OTUIType : NSInteger;
 ///
 - (void)enableOTSDKLog:(enum OTLoggerConstant)level;
 /// Use this API to clear all the OT SDK data.
+/// note:
+/// Safe to call from any thread. Concurrent calls are serialized internally
+/// via a dedicated serial queue. The method is synchronous — when it returns, all
+/// data has been cleared.
 - (void)clearOTSDKData;
 /// This API will reset the local consents of the Categories, Puposes, Vendors and SDKs.
 - (void)resetUpdatedConsent;
@@ -928,6 +854,8 @@ enum OTUIType : NSInteger;
 /// Consent will not be logged to server when interaction type is preference center close.
 /// note:
 /// consent will not logged to server when there are ATT linked categories and ATT permission is not determined.
+/// note:
+/// CMP API will only honor explicitConsent for UCP interaction type for now.
 /// <ul>
 ///   <li>
 ///     :
@@ -936,12 +864,15 @@ enum OTUIType : NSInteger;
 ///         type: The interaction type associated with the consent.
 ///       </li>
 ///       <li>
+///         explicitConsent: When set to true, passes OT-Explicit-Consent header to Save And Long Consent CMP API. Default is false.
+///       </li>
+///       <li>
 ///         completion: The completion handler that gets called once the saving is complete.
 ///       </li>
 ///     </ul>
 ///   </li>
 /// </ul>
-- (void)saveConsentWithType:(enum OTConsentInteractionType)type completion:(void (^ _Nonnull)(void))completion;
+- (void)saveConsentWithType:(enum OTConsentInteractionType)type explicitConsent:(BOOL)explicitConsent completion:(void (^ _Nonnull)(void))completion;
 /// Returns a boolean indicating if OT SDK is currently displaying its view in the current view hierarchy.
 - (BOOL)sdkViewsCurrentlyPresented SWIFT_WARN_UNUSED_RESULT;
 /// Returns the value stored in OT SDK that is associated with the passed in key.
@@ -995,6 +926,10 @@ SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK10OTResponse")
 @property (nonatomic, readonly) NSError * _Nullable error;
 /// Represents the entire server response received while starting OT SDK..
 @property (nonatomic, readonly, copy) NSString * _Nullable responseString;
+/// Represents a non-fatal warning that occurred during SDK setup (e.g., network failed but cached data was used).
+/// note:
+/// When set, <code>status</code> will still be <code>true</code> and <code>error</code> will be <code>nil</code>. The SDK is functional using locally cached data.
+@property (nonatomic, readonly, copy) NSString * _Nullable warning;
 /// Represents if the OT SDK data download call was successful or not.
 /// note:
 /// Refer to <code>responseString</code> and <code>error</code> for more details.
@@ -1053,18 +988,6 @@ typedef SWIFT_ENUM(NSInteger, OTUIType, open) {
   OTUITypePreferenceCenter = 1,
 };
 
-/// Struct containing all the UserDefault keys being saved
-SWIFT_CLASS("_TtC23OTPublishersHeadlessSDK17OTUserDefaultKeys")
-@interface OTUserDefaultKeys : NSObject
-/// Key for storing culture data.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull cultureData;)
-+ (NSString * _Nonnull)cultureData SWIFT_WARN_UNUSED_RESULT;
-/// Key for storing domain data.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull domainData;)
-+ (NSString * _Nonnull)domainData SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 enum VendorListJourneyType : NSInteger;
 /// Conform to this protocol to perform customizations on OT SDK UI.
 SWIFT_PROTOCOL_NAMED("UIConfigurator")
@@ -1086,7 +1009,7 @@ SWIFT_PROTOCOL_NAMED("UIConfigurator")
 /// Conform to this method to provide vendor list user journey.
 /// Pass in <code>.hideConfirmMyChoices</code> for going back to the screen from where you came. It is the default flow.
 /// note:
-/// <code>.hideConfirmMyChoices</code>does not log the consent, it saves the user consent and <code>Confirm My Choices</code>                            button will be hidden in vendor list screen.
+/// <code>.hideConfirmMyChoices</code>does not log the consent, it saves the user consent and <code>Confirm My Choices</code> button will be hidden in vendor list screen.
 /// note:
 /// <code>.showConfirmMyChoices</code> logs the consent and it dismisses all SDK UI on click of <code>Confirm My Choices</code>.
 - (enum VendorListJourneyType)getVendorListJourney SWIFT_WARN_UNUSED_RESULT;
@@ -1096,7 +1019,7 @@ SWIFT_PROTOCOL_NAMED("UIConfigurator")
 /// return <code>false</code> to force the sdk to light mode irrespective of the device’s <code>Dark Appearance</code> setting.
 /// note:
 /// return <code>true</code> to force the sdk to dark mode irrespective of the device’s <code>Dark Appearance</code> setting.
-- (BOOL)shouldEnableDarkMode SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(tvos,introduced=13.0) SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (BOOL)shouldEnableDarkMode SWIFT_WARN_UNUSED_RESULT;
 @end
 
 /// Enum for Vendor list user journey

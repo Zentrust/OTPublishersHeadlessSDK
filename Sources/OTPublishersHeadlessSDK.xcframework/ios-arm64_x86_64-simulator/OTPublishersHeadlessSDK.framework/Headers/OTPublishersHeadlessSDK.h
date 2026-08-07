@@ -9,6 +9,5 @@
 #ifndef OTPublishersHeadlessSDK_h
 #define OTPublishersHeadlessSDK_h
 
-#include "TCF2Encoder.h"
 
 #endif /* OTPublishersHeadlessSDK_h */

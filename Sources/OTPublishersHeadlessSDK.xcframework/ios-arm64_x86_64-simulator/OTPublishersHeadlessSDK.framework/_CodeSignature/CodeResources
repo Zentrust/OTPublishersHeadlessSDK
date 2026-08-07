@@ -6,275 +6,175 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		ypUeqKsduitnTJlpg9IXAkU5wSg=
+		thRtnHgRJQq09Gvsqn3qKeNvyS8=
 		</data>
-		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib</key>
 		<data>
-		6lIGyGHIqPCh5BVEInfjsoYZKC0=
-		</data>
-		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib/runtime.nib</key>
-		<data>
-		6lIGyGHIqPCh5BVEInfjsoYZKC0=
+		h/OALML7AO3a+9Bot3gbEapkHZk=
 		</data>
 		<key>ConsentUINative.storyboardc/Info.plist</key>
 		<data>
-		5/w6fysFMfampidkXjJIMC+dHCo=
+		lHiwfyrqsfk6rnptkv2WpXiccGs=
 		</data>
-		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib</key>
 		<data>
-		+aj9WL4ry3q2/e+F0mIWmM/lzb8=
+		qNRE6cQ4TwN8OLVJCklb4XW4C3U=
 		</data>
-		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib</key>
 		<data>
-		+aj9WL4ry3q2/e+F0mIWmM/lzb8=
+		PsS4Rk3AbRRtm4STK7wEhu/5HOA=
 		</data>
-		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib</key>
 		<data>
-		JJjfQ1pN/Vn/p4/OhaBb24BkFNw=
+		l76PdQQ6l6RD0y77xIP8T01r9/k=
 		</data>
-		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/runtime.nib</key>
-		<data>
-		JJjfQ1pN/Vn/p4/OhaBb24BkFNw=
-		</data>
-		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/objects-12.3+.nib</key>
-		<data>
-		ijoV0++JVLRvfTajXB0tytpXhSo=
-		</data>
-		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/runtime.nib</key>
-		<data>
-		ijoV0++JVLRvfTajXB0tytpXhSo=
-		</data>
-		<key>ConsentUINative.storyboardc/SDKListController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/SDKListController.nib</key>
 		<data>
 		gzFK+ninCpjnSNN+WwzdfC/sW50=
 		</data>
-		<key>ConsentUINative.storyboardc/SDKListController.nib/runtime.nib</key>
-		<data>
-		gzFK+ninCpjnSNN+WwzdfC/sW50=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib</key>
 		<data>
 		YJOkph1nGPEJ7oPANV8tq8zdMZk=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib/runtime.nib</key>
-		<data>
-		YJOkph1nGPEJ7oPANV8tq8zdMZk=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib</key>
 		<data>
 		IOHDt5Ku3io2/HoZexEmzk7I1R0=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib/runtime.nib</key>
-		<data>
-		IOHDt5Ku3io2/HoZexEmzk7I1R0=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib</key>
 		<data>
 		KbefSOxnioeCDH/LjP2XFwwe1W8=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib/runtime.nib</key>
-		<data>
-		KbefSOxnioeCDH/LjP2XFwwe1W8=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib</key>
 		<data>
 		XBEx+JEsTBi8LWkcQUkZJWVHS5Q=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib/runtime.nib</key>
-		<data>
-		XBEx+JEsTBi8LWkcQUkZJWVHS5Q=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib</key>
 		<data>
 		YJDI5xIctJKiV+vyWfpYc6Ht1t0=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib</key>
 		<data>
-		YJDI5xIctJKiV+vyWfpYc6Ht1t0=
+		ZeBp0TqPFIvSfxO+lR3dBm/pXh0=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib/objects-12.3+.nib</key>
-		<data>
-		yQLi0AYbZ04xHtjANN3cArD/qAM=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib/runtime.nib</key>
-		<data>
-		yQLi0AYbZ04xHtjANN3cArD/qAM=
-		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib</key>
 		<data>
 		7odXq0M1HGgEKy4PfPJ2e+JNaLc=
 		</data>
-		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib/runtime.nib</key>
-		<data>
-		7odXq0M1HGgEKy4PfPJ2e+JNaLc=
-		</data>
-		<key>ConsentUINative.storyboardc/VendorListViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/VendorListViewController.nib</key>
 		<data>
 		o6RCDJh7fxRXAXDiNbRbj5PvIAc=
 		</data>
-		<key>ConsentUINative.storyboardc/VendorListViewController.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib</key>
 		<data>
-		o6RCDJh7fxRXAXDiNbRbj5PvIAc=
+		VL97Jop7IcCQ6cKMic1bxGvXNts=
 		</data>
-		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib/objects-12.3+.nib</key>
-		<data>
-		WiHmG7CcOS97QuJxgW/oLDnn2t8=
-		</data>
-		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib/runtime.nib</key>
-		<data>
-		wrihChl3AXYJfB7rOAdnfQKRJbQ=
-		</data>
-		<key>ConsentUINative.storyboardc/bannerViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/bannerViewController.nib</key>
 		<data>
 		3yQAunVzb0jSahEadkSC3Tdyl00=
 		</data>
-		<key>ConsentUINative.storyboardc/bannerViewController.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib</key>
 		<data>
-		3yQAunVzb0jSahEadkSC3Tdyl00=
+		Btva0piZIdQCFska5uIdX4De0J0=
 		</data>
-		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib</key>
 		<data>
-		YMlq1bDfLJ8nZnoxiObXzbE8nik=
+		cIeGJUlL/QKt9HZfePJpPHQeQVc=
 		</data>
-		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib</key>
 		<data>
-		YMlq1bDfLJ8nZnoxiObXzbE8nik=
+		IgnlPaREhX42pvnuSr4lUMBQXVA=
 		</data>
-		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib</key>
 		<data>
-		7Wo45kKlA9gOPosMQplaS+E7Il4=
+		ooDHaX2yqiX2fZtChPwfmQ7PiJU=
 		</data>
-		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/kOR-m6-XzX-view-TVH-4p-RwS.nib</key>
 		<data>
-		7Wo45kKlA9gOPosMQplaS+E7Il4=
+		LpLoIVjjkLJW26srZvKyUMktW/U=
 		</data>
-		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/objects-12.3+.nib</key>
-		<data>
-		uxVJHCQgMAkrXWb2HbJBkuPhAZY=
-		</data>
-		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/runtime.nib</key>
-		<data>
-		uxVJHCQgMAkrXWb2HbJBkuPhAZY=
-		</data>
-		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib/objects-12.3+.nib</key>
-		<data>
-		Iqp4fdjpoIaYTwNpx4QkLRQkx3I=
-		</data>
-		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib/runtime.nib</key>
-		<data>
-		Iqp4fdjpoIaYTwNpx4QkLRQkx3I=
-		</data>
-		<key>ConsentUINative.storyboardc/pcViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/pcViewController.nib</key>
 		<data>
 		754U3gxoEJ738vkxEd8DNg8ho6Y=
 		</data>
-		<key>ConsentUINative.storyboardc/pcViewController.nib/runtime.nib</key>
-		<data>
-		754U3gxoEJ738vkxEd8DNg8ho6Y=
-		</data>
-		<key>ConsentUINative.storyboardc/permissionConsentVC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/permissionConsentVC.nib</key>
 		<data>
 		p4kS/1Rm9bxbbBMC0eKJEggSZG0=
 		</data>
-		<key>ConsentUINative.storyboardc/permissionConsentVC.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib</key>
 		<data>
-		p4kS/1Rm9bxbbBMC0eKJEggSZG0=
+		Fqw/mzbSeBlijmsWJyBMpD84cro=
 		</data>
-		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/showGlobalOptOutView.nib</key>
 		<data>
-		sCvrIFnOWv2hn56mcoHt/t5pNjA=
+		+6V7F0YENkp+uqQ5mAbTkZE4mO4=
 		</data>
-		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib</key>
 		<data>
-		sCvrIFnOWv2hn56mcoHt/t5pNjA=
+		nvLumLA8vatu+QR1f582XDH9uR8=
 		</data>
-		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/objects-12.3+.nib</key>
-		<data>
-		bnfLMrVKFEgHhJeePgQ5rF2cmHw=
-		</data>
-		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/runtime.nib</key>
-		<data>
-		bnfLMrVKFEgHhJeePgQ5rF2cmHw=
-		</data>
-		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/ucPurposesVC.nib</key>
 		<data>
 		QxbNUD6R3AVmKuC45ASYWNscMbc=
 		</data>
-		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/runtime.nib</key>
-		<data>
-		QxbNUD6R3AVmKuC45ASYWNscMbc=
-		</data>
-		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib</key>
 		<data>
 		018EXRgXwCAzxuCSwuy5ZyxeCFc=
 		</data>
-		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib/runtime.nib</key>
-		<data>
-		018EXRgXwCAzxuCSwuy5ZyxeCFc=
-		</data>
-		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib/objects-12.3+.nib</key>
-		<data>
-		dwEgwLIKpoRZBef1kQE4llCdcIk=
-		</data>
-		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib</key>
 		<data>
 		dwEgwLIKpoRZBef1kQE4llCdcIk=
 		</data>
 		<key>Headers/OTPublishersHeadlessSDK-Swift.h</key>
 		<data>
-		9XaqUn36+OisCBv8NadLIlIKsGw=
+		AIE+km5ymUnU2Vi6NZEAfYRHa3k=
 		</data>
 		<key>Headers/OTPublishersHeadlessSDK.h</key>
 		<data>
-		EO1NKli2xRUbRiOIjtiglI3V3d0=
-		</data>
-		<key>Headers/TCF2Encoder.h</key>
-		<data>
-		ZgD0JLuO2ff8YmUYzYnTMnWGZHQ=
+		GF2uck8QkwCUePbzsFrUmI2cs+c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aFyCUC00piM8VPAzon0FFfsjRP0=
+		TUvturRNp+t5HwRGeA220FjazFE=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DnBYfxe++CwiI7XO89EbMPSRIGA=
+		BMofa6m7T72vezkW4AfZbPuYj2g=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		d6uP4q2IwifUz5xNjFs7pfcMDPM=
+		ksJLxm64Gq31Op1TharPtPraIHY=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fg1BgAlOO+2FEeg+3JSOzoPqF50=
+		NGfLKIhRdmr48oABWnuzH4ultVI=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		d6uP4q2IwifUz5xNjFs7pfcMDPM=
+		ksJLxm64Gq31Op1TharPtPraIHY=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QpF+3FBzt77/ZhryD5H9htiQVJU=
+		Zza0M18uDVv1HzVXMgonQO04/Fs=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DnBYfxe++CwiI7XO89EbMPSRIGA=
+		BMofa6m7T72vezkW4AfZbPuYj2g=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PIVKwGV/g9ZywjQ0bBUCnDAML7k=
+		FS46I6NxN7yavWI8rp20fm4Q8es=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IHh6/ggrd47yAxMnBi3/JRvLpZI=
+		vhbO+i7UKJSUuI7heTziMHsqDC8=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PIVKwGV/g9ZywjQ0bBUCnDAML7k=
+		FS46I6NxN7yavWI8rp20fm4Q8es=
 		</data>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vd1kx9u8sFTq5jL5Nr+KFqamdww=
+		otogSiLYZ2XzSZCq8k2pCWW3bfg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -288,10 +188,6 @@
 		<data>
 		UJVvW7jpEm6ENQUP1qEMCSfSzNk=
 		</data>
-		<key>SnackBarView.nib</key>
-		<data>
-		k0KWmbWaOb4zX/Nz5CqJnzsC7ps=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -299,374 +195,206 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BhUhN7y6tCOLz+tOFD6f5UghYctzIqzmt8/R9alh4iY=
+			OIZL9P/3MoQRtXChAC6w3PfuYzE1rp8Sd90QTasKy1I=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			igR7SiOZog8yJ1gSQRYusO0bSzMWIGR6b4q4OfJ6iDw=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/GOY-bj-RBJ-view-AWY-lP-rei.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			igR7SiOZog8yJ1gSQRYusO0bSzMWIGR6b4q4OfJ6iDw=
+			IxTvwyUt1NPc6L60Kj5G/GeP953yw/NSMGzZrxSM7SE=
 			</data>
 		</dict>
 		<key>ConsentUINative.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QOuIatfBxQ3XicdgOhINPwtL90DMtUZKIjHz8gbyh2A=
+			VXGRqCizMT8yifWjbLFc/dJTriU78h/l7z/OZfZZGas=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtTd8gCubGub6tdEuK8jACQM9Q+m5neKDCXbPldh0Ac=
+			JikGAbYFZVhLhvluX6islNEPSqqsbk6/n3x8vPFXEzQ=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/MRX-Vz-NL4-view-rQq-Js-TIP.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtTd8gCubGub6tdEuK8jACQM9Q+m5neKDCXbPldh0Ac=
+			d36tFqwF56Ohq0ffl6KU66FjtcssGd1pi+9RJCwQP6k=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LZfDDcPK6xOEpIF33Ad3brR4sF2YzgW/UICsdJ6e2m0=
+			WjPepqx1FwQ4bWmvD++mUBjy27fSP79VcY+GV0dIDng=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/NHr-iN-bQ8-view-tfH-3y-LWk.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LZfDDcPK6xOEpIF33Ad3brR4sF2YzgW/UICsdJ6e2m0=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4ZpQg+2xpAuuXPDByd2W0Xz1GBkCqikF6Fmgb0CJM/g=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/Pb9-6Y-1sC-view-bib-gm-a2t.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4ZpQg+2xpAuuXPDByd2W0Xz1GBkCqikF6Fmgb0CJM/g=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/SDKListController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/SDKListController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			RRdLZsjBy16JqWs5FEJteaH9EuxyYfHzm+lWSv2VZKA=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/SDKListController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RRdLZsjBy16JqWs5FEJteaH9EuxyYfHzm+lWSv2VZKA=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			EZ+BDLAXmVHciZS6odMPVHmFyyw6UeLInFCedv+4BjI=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-GOY-bj-RBJ.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EZ+BDLAXmVHciZS6odMPVHmFyyw6UeLInFCedv+4BjI=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			DTkn35ETd1RW+tlxhXfQdMF+U8C9neo+O7Afflu49E8=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-MRX-Vz-NL4.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DTkn35ETd1RW+tlxhXfQdMF+U8C9neo+O7Afflu49E8=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			Fv9WzpGzvXRtyWZcFVfGNf/tCjVw6r7iFKc2S60/Cz0=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-NHr-iN-bQ8.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fv9WzpGzvXRtyWZcFVfGNf/tCjVw6r7iFKc2S60/Cz0=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			0X64Ugt0sVRU1gW9xzk6Bh6Rnb+t/akH6bqNK+ZBVjI=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-Pb9-6Y-1sC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0X64Ugt0sVRU1gW9xzk6Bh6Rnb+t/akH6bqNK+ZBVjI=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			R1pms3QUtq4WOQeW/YjxJPWrW7KLoUnWVWGN0gd0gQM=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-dSQ-Ru-zpy.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1pms3QUtq4WOQeW/YjxJPWrW7KLoUnWVWGN0gd0gQM=
+			k1PkMNRswIxVM14aWy0eTsUNfoZH3p/Z0d43MA4jexE=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Oi45NxXZpEY+32ATmO9DggKD/hjX9vP1xr/ONkNuTeE=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-iTW-fR-13H.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Oi45NxXZpEY+32ATmO9DggKD/hjX9vP1xr/ONkNuTeE=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			KeTTb0SLDR66mo9iNE1RYKx0FE+sDBw3l7r1nm2GXZY=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/UIViewController-r1h-qN-Vh3.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KeTTb0SLDR66mo9iNE1RYKx0FE+sDBw3l7r1nm2GXZY=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/VendorListViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/VendorListViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			V/PzDcr0LPjlaME+8a8gGiR+qfzzYw9PI8qchsvo8aA=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/VendorListViewController.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/PzDcr0LPjlaME+8a8gGiR+qfzzYw9PI8qchsvo8aA=
+			ZmefOI01Xhzki35kTiN5fq69Zv+9z5EfHn1j7CHv4rc=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XnuSxx9g6eY8U2BhcRQe+1gsAVngdC7B6y4+e5/fcmU=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/Wad-7G-Ovm-view-i9w-kF-0eQ.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YIh+KuTwJRvfnBuRip6gBaotL/hOPV1Q5oyftQ/e9Xo=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/bannerViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/bannerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			kOzgP8ZjQKfHUFFchsdDtJvpXlq3njL6JHXsOVR4kbY=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/bannerViewController.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOzgP8ZjQKfHUFFchsdDtJvpXlq3njL6JHXsOVR4kbY=
+			R9BRzW+xyX0YT8edGyc0if9qnzrHD5nUbGAi5jRm2Q8=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUI5RM+vpIuXIgEi4OK7AAYDeEk5s3+WhXActkoiWs4=
+			GeTZBvVGBXIAU7dkv7j+t/vrkx2l39pddmGOATN4fnM=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/dSQ-Ru-zpy-view-8yG-79-SXS.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUI5RM+vpIuXIgEi4OK7AAYDeEk5s3+WhXActkoiWs4=
+			2PpcDq9euRLXAuzSSRjXJjQhuyBvAQVmNdDaXUCRQp0=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pCa/DDJ5MXMTtIPo/A4+3NOi7UZPTAad9XVWN+VerDk=
+			MKMnxOrLQj8oPV4Y9lEu11M7eiVh2zjy9g556X8XXhE=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/hSs-ng-G2K-view-Hqe-nD-Abk.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/kOR-m6-XzX-view-TVH-4p-RwS.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pCa/DDJ5MXMTtIPo/A4+3NOi7UZPTAad9XVWN+VerDk=
+			PQ/onlZZ/iZrOWMidy+zHqums85zMjVk2tzh7fTFJjM=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ScCCyHUQpVAosZ1cObHMlHyN41OP/LTqyoV3Xq0INGI=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/iTW-fR-13H-view-NB8-7x-6YA.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ScCCyHUQpVAosZ1cObHMlHyN41OP/LTqyoV3Xq0INGI=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TEtVAQm+xL57U1R0Oi2E+kthZe38kYHtlrAJRfa1cI0=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/jMB-mY-NFO-view-voS-7S-2We.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TEtVAQm+xL57U1R0Oi2E+kthZe38kYHtlrAJRfa1cI0=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/pcViewController.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/pcViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			+qqSgzLOG1nFim2g+UMK+srnOU5yJCkS6RraRszdEdg=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/pcViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+qqSgzLOG1nFim2g+UMK+srnOU5yJCkS6RraRszdEdg=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/permissionConsentVC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/permissionConsentVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			pnv6UICOgh6F32k6QU5ic10x1lXUt7/XchUdCo6WPgI=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/permissionConsentVC.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pnv6UICOgh6F32k6QU5ic10x1lXUt7/XchUdCo6WPgI=
+			9lVReM/KPCadUC5U5hcbSzTsEUeIuDh1iryjUStVMY4=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/showGlobalOptOutView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96E6sBoR4cmQkDgsJRfDIlubTKuzNd7ZYJ8SDgifGgU=
+			rjmFGu2ZoN4YtN1VGkLaPxaVCVwqgbZCZFEFKpnE7Pw=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/r1h-qN-Vh3-view-tYb-z0-PDn.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96E6sBoR4cmQkDgsJRfDIlubTKuzNd7ZYJ8SDgifGgU=
+			rW0DhJNfow14+0KD3nVHjkQjyq5N7+Sc3beUQVwLg68=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			krL9XqwaAdCbh5jRnfKenL/uHKdhzknk+4VX1xmTZzo=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/tgB-Cz-Q8X-view-Fdg-wR-04j.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			krL9XqwaAdCbh5jRnfKenL/uHKdhzknk+4VX1xmTZzo=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/ucPurposesVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ZAKenSEd8s19dtwWil2bv+/dF7glw/1v7D9Yi9VF81w=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/ucPurposesVC.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZAKenSEd8s19dtwWil2bv+/dF7glw/1v7D9Yi9VF81w=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib/objects-12.3+.nib</key>
+		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			FQ52IvkmXIUMijPRZFlwD1PTfKR1qB5kcZCW09bxgFg=
 			</data>
 		</dict>
-		<key>ConsentUINative.storyboardc/vk9-MY-be9-view-W5K-nk-BJv.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FQ52IvkmXIUMijPRZFlwD1PTfKR1qB5kcZCW09bxgFg=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rau1vGJl7ToBmPsIWm0PPz8gB0WxoHHxgp/58qtOHJU=
-			</data>
-		</dict>
-		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib/runtime.nib</key>
+		<key>ConsentUINative.storyboardc/z74-J0-gFX-view-oHQ-HO-PIc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -677,91 +405,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N9lu5tz+BiVXUgt70XgkaEnnVCMTRNR7lyysGfJhbu4=
+			JaAbwsP33ZVu2Coa88Hl5mudMPDSckdmSPD5PkpyJ6M=
 			</data>
 		</dict>
 		<key>Headers/OTPublishersHeadlessSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v2v8MKz8jVdO6PaoTIA+RFwfUa6VehLw/fqvnm41aU0=
-			</data>
-		</dict>
-		<key>Headers/TCF2Encoder.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			semvQpTPkXQJwDb3j1SgRUpPGFPA6VBaxACNuq1h4YQ=
+			wfmuRNX9tv54KOtZu5QNDhTkHTdraIPzfzXeHKLEwo0=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q1ZRwtHguPf4Y0YTwKHdXGBBLrklYGHKAKhdiSJAcbM=
+			DPN31ac2Yz58Xf/9uqd8QRGPS0kACIcB+YmKzGKLXDo=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwgFVmYUllIh2JkxRy1xlH6C3jdIs/C1G7w5Da/h7LE=
+			Gz2s6ke+k6RkXxY80sd++Z6Rl4NmAoYJs86TZ7+lXRA=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4tfp92o7dLgM0k143Zp7GlV7Hu3axXpM4I0i4WCqiBQ=
+			7k754TmiPFydU4AubW2Az60dEIPI0GOGrN83l3SQf2c=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwgFVmYUllIh2JkxRy1xlH6C3jdIs/C1G7w5Da/h7LE=
+			Gz2s6ke+k6RkXxY80sd++Z6Rl4NmAoYJs86TZ7+lXRA=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bDg9FaO3lDNLy06gtff1g8EVxzGqYDknx2YSXMClEWw=
+			ClMgMQrZMEfGduvzpFqkohnJsXP6k+81vODo0L13kqk=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q1ZRwtHguPf4Y0YTwKHdXGBBLrklYGHKAKhdiSJAcbM=
+			DPN31ac2Yz58Xf/9uqd8QRGPS0kACIcB+YmKzGKLXDo=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			62nlS34ScvQJpp1lOiNCNB4Xa7+OuYSQwscBy6qMSMM=
+			btoA/ZpOHAy4v1kZroD1ROX4EDHi2HMJCkbuXchw3IY=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DebThqyhgVxXh1FOEK93iYRPquWXnLp3iwjbR6oki1k=
+			g805T9Xvr7l89DZq43PsFOoF8JfQIY7jbAArY99mFWc=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			62nlS34ScvQJpp1lOiNCNB4Xa7+OuYSQwscBy6qMSMM=
+			btoA/ZpOHAy4v1kZroD1ROX4EDHi2HMJCkbuXchw3IY=
 			</data>
 		</dict>
 		<key>Modules/OTPublishersHeadlessSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hBu8CZWEBkyCc1F58fhuMHxJ38MxaXDKV4X3FFqnfVI=
+			klp3eKiKtgUN4HthuGWtvM+MbvXRdYDpKs9k3CdiUFE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -783,13 +504,6 @@
 			<key>hash2</key>
 			<data>
 			NgfzGV2DI8NMjUUUCj3A9e5uVfY9H20fwQjXbJolkwI=
-			</data>
-		</dict>
-		<key>SnackBarView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NfrW43Vui9QNEt1l3cARc3UJ4CrlA8CWYMEHiQJtu9Y=
 			</data>
 		</dict>
 	</dict>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OTPublishersHeadlessSDK
+// swift-module-flags: -target arm64-apple-ios15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OTPublishersHeadlessSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AppTrackingTransparency
 import DeveloperToolsSupport
@@ -14,6 +14,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 @objc extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   @objc dynamic public func setupUI(_ viewController: UIKit.UIViewController, UIType: OTPublishersHeadlessSDK.OTUIType = .none)
   @objc dynamic public func showBannerUI()
@@ -41,6 +42,40 @@ public enum IABGPPUSPKeys : Swift.String, Swift.CaseIterable {
     get
   }
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CommonTCFKeys : Swift.CaseIterable {
+  case iabTcf2TCString
+  case iabTcf2CmpSdkId
+  case iabTcf2CmpSdkVersion
+  case iabTcf2PolicyVersion
+  case iabTcf2GdprApplies
+  case iabTcf2PublisherCC
+  case iabTcf2PurposeOneTreatment
+  case iabTcf2UseNonStandardStacks
+  case iabTcf2UseNonStandardTexts
+  case iabTcf2VendorConsents
+  case iabTcf2VendorLegitimateInterests
+  case iabTcf2PurposeConsents
+  case iabTcf2PurposeLegitimateInterests
+  case iabTcf2SpecialFeaturesOptIns
+  case iabTcf2PublisherRestrictions
+  case iabTcf2PublisherConsent
+  case iabTcf2PublisherLegitimateInterests
+  case iabTcf2PublisherCustomPurposesConsents
+  case iabTcf2PublisherCustomPurposesLegitimateInterests
+  case iabTcf2AddtlConsent
+  public var rawValue: Swift.String {
+    get
+  }
+  public static func == (a: OTPublishersHeadlessSDK.CommonTCFKeys, b: OTPublishersHeadlessSDK.CommonTCFKeys) -> Swift.Bool
+  public typealias AllCases = [OTPublishersHeadlessSDK.CommonTCFKeys]
+  nonisolated public static var allCases: [OTPublishersHeadlessSDK.CommonTCFKeys] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -80,7 +115,7 @@ extension OTPublishersHeadlessSDK.GeneralVendorsDetailsData {
   public func getLatestLegIntStatus() -> Swift.Int?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func getStoredResponseData(useCmpApi: Swift.Bool) -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
+  public static func getStoredResponseData() -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
   #endif
 }
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
@@ -96,8 +131,6 @@ extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func fetchUCPurposesCmpApiData(completion: @escaping ([Swift.String : Any]?) -> Swift.Void)
   #endif
-  @available(*, deprecated, message: "This API is only for OneTrust testing purposes only, DO NOT USE THIS IN PRODUCTION.")
-  public func setupUsingCmpApi(_ value: Swift.Bool)
 }
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -175,7 +208,7 @@ extension OTPublishersHeadlessSDK.IABVendorsDetailsData {
   public func getLatestLegIntStatus() -> Swift.Int?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func getStoredResponseData(useCmpApi: Swift.Bool) -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
+  public static func getStoredResponseData() -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
   #endif
 }
 public struct OTCoreConstants {
@@ -199,6 +232,11 @@ extension Swift.Array where Element : Swift.Decodable, Element : Swift.Encodable
 extension Swift.Encodable {
   #if compiler(>=5.3) && $NonescapableTypes
   public func asDictionary(prefix: Swift.String? = nil) -> [Swift.String : Any]?
+  #endif
+}
+extension Foundation.Data {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func asDictionary() -> [Swift.String : Any]?
   #endif
 }
 extension OTPublishersHeadlessSDK.PreferenceCenterUIDataModel {
@@ -243,14 +281,24 @@ extension OTPublishersHeadlessSDK.IABVendorsDetailsData {
     public init(from decoder: any Swift.Decoder) throws
   }
 }
+extension OTPublishersHeadlessSDK.BannerUIDataModel {
+  public struct SummaryData {
+    public var titleData: OTPublishersHeadlessSDK.UITextData
+    public var additionalDescriptionData: OTPublishersHeadlessSDK.UITextData {
+      get
+    }
+    public var descriptionData: OTPublishersHeadlessSDK.UITextData {
+      get
+    }
+    public var policyLinkData: OTPublishersHeadlessSDK.UIButtonData {
+      get
+    }
+  }
+}
 @objc extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   @objc dynamic public func updateUCPurposeConsent(purposeId: Swift.String, withConsent value: Swift.Bool)
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases. Topics is no longer supported as part of Universal Consent Purposes.")
-  dynamic public func updateUCPurposeConsent(topicOptionId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
   @objc dynamic public func updateUCPurposeConsent(cpOptionId: Swift.String, cpId: Swift.String, purposeId: Swift.String, withConsent value: Swift.Bool)
   @objc dynamic public func getUCPurposeConsent(purposeID: Swift.String) -> Swift.Int
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases. Topics is no longer supported as part of Universal Consent Purposes.")
-  dynamic public func getUCPurposeConsent(topicID: Swift.String, purposeID: Swift.String) -> Swift.Int
   @objc dynamic public func getUCPurposeConsent(customPreferenceOptionID: Swift.String, customPreferenceID: Swift.String, purposeID: Swift.String) -> Swift.Int
 }
 public enum IABGPPKeys : Swift.String, Swift.CaseIterable {
@@ -331,20 +379,6 @@ extension Swift.Optional where Wrapped == Swift.String {
   }
 }
 #endif
-extension OTPublishersHeadlessSDK.BannerUIDataModel {
-  public struct SummaryData {
-    public var titleData: OTPublishersHeadlessSDK.UITextData
-    public var additionalDescriptionData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var descriptionData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var policyLinkData: OTPublishersHeadlessSDK.UIButtonData {
-      get
-    }
-  }
-}
 public struct FirstPartyCookiesData : Swift.Codable {
   public let name: Swift.String
   public let description: Swift.String
@@ -444,9 +478,6 @@ extension OTPublishersHeadlessSDK.PreferenceCenterUIDataModel {
       get
     }
   }
-}
-public struct NtfyUIDataModel {
-  public init()
 }
 extension Foundation.FileManager {
   public var preferencesDirectory: Foundation.URL {
@@ -661,6 +692,21 @@ extension OTPublishersHeadlessSDK.PreferenceCenterUIDataModel {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RejectAllButtonData : OTPublishersHeadlessSDK.AcceptAllButtonData {
   @objc deinit
 }
+@objc public enum VendorListMode : Swift.Int, Swift.Codable {
+  case google
+  case iab
+  case general
+  public var description: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc public class OTSdkParams : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(countryCode: Swift.String?, regionCode: Swift.String?)
@@ -768,14 +814,6 @@ public enum ProxyType : Swift.Equatable {
   case attPrePromptLogo(Foundation.URL)
   case attPostPromptLogo(Foundation.URL)
   case ageGateLogo(Foundation.URL)
-  @available(*, deprecated, message: "This case will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use individual Cmp Api proxy types to setup the SDK.")
-  case sdkDataDownload(Foundation.URL)
-  @available(*, deprecated, message: "This case will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `cmpVendors(_)` Cmp Api proxy type to setup general vendors.")
-  case generalVendors(Foundation.URL)
-  @available(*, deprecated, message: "This case will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `cmpVendors(_)` Cmp Api proxy type to setup IAB vendors.")
-  case iabVendors(Foundation.URL)
-  @available(*, deprecated, message: "This case will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `cmpVendors(_)` Cmp Api proxy type to setup google vendors.")
-  case googleVendors(Foundation.URL)
   public static func == (lhs: OTPublishersHeadlessSDK.ProxyType, rhs: OTPublishersHeadlessSDK.ProxyType) -> Swift.Bool
 }
 @_inheritsConvenienceInitializers @objc public class OTProfileSyncParams : ObjectiveC.NSObject {
@@ -793,6 +831,9 @@ public enum ProxyType : Swift.Equatable {
     get
   }
   @objc public var responseString: Swift.String? {
+    get
+  }
+  @objc public var warning: Swift.String? {
     get
   }
   @objc public var status: Swift.Bool {
@@ -824,7 +865,7 @@ public enum ProxyType : Swift.Equatable {
   @objc dynamic public func updateVendorLegitInterest(vendorID: Swift.String, legIntStatus: Swift.Bool, for mode: OTPublishersHeadlessSDK.VendorListMode = .iab)
   @objc dynamic public func writeLogsToFile(_ enable: Swift.Bool, debugLog enableVerbose: Swift.Bool = false)
   @objc dynamic public func setFetchDataURL(_ urlString: Swift.String)
-  @objc dynamic public func saveConsent(type: OTPublishersHeadlessSDK.ConsentInteractionType, completion: @escaping () -> () = {   })
+  @objc dynamic public func saveConsent(type: OTPublishersHeadlessSDK.ConsentInteractionType, explicitConsent: Swift.Bool = false, completion: @escaping () -> () = {   })
   @objc dynamic public func sdkViewsCurrentlyPresented() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getValue(forKey key: Swift.String) -> Any?
@@ -845,36 +886,6 @@ public enum ProxyType : Swift.Equatable {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func getLastUserConsentedLocation() -> OTPublishersHeadlessSDK.OTGeolocationModel?
   #endif
-}
-@objc extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.")
-  dynamic public func getVendorListData(for mode: OTPublishersHeadlessSDK.VendorListMode = .iab) -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getAllVendors(mode:) to get all the active vendors associated with the passed in mode.")
-  dynamic public func getVendorListUI(for mode: OTPublishersHeadlessSDK.VendorListMode = .iab) -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use getVendorDetails(for:mode:) to get the vendor details assocaited with the passed in vendor identifier.")
-  dynamic public func getVendorDetails(vendorID: Swift.String, for mode: OTPublishersHeadlessSDK.VendorListMode = .iab) -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain data will no longer be available directly. We will be exposing individual items that are necessary under domain data via new public methods.")
-  dynamic public func getDomainGroupData() -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as common data will no longer be available directly. We will be exposing individual items that are necessary under common data via new public methods.")
-  dynamic public func getCommonData() -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). Please refer to the new list of public methods exposed in 202504.1.0 as domain information will no longer be available directly. We will be exposing individual items that are necessary under domain information data via new public methods.")
-  dynamic public func getDomainInfo() -> [Swift.String : Any]?
-  #endif
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.")
-  dynamic public func optOutOfSaleOfData(completion: @escaping () -> () = {   })
-  @objc @available(*, deprecated, message: "This method will be removed in a couple of releases(202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, we will no longer be supporting updating of CCPA string via public methods.")
-  dynamic public func optIntoSaleOfData(completion: @escaping () -> () = {   })
 }
 extension UIKit.UIFont {
   public struct FontDetails {
@@ -903,67 +914,25 @@ extension Foundation.Thread {
 extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   public func setOTOfflineData(_ data: OTPublishersHeadlessSDK.OTOfflineData)
 }
-public struct OTOfflineData {
-  public var logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? {
-    get
-  }
-  public var cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var otData: Foundation.Data? {
-    get
-  }
-  @available(*, deprecated, message: "This variable will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.cmpApiData` instead.")
-  public var vendorListData: OTPublishersHeadlessSDK.OTOfflineData.VendorListData? {
-    get
-  }
-  @available(*, deprecated, message: "This method will be removed in a couple of releases (202507.1.0, couple of releases after Cmp Api adoption in 202504.1.0). From 202504.1.0 onwards, please use `OTOfflineData.init(cmpApiData:logoData:)` instead.")
-  public init(otData: Foundation.Data, vendorListData: OTPublishersHeadlessSDK.OTOfflineData.VendorListData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData)
-  public init(cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData)
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct VendorListData {
-    public var iabData: Foundation.Data?
-    public var googleData: Foundation.Data?
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init(iab: Foundation.Data?, google: Foundation.Data?)
-    #endif
-  }
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct LogoData {
-    public var banner: UIKit.UIImage?
-    public var preferenceCenter: UIKit.UIImage?
-    public var ageGate: UIKit.UIImage?
-    public var att: UIKit.UIImage?
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
-    #endif
-  }
-}
-extension OTPublishersHeadlessSDK.OTOfflineData {
-  public struct CmpApiData {
-    public var banner: Foundation.Data?
-    public var preferences: Foundation.Data?
-    public var vendors: Foundation.Data?
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
-    #endif
-  }
-}
 @objc(OTUIConfigurator) public protocol UIConfigurator {
   @objc func shouldUseCustomUIConfig() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func customUIConfigFilePath() -> Swift.String?
   #endif
   @objc optional func getVendorListJourney() -> OTPublishersHeadlessSDK.VendorListJourneyType
-  @available(iOS 13.0, tvOS 13.0, *)
   @objc optional func shouldEnableDarkMode() -> Swift.Bool
 }
 public protocol CustomConfigurator : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   func getProxyDomain(for type: OTPublishersHeadlessSDK.ProxyType) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getProfileAgeRange(for profileID: Swift.String, completion: @escaping (OTPublishersHeadlessSDK.ProfileAgeRange?) -> Swift.Void)
+  #endif
+}
+extension OTPublishersHeadlessSDK.CustomConfigurator {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getProfileAgeRange(for profileID: Swift.String, completion: @escaping (OTPublishersHeadlessSDK.ProfileAgeRange?) -> Swift.Void)
   #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTPublishersHeadlessSDK : ObjectiveC.NSObject {
@@ -1012,7 +981,7 @@ public protocol CustomConfigurator : AnyObject {
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OTGoogleConsentType : ObjectiveC.NSObject, Swift.Codable {
+@_hasMissingDesignatedInitializers @objc public class OTGoogleConsentType : ObjectiveC.NSObject, Swift.Codable {
   @objc public var analyticsStorage: OTPublishersHeadlessSDK.OTGoogleConsentMode {
     get
   }
@@ -1162,6 +1131,43 @@ extension OTPublishersHeadlessSDK.BannerUIDataModel {
     }
   }
 }
+public struct OTOfflineData {
+  public var logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? {
+    get
+  }
+  public var cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(cmpApiData: OTPublishersHeadlessSDK.OTOfflineData.CmpApiData, logoData: OTPublishersHeadlessSDK.OTOfflineData.LogoData? = nil)
+  #endif
+}
+extension OTPublishersHeadlessSDK.OTOfflineData {
+  public struct LogoData {
+    public var banner: UIKit.UIImage?
+    public var preferenceCenter: UIKit.UIImage?
+    public var ageGate: UIKit.UIImage?
+    public var att: UIKit.UIImage?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(bannerLogo: UIKit.UIImage?, pcLogo: UIKit.UIImage?, ageGateLogo: UIKit.UIImage?, attLogo: UIKit.UIImage?)
+    #endif
+  }
+}
+extension OTPublishersHeadlessSDK.OTOfflineData {
+  public struct CmpApiData {
+    public var banner: Foundation.Data?
+    public var preferences: Foundation.Data?
+    public var vendors: Foundation.Data?
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cmpBannerData: Foundation.Data?, cmpPreferencesData: Foundation.Data?, cmpVendorsData: Foundation.Data?)
+    #endif
+  }
+}
+extension Foundation.ProcessInfo {
+  public static var isRunningOnMac: Swift.Bool {
+    get
+  }
+}
 public struct FilterUIResponseData : Swift.Codable {
   public let onColor: Swift.String
   public let onColorDark: Swift.String
@@ -1182,14 +1188,30 @@ public struct PreferenceCenterUIDataModel {
     get
   }
   public var logoDetails: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.LogoDetails
-  public let summaryData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.SummaryData
-  public let acceptAllButton: OTPublishersHeadlessSDK.AcceptAllButtonData
-  public let closeButtonData: OTPublishersHeadlessSDK.CloseButtonData
-  public let rejectAllButton: OTPublishersHeadlessSDK.RejectAllButtonData
-  public let savePreferencesButton: OTPublishersHeadlessSDK.ConfirmChoicesButtonData
-  public let purposeListItemData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.PurposeListItemData
-  public let purposeListData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.PurposeListData
-  public let dsIdData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.DsIdData
+  public var summaryData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.SummaryData {
+    get
+  }
+  public var acceptAllButton: OTPublishersHeadlessSDK.AcceptAllButtonData {
+    get
+  }
+  public var closeButtonData: OTPublishersHeadlessSDK.CloseButtonData {
+    get
+  }
+  public var rejectAllButton: OTPublishersHeadlessSDK.RejectAllButtonData {
+    get
+  }
+  public var savePreferencesButton: OTPublishersHeadlessSDK.ConfirmChoicesButtonData {
+    get
+  }
+  public var purposeListItemData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.PurposeListItemData {
+    get
+  }
+  public var purposeListData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.PurposeListData {
+    get
+  }
+  public var dsIdData: OTPublishersHeadlessSDK.PreferenceCenterUIDataModel.DsIdData {
+    get
+  }
   public var toggleActiveColor: OTPublishersHeadlessSDK.DynamicColor {
     get
   }
@@ -1369,6 +1391,20 @@ public struct VendorListUIData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ProfileAgeRange : Swift.Codable, Swift.Equatable {
+  public var lowerBound: Swift.UInt8? {
+    get
+  }
+  public var upperBound: Swift.UInt8? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(lowerBound: Swift.UInt8? = nil, upperBound: Swift.UInt8? = nil)
+  #endif
+  public static func == (a: OTPublishersHeadlessSDK.ProfileAgeRange, b: OTPublishersHeadlessSDK.ProfileAgeRange) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public protocol TextTheme : Swift.Decodable, Swift.Encodable {
   var fontName: Swift.String { get }
   var fontSize: Swift.Int { get }
@@ -1421,6 +1457,7 @@ public struct PageHeaderTheme : OTPublishersHeadlessSDK.TextTheme {
   case appTrackingConfirm
   case appTrackingOptOut
   case appTrackingNotGiven
+  case ageGateRange
   case syncProfile
   case ucPreferenceCenterConfirm
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1447,70 +1484,6 @@ public struct PageHeaderTheme : OTPublishersHeadlessSDK.TextTheme {
   public var rawValue: Swift.Int {
     get
   }
-}
-@_inheritsConvenienceInitializers @objc public class OTIABTCFKeys : ObjectiveC.NSObject {
-  @objc public static var iabTcf2CmpSdkId: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2CmpSdkVersion: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PolicyVersion: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2GdprApplies: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherCC: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PurposeOneTreatment: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2UseNonStandardStacks: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2UseNonStandardTexts: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2TCString: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2VendorConsents: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2VendorLegitimateInterests: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PurposeConsents: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PurposeLegitimateInterests: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2SpecialFeaturesOptIns: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherRestrictions: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherConsent: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherLegitimateInterests: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherCustomPurposesConsents: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2PublisherCustomPurposesLegitimateInterests: Swift.String {
-    @objc get
-  }
-  @objc public static var iabTcf2AddtlConsent: Swift.String {
-    @objc get
-  }
-  @objc override dynamic public init()
-  @objc deinit
 }
 @propertyWrapper public struct DynamicColor {
   public var lightHex: Swift.String {
@@ -1570,26 +1543,6 @@ public enum SDKViewMode {
     get
   }
 }
-extension OTPublishersHeadlessSDK.BannerUIDataModel {
-  public struct IABSummaryData {
-    public var titleData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var descriptionData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var partnersLinkData: OTPublishersHeadlessSDK.UIButtonData {
-      get
-    }
-  }
-}
-extension OTPublishersHeadlessSDK.OTCoreConstants {
-  public struct IAB_CCPA_Keys {
-    public static var consentString: [Swift.String] {
-      get
-    }
-  }
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AcceptAllButtonData : OTPublishersHeadlessSDK.CommonTextButtonData {
   @objc deinit
 }
@@ -1635,16 +1588,6 @@ extension OTPublishersHeadlessSDK.PreferenceCenterUIDataModel {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class OTUserDefaultKeys : ObjectiveC.NSObject {
-  @objc public static var cultureData: Swift.String {
-    @objc get
-  }
-  @objc public static var domainData: Swift.String {
-    @objc get
-  }
-  @objc override dynamic public init()
-  @objc deinit
-}
 public enum AgeGateAuthorizationStatus : Swift.Int {
   case notGiven
   case denied
@@ -1684,40 +1627,13 @@ public enum AgeGateAuthorizationStatus : Swift.Int {
   case info = 3
   case debug = 4
   case verbose = 5
+  case automation = 6
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
-  }
-}
-extension OTPublishersHeadlessSDK.NtfyUIDataModel {
-  public struct DisplayData {
-    public var backgroundColor: OTPublishersHeadlessSDK.DynamicColor {
-      get
-    }
-    public var borderColor: OTPublishersHeadlessSDK.DynamicColor {
-      get
-    }
-    public var iconBgColor: OTPublishersHeadlessSDK.DynamicColor {
-      get
-    }
-    public var showClose: Swift.Bool {
-      get
-    }
-    public var showIcon: Swift.Bool {
-      get
-    }
-    public var titleData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var descriptionData: OTPublishersHeadlessSDK.UITextData {
-      get
-    }
-    public var cookieSettingsBtbData: OTPublishersHeadlessSDK.UIButtonData? {
-      get
-    }
   }
 }
 @objc public enum OTBannerHeightRatio : Swift.Int, Swift.Codable {
@@ -1740,6 +1656,19 @@ extension OTPublishersHeadlessSDK.OTPublishersHeadlessSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func checkAndLogConsent(for permissionType: OTPublishersHeadlessSDK.AppPermissionType, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   #endif
+}
+extension OTPublishersHeadlessSDK.BannerUIDataModel {
+  public struct IABSummaryData {
+    public var titleData: OTPublishersHeadlessSDK.UITextData {
+      get
+    }
+    public var descriptionData: OTPublishersHeadlessSDK.UITextData {
+      get
+    }
+    public var partnersLinkData: OTPublishersHeadlessSDK.UIButtonData {
+      get
+    }
+  }
 }
 public struct DataElements {
   public struct Link : Swift.Codable {
@@ -1798,21 +1727,6 @@ extension OTPublishersHeadlessSDK.DataElements {
     public init(from decoder: any Swift.Decoder) throws
   }
 }
-@objc public enum VendorListMode : Swift.Int, Swift.Codable {
-  case google
-  case iab
-  case general
-  public var description: Swift.String {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public struct GoogleVendorsResponseData : Swift.Codable {
   public var vendors: [Swift.String : OTPublishersHeadlessSDK.GoogleVendorsResponseData.VendorDetails] {
     get
@@ -1850,12 +1764,14 @@ extension OTPublishersHeadlessSDK.GoogleVendorsResponseData.VendorDetails {
   public func getLatestLegIntStatus() -> Swift.Int?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func getStoredResponseData(useCmpApi: Swift.Bool) -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
+  public static func getStoredResponseData() -> [Swift.String : any OTPublishersHeadlessSDK.VendorsInfoProtocol]?
   #endif
 }
 extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.IABGPPUSPKeys : Swift.RawRepresentable {}
+extension OTPublishersHeadlessSDK.CommonTCFKeys : Swift.Equatable {}
+extension OTPublishersHeadlessSDK.CommonTCFKeys : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.IABGPPKeys : Swift.RawRepresentable {}
@@ -1873,6 +1789,9 @@ extension OTPublishersHeadlessSDK.IabCcpaConsent : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.VendorListJourneyType : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.VendorListJourneyType : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.VendorListJourneyType : Swift.RawRepresentable {}
+extension OTPublishersHeadlessSDK.VendorListMode : Swift.Equatable {}
+extension OTPublishersHeadlessSDK.VendorListMode : Swift.Hashable {}
+extension OTPublishersHeadlessSDK.VendorListMode : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.ButtonSection : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.ButtonSection : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.OTGoogleConsentMode : Swift.Equatable {}
@@ -1898,6 +1817,3 @@ extension OTPublishersHeadlessSDK.OTLoggerConstant : Swift.RawRepresentable {}
 extension OTPublishersHeadlessSDK.OTBannerHeightRatio : Swift.Equatable {}
 extension OTPublishersHeadlessSDK.OTBannerHeightRatio : Swift.Hashable {}
 extension OTPublishersHeadlessSDK.OTBannerHeightRatio : Swift.RawRepresentable {}
-extension OTPublishersHeadlessSDK.VendorListMode : Swift.Equatable {}
-extension OTPublishersHeadlessSDK.VendorListMode : Swift.Hashable {}
-extension OTPublishersHeadlessSDK.VendorListMode : Swift.RawRepresentable {}
