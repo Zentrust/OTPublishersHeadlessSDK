@@ -53304,7 +53304,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202608.1.0\""
+      "value": "\"202609.1.0\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/FirstPartyCookiesData.swift",
@@ -55941,7 +55941,7 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/GlobalOptOut\/GlobalOptOutViewController.swift",
       "kind": "Array",
-      "offset": 12320,
+      "offset": 12250,
       "length": 2,
       "value": "[]"
     },
@@ -57152,63 +57152,70 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
+      "offset": 1298,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1411,
+      "offset": 1415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1524,
+      "offset": 1520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1633,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1755,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1831,
+      "offset": 1852,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1935,
+      "offset": 1940,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2044,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "Array",
-      "offset": 2093,
+      "offset": 2202,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/GlobalOptOut\/GlobalOptOutDataModel.swift",
       "kind": "Array",
-      "offset": 2462,
+      "offset": 2571,
       "length": 2,
       "value": "[]"
     },
@@ -57670,28 +57677,28 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/OTStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4151,
+      "offset": 4146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/OTStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5547,
+      "offset": 5542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/OTStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6963,
+      "offset": 6958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Helpers\/OTStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8720,
+      "offset": 8715,
       "length": 5,
       "value": "false"
     },
