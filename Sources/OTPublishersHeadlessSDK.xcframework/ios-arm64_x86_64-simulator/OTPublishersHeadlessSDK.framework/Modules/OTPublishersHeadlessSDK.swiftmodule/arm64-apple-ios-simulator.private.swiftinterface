@@ -393,6 +393,8 @@ extension FirstPartyCookiesData {
   public func getLatestConsent() -> Swift.Int8
   public func getToggleStatus() -> Swift.Int8
   public func canToggleStatus() -> Swift.Bool
+  public func hasDisabledConsentToggle() -> Swift.Bool
+  public func hasHiddenConsentToggle() -> Swift.Bool
 }
 public enum AppPermissionType {
   case idfa
@@ -1384,6 +1386,12 @@ public struct OTUIKeys {
       get
     }
   }
+}
+public struct LogFileHandler {
+}
+extension LogFileHandler {
+  public static func readLogsFileContent() -> Swift.String
+  public static func clearLogsFile()
 }
 public struct VendorListUIData : Swift.Codable {
   public let general: VendorListUIData.General
