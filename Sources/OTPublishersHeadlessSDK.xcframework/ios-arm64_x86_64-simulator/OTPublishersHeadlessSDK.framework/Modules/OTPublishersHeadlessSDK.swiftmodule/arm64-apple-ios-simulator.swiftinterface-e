@@ -743,6 +743,8 @@ public struct PurposeTreeGroup : Swift.Codable {
   public let descriptionLegal: Swift.String
   public var iabIllustrations: [Swift.String]?
   public let consentToggleStatus: Swift.Int8
+  public let isConsentDisabled: Swift.Bool
+  public let isLegIntDisabled: Swift.Bool
   public var vendorsLinkedInfo: Swift.String? {
     get
   }
