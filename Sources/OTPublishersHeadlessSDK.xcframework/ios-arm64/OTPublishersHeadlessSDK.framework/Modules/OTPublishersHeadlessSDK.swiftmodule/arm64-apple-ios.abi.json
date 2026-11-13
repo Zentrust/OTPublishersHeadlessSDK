@@ -52012,6 +52012,13 @@
       "value": "20"
     },
     {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/Native UI Helpers\/Main UI\/Banner\/BannerViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 831,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Vendors\/GeneralVendorsResponseData.swift",
       "kind": "StringLiteral",
       "offset": 1833,
@@ -53514,7 +53521,7 @@
       "kind": "StringLiteral",
       "offset": 403,
       "length": 12,
-      "value": "\"202610.1.0\""
+      "value": "\"202611.1.0\""
     },
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/CMP API\/Common\/Data Types\/FirstPartyCookiesData.swift",
@@ -55059,7 +55066,14 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9074,
+      "offset": 1615,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/OTPublishersHeadlessSDK\/Native UI\/Main UI\/Banner\/BannerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10799,
       "length": 4,
       "value": "true"
     },
@@ -56683,7 +56697,7 @@
     {
       "filePath": "\/Users\/builduser\/gitlab-runner\/builds\/udzdSm4BC\/0\/onetrust\/sdk\/publishers-mobile-native-sdk-ios\/OTPublishersHeadlessSDK\/Source\/Native SDK Common\/DataModel\/OTExternalConsent.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 1760,
       "length": 11,
       "value": "\"USPrivacy\""
     },
